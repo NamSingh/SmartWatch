@@ -1,44 +1,45 @@
 ﻿Public Class Form1
 
     Private currentpg = 0
-    Dim Time As New DateTime
-    Dim balance = 6.51
+    Public Time As New DateTime
+    Public balance = 6.51
     Public Sub New()
 
         ' This call is required by the designer.
         InitializeComponent()
-        Me.TimePanel.Visible = True
+        Me.HomePagePanel.Visible = True
         Me.AppPanel.Visible = False
-        Me.CallPanel.Visible = False
-        Me.Bankpanel.Visible = False
+        Me.PhoneAppPanel.Visible = False
+        Me.AllowanceAppPanel.Visible = False
         Me.AppPanel2.Visible = False
-        Me.TimeLabel.Text = Now.ToShortTimeString.ToString()
+        Me.HomeTimeLabel.Text = Now.ToShortTimeString.ToString()
         Timer1.Start()
 
         ' Add any initialization after the InitializeComponent() call.
+        Phone.Show()
 
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        Me.TimeLabel.Text = Now.ToShortTimeString.ToString()
+        Me.HomeTimeLabel.Text = Now.ToShortTimeString.ToString()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles RightButton.Click
         If currentpg = 0 Then
             currentpg = 1
-            Me.TimePanel.Visible = False
+            Me.HomePagePanel.Visible = False
             Me.AppPanel.Visible = True
             Me.AppPanel2.Visible = False
 
         ElseIf currentpg = 1 Then
             currentpg = 2
-            Me.TimePanel.Visible = False
+            Me.HomePagePanel.Visible = False
             Me.AppPanel.Visible = False
             Me.AppPanel2.Visible = True
 
         ElseIf currentpg = 2 Then
             currentpg = 0
-            Me.TimePanel.Visible = True
+            Me.HomePagePanel.Visible = True
             Me.AppPanel.Visible = False
             Me.AppPanel2.Visible = False
         End If
@@ -47,31 +48,29 @@
     Private Sub LeftButton_Click(sender As Object, e As EventArgs) Handles LeftButton.Click
         If currentpg = 0 Then
             currentpg = 2
-            Me.TimePanel.Visible = False
+            Me.HomePagePanel.Visible = False
             Me.AppPanel.Visible = False
             Me.AppPanel2.Visible = True
 
         ElseIf currentpg = 1 Then
             currentpg = 0
-            Me.TimePanel.Visible = True
+            Me.HomePagePanel.Visible = True
             Me.AppPanel.Visible = False
             Me.AppPanel2.Visible = False
 
         ElseIf currentpg = 2 Then
             currentpg = 1
-            Me.TimePanel.Visible = False
+            Me.HomePagePanel.Visible = False
             Me.AppPanel.Visible = True
             Me.AppPanel2.Visible = False
         End If
-
-
     End Sub
 
     Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
         Me.PictureBox5.Visible = False
-        Me.PictureBox6.Visible = True
-        Me.PictureBox7.Visible = False
-        Me.CallPanel.BackColor = Color.Green
+        Me.CallButton.Visible = True
+        Me.CallHomeButton.Visible = False
+        Me.PhoneAppPanel.BackColor = Color.Green
         Time = DateTime.Now
         Timer2.Start()
     End Sub
@@ -85,20 +84,21 @@
         CallTimeLabel.Text = Difference.Days.ToString & ":" & Difference.Hours.ToString & ":" & Difference.Minutes.ToString & ":" & Difference.Seconds.ToString & "." & Difference.Milliseconds.ToString
     End Sub
 
-    Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
-        Me.PictureBox6.Visible = False
+    Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles CallButton.Click
+        Me.CallButton.Visible = False
         Me.PictureBox5.Visible = False
-        Me.PictureBox7.Visible = True
-        Me.CallPanel.BackColor = Color.Red
-        Me.Label2.Visible = True
+        Me.CallHomeButton.Visible = True
+        Me.PhoneAppPanel.BackColor = Color.Red
+        Me.CallEndLabel.Visible = True
         Timer2.Stop()
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        HomeDateLabel.Text = Today.ToString("dddd, MMMM dd")
 
     End Sub
 
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles PayButton.Click
         ' If Me.Label4.Text.Equals("$1.50") Then
         'Me.Label6.Visible = True
         ' Else
@@ -110,68 +110,68 @@
 
 
         If balance < 10 Then
-            Me.Label6.Visible = True
+            Me.AllowanceLabel3.Visible = True
         Else
             balance = balance - 10
-            Me.Label4.Text = "$" + balance.ToString
-            Label22.Text = Label4.Text
-            Me.Label6.Visible = True
-            Me.Label6.ForeColor = Color.Green
-            Me.Label6.Text = "Purchased Tickets!"
+            Me.AllowanceLabel2.Text = "$" + balance.ToString
+            Phone.Label22.Text = AllowanceLabel2.Text
+            Me.AllowanceLabel3.Visible = True
+            Me.AllowanceLabel3.ForeColor = Color.Green
+            Me.AllowanceLabel3.Text = "Purchased Tickets!"
         End If
 
 
 
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PhoneAppIcon.Click
         clear()
-        Me.CallPanel.Visible = True
+        Me.PhoneAppPanel.Visible = True
     End Sub
 
     Public Sub clear()
-        Me.TimePanel.Visible = False
+        Me.HomePagePanel.Visible = False
         Me.AppPanel.Visible = False
-        Me.CallPanel.Visible = False
-        Me.Bankpanel.Visible = False
+        Me.PhoneAppPanel.Visible = False
+        Me.AllowanceAppPanel.Visible = False
         Me.AppPanel2.Visible = False
         Me.SettingPanel.Visible = False
-        Me.GpsPanel.Visible = False
-        Me.SchedulePanel.Visible = False
+        Me.GpsAppPanel.Visible = False
+        Me.ScheduleAppPanel.Visible = False
         Me.SoccerDetails.Visible = False
         Me.StudyDetails.Visible = False
     End Sub
 
-    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click, PictureBox12.Click, PictureBox14.Click, PictureBox15.Click
+    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles CallHomeButton.Click, AllowanceHome.Click, SettingsHome.Click, GPSHomeButton.Click
         clear()
-        Me.TimePanel.Visible = True
+        Me.HomePagePanel.Visible = True
         currentpg = 0
     End Sub
 
-    Private Sub PictureBox10_Click(sender As Object, e As EventArgs) Handles PictureBox10.Click
+    Private Sub PictureBox10_Click(sender As Object, e As EventArgs) Handles AllowanceAppIcon.Click
         clear()
-        Me.Bankpanel.Visible = True
+        Me.AllowanceAppPanel.Visible = True
     End Sub
 
     Private Sub ProgressBar1_Click(sender As Object, e As EventArgs) Handles ProgressBar1.Click
 
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles HigherBright.Click
         If ProgressBar1.Value = 100 Then
         Else
             ProgressBar1.Value = ProgressBar1.Value + 10
         End If
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles LowerBright.Click
         If ProgressBar1.Value = 0 Then
         Else
             ProgressBar1.Value = ProgressBar1.Value - 10
         End If
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles HigherVol.Click
         If ProgressBar2.Value = 100 Then
         Else
             ProgressBar2.Value = ProgressBar2.Value + 10
@@ -179,7 +179,7 @@
 
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles LowerVol.Click
         If ProgressBar2.Value = 0 Then
         Else
             ProgressBar2.Value = ProgressBar2.Value - 10
@@ -187,110 +187,52 @@
 
     End Sub
 
-    Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles PictureBox8.Click
+    Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles SettingAppIcon.Click
         clear()
         Me.SettingPanel.Visible = True
     End Sub
 
-    Private Sub PhoneFrame_Click(sender As Object, e As EventArgs) Handles PhoneFrame.Click
+    Private Sub PhoneFrame_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
-        clearphone()
-        ReminderPanel.Visible = True
-    End Sub
-
-    Private Sub Label18_Click(sender As Object, e As EventArgs) Handles Label18.Click
+    Private Sub Label18_Click(sender As Object, e As EventArgs)
 
     End Sub
 
     '================================================================================
 
     Private Sub SosButton_Click(sender As Object, e As EventArgs) Handles SosButton.Click
-        LocateSosPanel.Visible = True
-        Label16.Text = "SOS FROM CHILD"
-        LocateSosPanel.BringToFront()
+        Phone.LocateSosPanel.Visible = True
+        Phone.Label16.Text = "SOS FROM CHILD"
+        Phone.LocateSosPanel.BringToFront()
 
     End Sub
 
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles GPSAppIcon.Click
         clear()
         Me.GpsPic1.Visible = True
-        Me.GpsPanel.Visible = True
+        Me.GpsAppPanel.Visible = True
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        Alert.Visible = True
-        Alert.BringToFront()
-        If TextBox1.Text.Equals("") Then
-        Else
-            MessageBox.Text = TextBox1.Text
-        End If
-    End Sub
 
     Private Sub EndAlertButton_Click(sender As Object, e As EventArgs) Handles EndAlertButton.Click
-        Alert.Visible = False
-    End Sub
-
-    Private Sub Label15_Click(sender As Object, e As EventArgs) Handles Label15.Click
-
-    End Sub
-
-    Private Sub BackButton_Click(sender As Object, e As EventArgs) Handles BackButton.Click
-        clearphone()
-        SamsungMain.Visible = True
+        ReminderAppPanel.Visible = False
     End Sub
 
 
-    Public Sub clearphone()
-        ReminderPanel.Visible = False
-        SamsungMain.Visible = False
-        LocateSosPanel.Visible = False
-        FundsPanel.Visible = False
-        DailySchedPanel.Visible = False
-    End Sub
-
-    Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
-        LocateSosPanel.Visible = True
-        LocateSosPanel.BringToFront()
-    End Sub
-
-    Private Sub LocateChildPicBox_Click(sender As Object, e As EventArgs) Handles LocateChildPicBox.Click
-        LocateChildPicBox.Visible = False
-        SendLocPic.Visible = True
-        Label19.Text = "Send Child to: Esso Gas Station"
-    End Sub
-
-    Private Sub SendLoc_Click(sender As Object, e As EventArgs) Handles SendLoc.Click
+    Private Sub SendLoc_Click(sender As Object, e As EventArgs)
         GpsPic1.Visible = False
         GpsPic2.Visible = True
     End Sub
 
-    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        ' Label4.Text = "$" + (Convert.ToDouble(TextBox2.Text) + Convert.ToDouble(Label4.Text)).ToString
-        'Label22.Text = Label4.Text
 
-        balance = (Convert.ToDouble(TextBox2.Text) + balance)
-
-        Label4.Text = "$" + balance.ToString
-
-        Label22.Text = Label4.Text
-    End Sub
-
-    Private Sub Label12_Click(sender As Object, e As EventArgs) Handles Label12.Click
-        Label22.Text = Label4.Text
-        FundsPanel.Visible = True
-        FundsPanel.BringToFront()
-
-    End Sub
-
-    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
+    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles ScheduleAppIcon.Click
         clear()
         DateTimePicker1.Format = DateTimePickerFormat.Custom
         DateTimePicker1.CustomFormat = "dddd, MMMM dd"
         DateTimePicker1.Value = Today
-        SchedulePanel.Visible = True
+        ScheduleAppPanel.Visible = True
 
     End Sub
 
@@ -317,26 +259,22 @@
 
     Private Sub SheduleBack_Click(sender As Object, e As EventArgs) Handles SoccerBack.Click, StudyBack.Click
         clear()
-        SchedulePanel.Visible = True
+        ScheduleAppPanel.Visible = True
 
     End Sub
 
     Private Sub ScheduleHome_Click(sender As Object, e As EventArgs) Handles StudyHome.Click, SoccerHome.Click
         clear()
         currentpg = 0
-        TimePanel.Visible = True
+        HomePagePanel.Visible = True
     End Sub
 
-    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+    Private Sub Button8_Click(sender As Object, e As EventArgs)
         SoccerPanel.Visible = True
     End Sub
 
-    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+    Private Sub Button9_Click(sender As Object, e As EventArgs)
         StudyPanel.Visible = True
     End Sub
 
-    Private Sub Label13_Click(sender As Object, e As EventArgs) Handles Label13.Click
-        clearphone()
-        DailySchedPanel.Visible = True
-    End Sub
 End Class
