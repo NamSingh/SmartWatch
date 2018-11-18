@@ -209,18 +209,20 @@ Partial Class Form1
         Me.TimePanel.Controls.Add(Me.PictureBox13)
         Me.TimePanel.Controls.Add(Me.TimeLabel)
         Me.TimePanel.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
-        Me.TimePanel.Location = New System.Drawing.Point(232, 218)
+        Me.TimePanel.Location = New System.Drawing.Point(309, 268)
+        Me.TimePanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TimePanel.Name = "TimePanel"
-        Me.TimePanel.Size = New System.Drawing.Size(337, 343)
+        Me.TimePanel.Size = New System.Drawing.Size(449, 422)
         Me.TimePanel.TabIndex = 0
         '
         'PictureBox13
         '
         Me.PictureBox13.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox13.Image = CType(resources.GetObject("PictureBox13.Image"), System.Drawing.Image)
-        Me.PictureBox13.Location = New System.Drawing.Point(84, 179)
+        Me.PictureBox13.Location = New System.Drawing.Point(112, 220)
+        Me.PictureBox13.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(171, 164)
+        Me.PictureBox13.Size = New System.Drawing.Size(228, 202)
         Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox13.TabIndex = 2
         Me.PictureBox13.TabStop = False
@@ -229,11 +231,12 @@ Partial Class Form1
         '
         Me.TimeLabel.AutoSize = True
         Me.TimeLabel.BackColor = System.Drawing.Color.Transparent
-        Me.TimeLabel.Font = New System.Drawing.Font("Quartz MS", 50.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TimeLabel.Location = New System.Drawing.Point(36, 65)
+        Me.TimeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 50.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TimeLabel.Location = New System.Drawing.Point(48, 80)
+        Me.TimeLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.TimeLabel.Name = "TimeLabel"
         Me.TimeLabel.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.TimeLabel.Size = New System.Drawing.Size(347, 80)
+        Me.TimeLabel.Size = New System.Drawing.Size(418, 101)
         Me.TimeLabel.TabIndex = 0
         Me.TimeLabel.Text = "00:00 PM"
         '
@@ -242,18 +245,20 @@ Partial Class Form1
         '
         'RightButton
         '
-        Me.RightButton.Location = New System.Drawing.Point(575, 360)
+        Me.RightButton.Location = New System.Drawing.Point(767, 443)
+        Me.RightButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.RightButton.Name = "RightButton"
-        Me.RightButton.Size = New System.Drawing.Size(71, 56)
+        Me.RightButton.Size = New System.Drawing.Size(95, 69)
         Me.RightButton.TabIndex = 1
         Me.RightButton.Text = ">"
         Me.RightButton.UseVisualStyleBackColor = True
         '
         'LeftButton
         '
-        Me.LeftButton.Location = New System.Drawing.Point(155, 360)
+        Me.LeftButton.Location = New System.Drawing.Point(207, 443)
+        Me.LeftButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.LeftButton.Name = "LeftButton"
-        Me.LeftButton.Size = New System.Drawing.Size(71, 56)
+        Me.LeftButton.Size = New System.Drawing.Size(95, 69)
         Me.LeftButton.TabIndex = 2
         Me.LeftButton.Text = "<"
         Me.LeftButton.UseVisualStyleBackColor = True
@@ -270,18 +275,20 @@ Partial Class Form1
         Me.CallPanel.Controls.Add(Me.MomLabel)
         Me.CallPanel.Controls.Add(Me.MomBox)
         Me.CallPanel.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
-        Me.CallPanel.Location = New System.Drawing.Point(226, 218)
+        Me.CallPanel.Location = New System.Drawing.Point(301, 268)
+        Me.CallPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CallPanel.Name = "CallPanel"
-        Me.CallPanel.Size = New System.Drawing.Size(337, 343)
+        Me.CallPanel.Size = New System.Drawing.Size(449, 422)
         Me.CallPanel.TabIndex = 1
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label2.Location = New System.Drawing.Point(79, 290)
+        Me.Label2.Location = New System.Drawing.Point(105, 357)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(185, 39)
+        Me.Label2.Size = New System.Drawing.Size(236, 52)
         Me.Label2.TabIndex = 8
         Me.Label2.Text = "Call Ended"
         Me.Label2.Visible = False
@@ -291,17 +298,19 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label1.Location = New System.Drawing.Point(168, 161)
+        Me.Label1.Location = New System.Drawing.Point(224, 198)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(0, 20)
+        Me.Label1.Size = New System.Drawing.Size(0, 25)
         Me.Label1.TabIndex = 7
         '
         'PictureBox7
         '
         Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(264, 279)
+        Me.PictureBox7.Location = New System.Drawing.Point(352, 343)
+        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(70, 61)
+        Me.PictureBox7.Size = New System.Drawing.Size(93, 75)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox7.TabIndex = 6
         Me.PictureBox7.TabStop = False
@@ -311,17 +320,19 @@ Partial Class Form1
         Me.CallTimeLabel.AutoSize = True
         Me.CallTimeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CallTimeLabel.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.CallTimeLabel.Location = New System.Drawing.Point(123, 238)
+        Me.CallTimeLabel.Location = New System.Drawing.Point(164, 293)
+        Me.CallTimeLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.CallTimeLabel.Name = "CallTimeLabel"
-        Me.CallTimeLabel.Size = New System.Drawing.Size(0, 20)
+        Me.CallTimeLabel.Size = New System.Drawing.Size(0, 25)
         Me.CallTimeLabel.TabIndex = 5
         '
         'PictureBox6
         '
         Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(136, 279)
+        Me.PictureBox6.Location = New System.Drawing.Point(181, 343)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(70, 61)
+        Me.PictureBox6.Size = New System.Drawing.Size(93, 75)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox6.TabIndex = 4
         Me.PictureBox6.TabStop = False
@@ -330,9 +341,10 @@ Partial Class Form1
         'PictureBox5
         '
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(136, 279)
+        Me.PictureBox5.Location = New System.Drawing.Point(181, 343)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(70, 61)
+        Me.PictureBox5.Size = New System.Drawing.Size(93, 75)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox5.TabIndex = 3
         Me.PictureBox5.TabStop = False
@@ -341,18 +353,20 @@ Partial Class Form1
         '
         Me.MomLabel.AutoSize = True
         Me.MomLabel.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.MomLabel.Location = New System.Drawing.Point(120, 184)
+        Me.MomLabel.Location = New System.Drawing.Point(160, 226)
+        Me.MomLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MomLabel.Name = "MomLabel"
-        Me.MomLabel.Size = New System.Drawing.Size(99, 39)
+        Me.MomLabel.Size = New System.Drawing.Size(131, 52)
         Me.MomLabel.TabIndex = 2
         Me.MomLabel.Text = "MOM"
         '
         'MomBox
         '
         Me.MomBox.Image = CType(resources.GetObject("MomBox.Image"), System.Drawing.Image)
-        Me.MomBox.Location = New System.Drawing.Point(73, 3)
+        Me.MomBox.Location = New System.Drawing.Point(97, 4)
+        Me.MomBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MomBox.Name = "MomBox"
-        Me.MomBox.Size = New System.Drawing.Size(191, 178)
+        Me.MomBox.Size = New System.Drawing.Size(255, 219)
         Me.MomBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.MomBox.TabIndex = 1
         Me.MomBox.TabStop = False
@@ -367,17 +381,19 @@ Partial Class Form1
         Me.Bankpanel.Controls.Add(Me.Label4)
         Me.Bankpanel.Controls.Add(Me.Label3)
         Me.Bankpanel.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
-        Me.Bankpanel.Location = New System.Drawing.Point(229, 213)
+        Me.Bankpanel.Location = New System.Drawing.Point(305, 262)
+        Me.Bankpanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Bankpanel.Name = "Bankpanel"
-        Me.Bankpanel.Size = New System.Drawing.Size(337, 343)
+        Me.Bankpanel.Size = New System.Drawing.Size(449, 422)
         Me.Bankpanel.TabIndex = 2
         '
         'PictureBox12
         '
         Me.PictureBox12.Image = CType(resources.GetObject("PictureBox12.Image"), System.Drawing.Image)
-        Me.PictureBox12.Location = New System.Drawing.Point(264, 279)
+        Me.PictureBox12.Location = New System.Drawing.Point(352, 343)
+        Me.PictureBox12.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(70, 61)
+        Me.PictureBox12.Size = New System.Drawing.Size(93, 75)
         Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox12.TabIndex = 7
         Me.PictureBox12.TabStop = False
@@ -386,9 +402,10 @@ Partial Class Form1
         '
         Me.Label6.AutoSize = True
         Me.Label6.ForeColor = System.Drawing.Color.Red
-        Me.Label6.Location = New System.Drawing.Point(17, 158)
+        Me.Label6.Location = New System.Drawing.Point(23, 194)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(317, 39)
+        Me.Label6.Size = New System.Drawing.Size(407, 52)
         Me.Label6.TabIndex = 4
         Me.Label6.Text = "Not Enough Money!"
         Me.Label6.Visible = False
@@ -398,17 +415,19 @@ Partial Class Form1
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label5.Location = New System.Drawing.Point(50, 217)
+        Me.Label5.Location = New System.Drawing.Point(67, 267)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(229, 20)
+        Me.Label5.Size = New System.Drawing.Size(312, 25)
         Me.Label5.TabIndex = 3
         Me.Label5.Text = "Tap ""Pay"" when close to reader"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(99, 258)
+        Me.Button1.Location = New System.Drawing.Point(132, 318)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(145, 56)
+        Me.Button1.Size = New System.Drawing.Size(193, 69)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "PAY"
         Me.Button1.UseVisualStyleBackColor = True
@@ -418,9 +437,10 @@ Partial Class Form1
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label4.Location = New System.Drawing.Point(99, 103)
+        Me.Label4.Location = New System.Drawing.Point(132, 127)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(145, 55)
+        Me.Label4.Size = New System.Drawing.Size(188, 72)
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "$6.50"
         '
@@ -428,9 +448,10 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label3.Location = New System.Drawing.Point(34, 31)
+        Me.Label3.Location = New System.Drawing.Point(45, 38)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(272, 39)
+        Me.Label3.Size = New System.Drawing.Size(350, 52)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Current Balance:"
         '
@@ -441,17 +462,19 @@ Partial Class Form1
         Me.AppPanel.Controls.Add(Me.PictureBox2)
         Me.AppPanel.Controls.Add(Me.PictureBox1)
         Me.AppPanel.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
-        Me.AppPanel.Location = New System.Drawing.Point(211, 212)
+        Me.AppPanel.Location = New System.Drawing.Point(281, 261)
+        Me.AppPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.AppPanel.Name = "AppPanel"
-        Me.AppPanel.Size = New System.Drawing.Size(337, 343)
+        Me.AppPanel.Size = New System.Drawing.Size(449, 422)
         Me.AppPanel.TabIndex = 2
         '
         'PictureBox4
         '
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(169, 170)
+        Me.PictureBox4.Location = New System.Drawing.Point(225, 209)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(174, 170)
+        Me.PictureBox4.Size = New System.Drawing.Size(232, 209)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox4.TabIndex = 3
         Me.PictureBox4.TabStop = False
@@ -459,9 +482,10 @@ Partial Class Form1
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(3, 173)
+        Me.PictureBox3.Location = New System.Drawing.Point(4, 213)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(166, 167)
+        Me.PictureBox3.Size = New System.Drawing.Size(221, 206)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 2
         Me.PictureBox3.TabStop = False
@@ -469,9 +493,10 @@ Partial Class Form1
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(169, 0)
+        Me.PictureBox2.Location = New System.Drawing.Point(225, 0)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(171, 164)
+        Me.PictureBox2.Size = New System.Drawing.Size(228, 202)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 1
         Me.PictureBox2.TabStop = False
@@ -479,9 +504,10 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox1.Location = New System.Drawing.Point(4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(166, 164)
+        Me.PictureBox1.Size = New System.Drawing.Size(221, 202)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -496,17 +522,19 @@ Partial Class Form1
         Me.AppPanel2.Controls.Add(Me.PictureBox10)
         Me.AppPanel2.Controls.Add(Me.PictureBox11)
         Me.AppPanel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
-        Me.AppPanel2.Location = New System.Drawing.Point(215, 212)
+        Me.AppPanel2.Location = New System.Drawing.Point(287, 261)
+        Me.AppPanel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.AppPanel2.Name = "AppPanel2"
-        Me.AppPanel2.Size = New System.Drawing.Size(337, 343)
+        Me.AppPanel2.Size = New System.Drawing.Size(449, 422)
         Me.AppPanel2.TabIndex = 4
         '
         'PictureBox8
         '
         Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
-        Me.PictureBox8.Location = New System.Drawing.Point(169, 170)
+        Me.PictureBox8.Location = New System.Drawing.Point(225, 209)
+        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(174, 170)
+        Me.PictureBox8.Size = New System.Drawing.Size(232, 209)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox8.TabIndex = 3
         Me.PictureBox8.TabStop = False
@@ -514,9 +542,10 @@ Partial Class Form1
         'PictureBox9
         '
         Me.PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), System.Drawing.Image)
-        Me.PictureBox9.Location = New System.Drawing.Point(3, 173)
+        Me.PictureBox9.Location = New System.Drawing.Point(4, 213)
+        Me.PictureBox9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(166, 167)
+        Me.PictureBox9.Size = New System.Drawing.Size(221, 206)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox9.TabIndex = 2
         Me.PictureBox9.TabStop = False
@@ -524,9 +553,10 @@ Partial Class Form1
         'PictureBox10
         '
         Me.PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), System.Drawing.Image)
-        Me.PictureBox10.Location = New System.Drawing.Point(169, 0)
+        Me.PictureBox10.Location = New System.Drawing.Point(225, 0)
+        Me.PictureBox10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(171, 164)
+        Me.PictureBox10.Size = New System.Drawing.Size(228, 202)
         Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox10.TabIndex = 1
         Me.PictureBox10.TabStop = False
@@ -534,9 +564,10 @@ Partial Class Form1
         'PictureBox11
         '
         Me.PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), System.Drawing.Image)
-        Me.PictureBox11.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox11.Location = New System.Drawing.Point(4, 4)
+        Me.PictureBox11.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(166, 164)
+        Me.PictureBox11.Size = New System.Drawing.Size(221, 202)
         Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox11.TabIndex = 0
         Me.PictureBox11.TabStop = False
@@ -548,27 +579,30 @@ Partial Class Form1
         Me.GpsPanel.Controls.Add(Me.GpsPic2)
         Me.GpsPanel.Controls.Add(Me.GpsPic1)
         Me.GpsPanel.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
-        Me.GpsPanel.Location = New System.Drawing.Point(218, 217)
+        Me.GpsPanel.Location = New System.Drawing.Point(291, 267)
+        Me.GpsPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GpsPanel.Name = "GpsPanel"
-        Me.GpsPanel.Size = New System.Drawing.Size(337, 343)
+        Me.GpsPanel.Size = New System.Drawing.Size(449, 422)
         Me.GpsPanel.TabIndex = 5
         Me.GpsPanel.Visible = False
         '
         'PictureBox15
         '
         Me.PictureBox15.Image = CType(resources.GetObject("PictureBox15.Image"), System.Drawing.Image)
-        Me.PictureBox15.Location = New System.Drawing.Point(267, 277)
+        Me.PictureBox15.Location = New System.Drawing.Point(356, 341)
+        Me.PictureBox15.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox15.Name = "PictureBox15"
-        Me.PictureBox15.Size = New System.Drawing.Size(70, 61)
+        Me.PictureBox15.Size = New System.Drawing.Size(93, 75)
         Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox15.TabIndex = 8
         Me.PictureBox15.TabStop = False
         '
         'SosButton
         '
-        Me.SosButton.Location = New System.Drawing.Point(117, 294)
+        Me.SosButton.Location = New System.Drawing.Point(156, 362)
+        Me.SosButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SosButton.Name = "SosButton"
-        Me.SosButton.Size = New System.Drawing.Size(99, 43)
+        Me.SosButton.Size = New System.Drawing.Size(132, 53)
         Me.SosButton.TabIndex = 1
         Me.SosButton.Text = "SOS"
         Me.SosButton.UseVisualStyleBackColor = True
@@ -577,9 +611,10 @@ Partial Class Form1
         '
         Me.GpsPic2.Image = CType(resources.GetObject("GpsPic2.Image"), System.Drawing.Image)
         Me.GpsPic2.InitialImage = Nothing
-        Me.GpsPic2.Location = New System.Drawing.Point(3, 3)
+        Me.GpsPic2.Location = New System.Drawing.Point(4, 4)
+        Me.GpsPic2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GpsPic2.Name = "GpsPic2"
-        Me.GpsPic2.Size = New System.Drawing.Size(332, 335)
+        Me.GpsPic2.Size = New System.Drawing.Size(443, 412)
         Me.GpsPic2.TabIndex = 2
         Me.GpsPic2.TabStop = False
         Me.GpsPic2.Visible = False
@@ -588,9 +623,10 @@ Partial Class Form1
         '
         Me.GpsPic1.Image = CType(resources.GetObject("GpsPic1.Image"), System.Drawing.Image)
         Me.GpsPic1.InitialImage = Nothing
-        Me.GpsPic1.Location = New System.Drawing.Point(3, 3)
+        Me.GpsPic1.Location = New System.Drawing.Point(4, 4)
+        Me.GpsPic1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GpsPic1.Name = "GpsPic1"
-        Me.GpsPic1.Size = New System.Drawing.Size(332, 335)
+        Me.GpsPic1.Size = New System.Drawing.Size(443, 412)
         Me.GpsPic1.TabIndex = 0
         Me.GpsPic1.TabStop = False
         '
@@ -607,78 +643,87 @@ Partial Class Form1
         Me.SettingPanel.Controls.Add(Me.Button2)
         Me.SettingPanel.Controls.Add(Me.PictureBox14)
         Me.SettingPanel.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
-        Me.SettingPanel.Location = New System.Drawing.Point(224, 219)
+        Me.SettingPanel.Location = New System.Drawing.Point(299, 270)
+        Me.SettingPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SettingPanel.Name = "SettingPanel"
-        Me.SettingPanel.Size = New System.Drawing.Size(337, 343)
+        Me.SettingPanel.Size = New System.Drawing.Size(449, 422)
         Me.SettingPanel.TabIndex = 8
         Me.SettingPanel.Visible = False
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(0, 193)
+        Me.Button5.Location = New System.Drawing.Point(0, 238)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(34, 48)
+        Me.Button5.Size = New System.Drawing.Size(45, 59)
         Me.Button5.TabIndex = 15
         Me.Button5.Text = "<"
         Me.Button5.UseVisualStyleBackColor = True
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(300, 192)
+        Me.Button4.Location = New System.Drawing.Point(400, 236)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(34, 49)
+        Me.Button4.Size = New System.Drawing.Size(45, 60)
         Me.Button4.TabIndex = 14
         Me.Button4.Text = ">"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'ProgressBar2
         '
-        Me.ProgressBar2.Location = New System.Drawing.Point(43, 211)
+        Me.ProgressBar2.Location = New System.Drawing.Point(57, 260)
+        Me.ProgressBar2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ProgressBar2.Name = "ProgressBar2"
-        Me.ProgressBar2.Size = New System.Drawing.Size(251, 29)
+        Me.ProgressBar2.Size = New System.Drawing.Size(335, 36)
         Me.ProgressBar2.TabIndex = 13
         Me.ProgressBar2.Value = 50
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(103, 160)
+        Me.Label8.Location = New System.Drawing.Point(137, 197)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(133, 39)
+        Me.Label8.Size = New System.Drawing.Size(171, 52)
         Me.Label8.TabIndex = 12
         Me.Label8.Text = "Volume"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(81, 73)
+        Me.Label7.Location = New System.Drawing.Point(108, 90)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(178, 39)
+        Me.Label7.Size = New System.Drawing.Size(229, 52)
         Me.Label7.TabIndex = 11
         Me.Label7.Text = "Brightness"
         '
         'ProgressBar1
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(43, 115)
+        Me.ProgressBar1.Location = New System.Drawing.Point(57, 142)
+        Me.ProgressBar1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(251, 29)
+        Me.ProgressBar1.Size = New System.Drawing.Size(335, 36)
         Me.ProgressBar1.TabIndex = 10
         Me.ProgressBar1.Value = 20
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(300, 96)
+        Me.Button3.Location = New System.Drawing.Point(400, 118)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(34, 49)
+        Me.Button3.Size = New System.Drawing.Size(45, 60)
         Me.Button3.TabIndex = 9
         Me.Button3.Text = ">"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(3, 96)
+        Me.Button2.Location = New System.Drawing.Point(4, 118)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(34, 48)
+        Me.Button2.Size = New System.Drawing.Size(45, 59)
         Me.Button2.TabIndex = 8
         Me.Button2.Text = "<"
         Me.Button2.UseVisualStyleBackColor = True
@@ -686,9 +731,10 @@ Partial Class Form1
         'PictureBox14
         '
         Me.PictureBox14.Image = CType(resources.GetObject("PictureBox14.Image"), System.Drawing.Image)
-        Me.PictureBox14.Location = New System.Drawing.Point(264, 279)
+        Me.PictureBox14.Location = New System.Drawing.Point(352, 343)
+        Me.PictureBox14.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(70, 61)
+        Me.PictureBox14.Size = New System.Drawing.Size(93, 75)
         Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox14.TabIndex = 7
         Me.PictureBox14.TabStop = False
@@ -696,9 +742,10 @@ Partial Class Form1
         'PhoneFrame
         '
         Me.PhoneFrame.Image = CType(resources.GetObject("PhoneFrame.Image"), System.Drawing.Image)
-        Me.PhoneFrame.Location = New System.Drawing.Point(900, 12)
+        Me.PhoneFrame.Location = New System.Drawing.Point(1200, 15)
+        Me.PhoneFrame.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PhoneFrame.Name = "PhoneFrame"
-        Me.PhoneFrame.Size = New System.Drawing.Size(394, 786)
+        Me.PhoneFrame.Size = New System.Drawing.Size(525, 967)
         Me.PhoneFrame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PhoneFrame.TabIndex = 16
         Me.PhoneFrame.TabStop = False
@@ -711,48 +758,53 @@ Partial Class Form1
         Me.SamsungMain.Controls.Add(Me.Label11)
         Me.SamsungMain.Controls.Add(Me.Label10)
         Me.SamsungMain.Controls.Add(Me.Label9)
-        Me.SamsungMain.Location = New System.Drawing.Point(918, 92)
+        Me.SamsungMain.Location = New System.Drawing.Point(1224, 113)
+        Me.SamsungMain.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SamsungMain.Name = "SamsungMain"
-        Me.SamsungMain.Size = New System.Drawing.Size(369, 640)
+        Me.SamsungMain.Size = New System.Drawing.Size(492, 788)
         Me.SamsungMain.TabIndex = 17
         '
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Motorwerk", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(3, 441)
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(4, 543)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(321, 27)
+        Me.Label13.Size = New System.Drawing.Size(423, 53)
         Me.Label13.TabIndex = 4
         Me.Label13.Text = "Edit Daily Schedule"
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Motorwerk", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(3, 342)
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(4, 421)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(200, 27)
+        Me.Label12.Size = New System.Drawing.Size(283, 53)
         Me.Label12.TabIndex = 3
         Me.Label12.Text = "Send Money"
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Motorwerk", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(3, 250)
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(4, 308)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(170, 27)
+        Me.Label11.Size = New System.Drawing.Size(230, 53)
         Me.Label11.TabIndex = 2
         Me.Label11.Text = "Find Child"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Motorwerk", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(3, 165)
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(4, 203)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(244, 27)
+        Me.Label10.Size = New System.Drawing.Size(344, 53)
         Me.Label10.TabIndex = 1
         Me.Label10.Text = "Send Reminder"
         '
@@ -760,10 +812,11 @@ Partial Class Form1
         '
         Me.Label9.AutoSize = True
         Me.Label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label9.Font = New System.Drawing.Font("Motorwerk", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(3, 0)
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(4, 0)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(352, 29)
+        Me.Label9.Size = New System.Drawing.Size(467, 55)
         Me.Label9.TabIndex = 0
         Me.Label9.Text = "KidWatch Parent App"
         '
@@ -773,26 +826,29 @@ Partial Class Form1
         Me.ReminderPanel.Controls.Add(Me.TextBox1)
         Me.ReminderPanel.Controls.Add(Me.Button6)
         Me.ReminderPanel.Controls.Add(Me.Label18)
-        Me.ReminderPanel.Location = New System.Drawing.Point(918, 91)
+        Me.ReminderPanel.Location = New System.Drawing.Point(1224, 112)
+        Me.ReminderPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ReminderPanel.Name = "ReminderPanel"
-        Me.ReminderPanel.Size = New System.Drawing.Size(369, 640)
+        Me.ReminderPanel.Size = New System.Drawing.Size(492, 788)
         Me.ReminderPanel.TabIndex = 18
         Me.ReminderPanel.Visible = False
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(48, 63)
+        Me.TextBox1.Location = New System.Drawing.Point(64, 78)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(284, 121)
+        Me.TextBox1.Size = New System.Drawing.Size(377, 148)
         Me.TextBox1.TabIndex = 2
         '
         'Button6
         '
         Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(98, 248)
+        Me.Button6.Location = New System.Drawing.Point(131, 305)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(175, 73)
+        Me.Button6.Size = New System.Drawing.Size(233, 90)
         Me.Button6.TabIndex = 1
         Me.Button6.Text = "Send"
         Me.Button6.UseVisualStyleBackColor = True
@@ -801,10 +857,11 @@ Partial Class Form1
         '
         Me.Label18.AutoSize = True
         Me.Label18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label18.Font = New System.Drawing.Font("Motorwerk", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(65, 0)
+        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Location = New System.Drawing.Point(87, 0)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(246, 29)
+        Me.Label18.Size = New System.Drawing.Size(346, 55)
         Me.Label18.TabIndex = 0
         Me.Label18.Text = "Send Reminder"
         '
@@ -816,20 +873,22 @@ Partial Class Form1
         Me.Alert.Controls.Add(Me.Label14)
         Me.Alert.Controls.Add(Me.EndAlertButton)
         Me.Alert.ForeColor = System.Drawing.Color.White
-        Me.Alert.Location = New System.Drawing.Point(220, 213)
+        Me.Alert.Location = New System.Drawing.Point(293, 262)
+        Me.Alert.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Alert.Name = "Alert"
-        Me.Alert.Size = New System.Drawing.Size(345, 344)
+        Me.Alert.Size = New System.Drawing.Size(460, 423)
         Me.Alert.TabIndex = 19
         Me.Alert.Visible = False
         '
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Motorwerk", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.Yellow
-        Me.Label15.Location = New System.Drawing.Point(11, 0)
+        Me.Label15.Location = New System.Drawing.Point(15, 0)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(317, 49)
+        Me.Label15.Size = New System.Drawing.Size(521, 95)
         Me.Label15.TabIndex = 3
         Me.Label15.Text = "REMINDER!"
         '
@@ -837,28 +896,31 @@ Partial Class Form1
         '
         Me.MessageBox.AutoSize = True
         Me.MessageBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MessageBox.Location = New System.Drawing.Point(14, 137)
+        Me.MessageBox.Location = New System.Drawing.Point(19, 169)
+        Me.MessageBox.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MessageBox.Name = "MessageBox"
         Me.MessageBox.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.MessageBox.Size = New System.Drawing.Size(0, 31)
+        Me.MessageBox.Size = New System.Drawing.Size(0, 40)
         Me.MessageBox.TabIndex = 2
         '
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Motorwerk", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(90, 100)
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(120, 123)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(175, 24)
+        Me.Label14.Size = New System.Drawing.Size(267, 48)
         Me.Label14.TabIndex = 1
         Me.Label14.Text = "MOM SAYS:"
         '
         'EndAlertButton
         '
         Me.EndAlertButton.ForeColor = System.Drawing.Color.Red
-        Me.EndAlertButton.Location = New System.Drawing.Point(121, 280)
+        Me.EndAlertButton.Location = New System.Drawing.Point(161, 345)
+        Me.EndAlertButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.EndAlertButton.Name = "EndAlertButton"
-        Me.EndAlertButton.Size = New System.Drawing.Size(88, 37)
+        Me.EndAlertButton.Size = New System.Drawing.Size(117, 46)
         Me.EndAlertButton.TabIndex = 0
         Me.EndAlertButton.Text = "OK"
         Me.EndAlertButton.UseVisualStyleBackColor = True
@@ -866,9 +928,10 @@ Partial Class Form1
         'BackButton
         '
         Me.BackButton.BackColor = System.Drawing.Color.Transparent
-        Me.BackButton.Location = New System.Drawing.Point(1183, 744)
+        Me.BackButton.Location = New System.Drawing.Point(1577, 916)
+        Me.BackButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BackButton.Name = "BackButton"
-        Me.BackButton.Size = New System.Drawing.Size(59, 31)
+        Me.BackButton.Size = New System.Drawing.Size(79, 38)
         Me.BackButton.TabIndex = 20
         Me.BackButton.Text = "<-"
         Me.BackButton.UseVisualStyleBackColor = False
@@ -882,9 +945,10 @@ Partial Class Form1
         Me.LocateSosPanel.Controls.Add(Me.SendLoc)
         Me.LocateSosPanel.Controls.Add(Me.LocateChildPicBox)
         Me.LocateSosPanel.Controls.Add(Me.Label16)
-        Me.LocateSosPanel.Location = New System.Drawing.Point(917, 91)
+        Me.LocateSosPanel.Location = New System.Drawing.Point(1223, 112)
+        Me.LocateSosPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.LocateSosPanel.Name = "LocateSosPanel"
-        Me.LocateSosPanel.Size = New System.Drawing.Size(369, 640)
+        Me.LocateSosPanel.Size = New System.Drawing.Size(492, 788)
         Me.LocateSosPanel.TabIndex = 21
         Me.LocateSosPanel.Visible = False
         '
@@ -892,9 +956,10 @@ Partial Class Form1
         '
         Me.SendLocPic.Image = CType(resources.GetObject("SendLocPic.Image"), System.Drawing.Image)
         Me.SendLocPic.InitialImage = Nothing
-        Me.SendLocPic.Location = New System.Drawing.Point(16, 91)
+        Me.SendLocPic.Location = New System.Drawing.Point(21, 112)
+        Me.SendLocPic.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SendLocPic.Name = "SendLocPic"
-        Me.SendLocPic.Size = New System.Drawing.Size(332, 298)
+        Me.SendLocPic.Size = New System.Drawing.Size(443, 367)
         Me.SendLocPic.TabIndex = 7
         Me.SendLocPic.TabStop = False
         Me.SendLocPic.Visible = False
@@ -903,26 +968,29 @@ Partial Class Form1
         '
         Me.Label19.AutoSize = True
         Me.Label19.BackColor = System.Drawing.Color.Transparent
-        Me.Label19.Location = New System.Drawing.Point(35, 401)
+        Me.Label19.Location = New System.Drawing.Point(47, 494)
+        Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(77, 13)
+        Me.Label19.Size = New System.Drawing.Size(96, 16)
         Me.Label19.TabIndex = 6
         Me.Label19.Text = "Send Child To:"
         '
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(160, 206)
+        Me.Label17.Location = New System.Drawing.Point(213, 254)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(30, 13)
+        Me.Label17.Size = New System.Drawing.Size(38, 16)
         Me.Label17.TabIndex = 5
         Me.Label17.Text = "Child"
         '
         'SendLoc
         '
-        Me.SendLoc.Location = New System.Drawing.Point(119, 421)
+        Me.SendLoc.Location = New System.Drawing.Point(159, 518)
+        Me.SendLoc.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SendLoc.Name = "SendLoc"
-        Me.SendLoc.Size = New System.Drawing.Size(122, 62)
+        Me.SendLoc.Size = New System.Drawing.Size(163, 76)
         Me.SendLoc.TabIndex = 4
         Me.SendLoc.Text = "Send Location"
         Me.SendLoc.UseVisualStyleBackColor = True
@@ -931,9 +999,10 @@ Partial Class Form1
         '
         Me.LocateChildPicBox.Image = CType(resources.GetObject("LocateChildPicBox.Image"), System.Drawing.Image)
         Me.LocateChildPicBox.InitialImage = Nothing
-        Me.LocateChildPicBox.Location = New System.Drawing.Point(16, 91)
+        Me.LocateChildPicBox.Location = New System.Drawing.Point(21, 112)
+        Me.LocateChildPicBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.LocateChildPicBox.Name = "LocateChildPicBox"
-        Me.LocateChildPicBox.Size = New System.Drawing.Size(332, 298)
+        Me.LocateChildPicBox.Size = New System.Drawing.Size(443, 367)
         Me.LocateChildPicBox.TabIndex = 3
         Me.LocateChildPicBox.TabStop = False
         '
@@ -941,10 +1010,11 @@ Partial Class Form1
         '
         Me.Label16.AutoSize = True
         Me.Label16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label16.Font = New System.Drawing.Font("Motorwerk", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(75, 31)
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(100, 38)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(208, 29)
+        Me.Label16.Size = New System.Drawing.Size(282, 55)
         Me.Label16.TabIndex = 1
         Me.Label16.Text = "Locate Child"
         '
@@ -956,9 +1026,10 @@ Partial Class Form1
         Me.FundsPanel.Controls.Add(Me.TextBox2)
         Me.FundsPanel.Controls.Add(Me.Button7)
         Me.FundsPanel.Controls.Add(Me.Label20)
-        Me.FundsPanel.Location = New System.Drawing.Point(915, 87)
+        Me.FundsPanel.Location = New System.Drawing.Point(1220, 107)
+        Me.FundsPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.FundsPanel.Name = "FundsPanel"
-        Me.FundsPanel.Size = New System.Drawing.Size(369, 640)
+        Me.FundsPanel.Size = New System.Drawing.Size(492, 788)
         Me.FundsPanel.TabIndex = 22
         Me.FundsPanel.Visible = False
         '
@@ -966,9 +1037,10 @@ Partial Class Form1
         '
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.Location = New System.Drawing.Point(99, 104)
+        Me.Label22.Location = New System.Drawing.Point(132, 128)
+        Me.Label22.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(150, 55)
+        Me.Label22.Size = New System.Drawing.Size(193, 72)
         Me.Label22.TabIndex = 4
         Me.Label22.Text = "00.00"
         '
@@ -976,26 +1048,29 @@ Partial Class Form1
         '
         Me.Label21.AutoSize = True
         Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(121, 56)
+        Me.Label21.Location = New System.Drawing.Point(161, 69)
+        Me.Label21.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(119, 31)
+        Me.Label21.Size = New System.Drawing.Size(154, 40)
         Me.Label21.TabIndex = 3
         Me.Label21.Text = "Balance"
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(102, 167)
+        Me.TextBox2.Location = New System.Drawing.Point(136, 206)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox2.Multiline = True
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(168, 74)
+        Me.TextBox2.Size = New System.Drawing.Size(223, 90)
         Me.TextBox2.TabIndex = 2
         '
         'Button7
         '
         Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(102, 262)
+        Me.Button7.Location = New System.Drawing.Point(136, 322)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(175, 73)
+        Me.Button7.Size = New System.Drawing.Size(233, 90)
         Me.Button7.TabIndex = 1
         Me.Button7.Text = "Send"
         Me.Button7.UseVisualStyleBackColor = True
@@ -1004,10 +1079,11 @@ Partial Class Form1
         '
         Me.Label20.AutoSize = True
         Me.Label20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label20.Font = New System.Drawing.Font("Motorwerk", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(81, 10)
+        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.Location = New System.Drawing.Point(108, 12)
+        Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(189, 29)
+        Me.Label20.Size = New System.Drawing.Size(275, 55)
         Me.Label20.TabIndex = 0
         Me.Label20.Text = "Send Funds"
         '
@@ -1015,9 +1091,10 @@ Partial Class Form1
         '
         Me.StudyLabel8.AutoSize = True
         Me.StudyLabel8.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.StudyLabel8.Location = New System.Drawing.Point(128, 150)
+        Me.StudyLabel8.Location = New System.Drawing.Point(171, 185)
+        Me.StudyLabel8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.StudyLabel8.Name = "StudyLabel8"
-        Me.StudyLabel8.Size = New System.Drawing.Size(134, 29)
+        Me.StudyLabel8.Size = New System.Drawing.Size(180, 37)
         Me.StudyLabel8.TabIndex = 10
         Me.StudyLabel8.Text = "Coach Alex"
         '
@@ -1035,9 +1112,10 @@ Partial Class Form1
         Me.SoccerDetails.Controls.Add(Me.SoccerTime2)
         Me.SoccerDetails.Controls.Add(Me.SoccerLabel2)
         Me.SoccerDetails.Controls.Add(Me.SoccerBall2)
-        Me.SoccerDetails.Location = New System.Drawing.Point(224, 211)
+        Me.SoccerDetails.Location = New System.Drawing.Point(299, 260)
+        Me.SoccerDetails.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SoccerDetails.Name = "SoccerDetails"
-        Me.SoccerDetails.Size = New System.Drawing.Size(337, 343)
+        Me.SoccerDetails.Size = New System.Drawing.Size(449, 422)
         Me.SoccerDetails.TabIndex = 23
         Me.SoccerDetails.Visible = False
         '
@@ -1045,9 +1123,10 @@ Partial Class Form1
         '
         Me.SoccerHome.BackgroundImage = CType(resources.GetObject("SoccerHome.BackgroundImage"), System.Drawing.Image)
         Me.SoccerHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.SoccerHome.Location = New System.Drawing.Point(231, 243)
+        Me.SoccerHome.Location = New System.Drawing.Point(308, 299)
+        Me.SoccerHome.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SoccerHome.Name = "SoccerHome"
-        Me.SoccerHome.Size = New System.Drawing.Size(92, 90)
+        Me.SoccerHome.Size = New System.Drawing.Size(123, 111)
         Me.SoccerHome.TabIndex = 12
         Me.SoccerHome.TabStop = False
         '
@@ -1055,9 +1134,10 @@ Partial Class Form1
         '
         Me.SoccerAudio.BackgroundImage = CType(resources.GetObject("SoccerAudio.BackgroundImage"), System.Drawing.Image)
         Me.SoccerAudio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.SoccerAudio.Location = New System.Drawing.Point(123, 242)
+        Me.SoccerAudio.Location = New System.Drawing.Point(164, 298)
+        Me.SoccerAudio.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SoccerAudio.Name = "SoccerAudio"
-        Me.SoccerAudio.Size = New System.Drawing.Size(92, 90)
+        Me.SoccerAudio.Size = New System.Drawing.Size(123, 111)
         Me.SoccerAudio.TabIndex = 11
         Me.SoccerAudio.TabStop = False
         '
@@ -1065,9 +1145,10 @@ Partial Class Form1
         '
         Me.SoccerLabel6.AutoSize = True
         Me.SoccerLabel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SoccerLabel6.Location = New System.Drawing.Point(128, 150)
+        Me.SoccerLabel6.Location = New System.Drawing.Point(171, 185)
+        Me.SoccerLabel6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.SoccerLabel6.Name = "SoccerLabel6"
-        Me.SoccerLabel6.Size = New System.Drawing.Size(134, 29)
+        Me.SoccerLabel6.Size = New System.Drawing.Size(180, 37)
         Me.SoccerLabel6.TabIndex = 10
         Me.SoccerLabel6.Text = "Coach Alex"
         '
@@ -1075,9 +1156,10 @@ Partial Class Form1
         '
         Me.SoccerLabel4.AutoSize = True
         Me.SoccerLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SoccerLabel4.Location = New System.Drawing.Point(15, 149)
+        Me.SoccerLabel4.Location = New System.Drawing.Point(20, 183)
+        Me.SoccerLabel4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.SoccerLabel4.Name = "SoccerLabel4"
-        Me.SoccerLabel4.Size = New System.Drawing.Size(66, 29)
+        Me.SoccerLabel4.Size = New System.Drawing.Size(91, 37)
         Me.SoccerLabel4.TabIndex = 9
         Me.SoccerLabel4.Text = "With:"
         '
@@ -1085,9 +1167,10 @@ Partial Class Form1
         '
         Me.SoccerLabel5.AutoSize = True
         Me.SoccerLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SoccerLabel5.Location = New System.Drawing.Point(128, 117)
+        Me.SoccerLabel5.Location = New System.Drawing.Point(171, 144)
+        Me.SoccerLabel5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.SoccerLabel5.Name = "SoccerLabel5"
-        Me.SoccerLabel5.Size = New System.Drawing.Size(150, 29)
+        Me.SoccerLabel5.Size = New System.Drawing.Size(194, 37)
         Me.SoccerLabel5.TabIndex = 8
         Me.SoccerLabel5.Text = "Soccer Field"
         '
@@ -1095,9 +1178,10 @@ Partial Class Form1
         '
         Me.SoccerLabel3.AutoSize = True
         Me.SoccerLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SoccerLabel3.Location = New System.Drawing.Point(15, 117)
+        Me.SoccerLabel3.Location = New System.Drawing.Point(20, 144)
+        Me.SoccerLabel3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.SoccerLabel3.Name = "SoccerLabel3"
-        Me.SoccerLabel3.Size = New System.Drawing.Size(90, 29)
+        Me.SoccerLabel3.Size = New System.Drawing.Size(120, 37)
         Me.SoccerLabel3.TabIndex = 7
         Me.SoccerLabel3.Text = "Where:"
         '
@@ -1105,9 +1189,10 @@ Partial Class Form1
         '
         Me.SoccerBack.BackgroundImage = CType(resources.GetObject("SoccerBack.BackgroundImage"), System.Drawing.Image)
         Me.SoccerBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.SoccerBack.Location = New System.Drawing.Point(-1, 243)
+        Me.SoccerBack.Location = New System.Drawing.Point(-1, 299)
+        Me.SoccerBack.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SoccerBack.Name = "SoccerBack"
-        Me.SoccerBack.Size = New System.Drawing.Size(100, 90)
+        Me.SoccerBack.Size = New System.Drawing.Size(133, 111)
         Me.SoccerBack.TabIndex = 6
         Me.SoccerBack.TabStop = False
         '
@@ -1115,9 +1200,10 @@ Partial Class Form1
         '
         Me.SoccerTime2.AutoSize = True
         Me.SoccerTime2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SoccerTime2.Location = New System.Drawing.Point(144, 42)
+        Me.SoccerTime2.Location = New System.Drawing.Point(192, 52)
+        Me.SoccerTime2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.SoccerTime2.Name = "SoccerTime2"
-        Me.SoccerTime2.Size = New System.Drawing.Size(152, 29)
+        Me.SoccerTime2.Size = New System.Drawing.Size(201, 37)
         Me.SoccerTime2.TabIndex = 5
         Me.SoccerTime2.Text = "11am - 12pm"
         '
@@ -1125,9 +1211,10 @@ Partial Class Form1
         '
         Me.SoccerLabel2.AutoSize = True
         Me.SoccerLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SoccerLabel2.Location = New System.Drawing.Point(132, 3)
+        Me.SoccerLabel2.Location = New System.Drawing.Point(176, 4)
+        Me.SoccerLabel2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.SoccerLabel2.Name = "SoccerLabel2"
-        Me.SoccerLabel2.Size = New System.Drawing.Size(182, 29)
+        Me.SoccerLabel2.Size = New System.Drawing.Size(240, 37)
         Me.SoccerLabel2.TabIndex = 4
         Me.SoccerLabel2.Text = "Soccer Practice"
         '
@@ -1135,9 +1222,10 @@ Partial Class Form1
         '
         Me.SoccerBall2.BackgroundImage = CType(resources.GetObject("SoccerBall2.BackgroundImage"), System.Drawing.Image)
         Me.SoccerBall2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.SoccerBall2.Location = New System.Drawing.Point(3, 3)
+        Me.SoccerBall2.Location = New System.Drawing.Point(4, 4)
+        Me.SoccerBall2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SoccerBall2.Name = "SoccerBall2"
-        Me.SoccerBall2.Size = New System.Drawing.Size(123, 96)
+        Me.SoccerBall2.Size = New System.Drawing.Size(164, 118)
         Me.SoccerBall2.TabIndex = 3
         Me.SoccerBall2.TabStop = False
         '
@@ -1148,9 +1236,10 @@ Partial Class Form1
         Me.SchedulePanel.Controls.Add(Me.DateTimePicker1)
         Me.SchedulePanel.Controls.Add(Me.StudyPanel)
         Me.SchedulePanel.Controls.Add(Me.SoccerPanel)
-        Me.SchedulePanel.Location = New System.Drawing.Point(222, 214)
+        Me.SchedulePanel.Location = New System.Drawing.Point(296, 263)
+        Me.SchedulePanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SchedulePanel.Name = "SchedulePanel"
-        Me.SchedulePanel.Size = New System.Drawing.Size(337, 343)
+        Me.SchedulePanel.Size = New System.Drawing.Size(449, 422)
         Me.SchedulePanel.TabIndex = 24
         Me.SchedulePanel.Visible = False
         '
@@ -1158,9 +1247,10 @@ Partial Class Form1
         '
         Me.DateTimePicker1.CustomFormat = "dddd, MMMM dd"
         Me.DateTimePicker1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker1.Location = New System.Drawing.Point(3, 3)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(4, 4)
+        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(327, 31)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(435, 38)
         Me.DateTimePicker1.TabIndex = 6
         '
         'StudyPanel
@@ -1170,9 +1260,10 @@ Partial Class Form1
         Me.StudyPanel.Controls.Add(Me.StudyTime)
         Me.StudyPanel.Controls.Add(Me.StudyLabel)
         Me.StudyPanel.Controls.Add(Me.StudyPic)
-        Me.StudyPanel.Location = New System.Drawing.Point(3, 190)
+        Me.StudyPanel.Location = New System.Drawing.Point(4, 234)
+        Me.StudyPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.StudyPanel.Name = "StudyPanel"
-        Me.StudyPanel.Size = New System.Drawing.Size(331, 100)
+        Me.StudyPanel.Size = New System.Drawing.Size(441, 123)
         Me.StudyPanel.TabIndex = 6
         Me.StudyPanel.Visible = False
         '
@@ -1180,9 +1271,10 @@ Partial Class Form1
         '
         Me.StudyTime.AutoSize = True
         Me.StudyTime.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.StudyTime.Location = New System.Drawing.Point(161, 42)
+        Me.StudyTime.Location = New System.Drawing.Point(215, 52)
+        Me.StudyTime.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.StudyTime.Name = "StudyTime"
-        Me.StudyTime.Size = New System.Drawing.Size(127, 29)
+        Me.StudyTime.Size = New System.Drawing.Size(171, 37)
         Me.StudyTime.TabIndex = 7
         Me.StudyTime.Text = "5pm - 6pm"
         '
@@ -1190,9 +1282,10 @@ Partial Class Form1
         '
         Me.StudyLabel.AutoSize = True
         Me.StudyLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.StudyLabel.Location = New System.Drawing.Point(153, 13)
+        Me.StudyLabel.Location = New System.Drawing.Point(204, 16)
+        Me.StudyLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.StudyLabel.Name = "StudyLabel"
-        Me.StudyLabel.Size = New System.Drawing.Size(135, 29)
+        Me.StudyLabel.Size = New System.Drawing.Size(178, 37)
         Me.StudyLabel.TabIndex = 6
         Me.StudyLabel.Text = "Study Time"
         '
@@ -1200,9 +1293,10 @@ Partial Class Form1
         '
         Me.StudyPic.BackgroundImage = CType(resources.GetObject("StudyPic.BackgroundImage"), System.Drawing.Image)
         Me.StudyPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.StudyPic.Location = New System.Drawing.Point(3, 3)
+        Me.StudyPic.Location = New System.Drawing.Point(4, 4)
+        Me.StudyPic.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.StudyPic.Name = "StudyPic"
-        Me.StudyPic.Size = New System.Drawing.Size(123, 96)
+        Me.StudyPic.Size = New System.Drawing.Size(164, 118)
         Me.StudyPic.TabIndex = 4
         Me.StudyPic.TabStop = False
         '
@@ -1213,9 +1307,10 @@ Partial Class Form1
         Me.SoccerPanel.Controls.Add(Me.SoccerTime)
         Me.SoccerPanel.Controls.Add(Me.SoccerLabel)
         Me.SoccerPanel.Controls.Add(Me.soccerBall)
-        Me.SoccerPanel.Location = New System.Drawing.Point(3, 84)
+        Me.SoccerPanel.Location = New System.Drawing.Point(4, 103)
+        Me.SoccerPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SoccerPanel.Name = "SoccerPanel"
-        Me.SoccerPanel.Size = New System.Drawing.Size(331, 100)
+        Me.SoccerPanel.Size = New System.Drawing.Size(441, 123)
         Me.SoccerPanel.TabIndex = 5
         Me.SoccerPanel.Visible = False
         '
@@ -1223,9 +1318,10 @@ Partial Class Form1
         '
         Me.SoccerTime.AutoSize = True
         Me.SoccerTime.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SoccerTime.Location = New System.Drawing.Point(144, 42)
+        Me.SoccerTime.Location = New System.Drawing.Point(192, 52)
+        Me.SoccerTime.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.SoccerTime.Name = "SoccerTime"
-        Me.SoccerTime.Size = New System.Drawing.Size(152, 29)
+        Me.SoccerTime.Size = New System.Drawing.Size(201, 37)
         Me.SoccerTime.TabIndex = 5
         Me.SoccerTime.Text = "11am - 12pm"
         '
@@ -1233,9 +1329,10 @@ Partial Class Form1
         '
         Me.SoccerLabel.AutoSize = True
         Me.SoccerLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SoccerLabel.Location = New System.Drawing.Point(132, 3)
+        Me.SoccerLabel.Location = New System.Drawing.Point(176, 4)
+        Me.SoccerLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.SoccerLabel.Name = "SoccerLabel"
-        Me.SoccerLabel.Size = New System.Drawing.Size(182, 29)
+        Me.SoccerLabel.Size = New System.Drawing.Size(240, 37)
         Me.SoccerLabel.TabIndex = 4
         Me.SoccerLabel.Text = "Soccer Practice"
         '
@@ -1243,9 +1340,10 @@ Partial Class Form1
         '
         Me.soccerBall.BackgroundImage = CType(resources.GetObject("soccerBall.BackgroundImage"), System.Drawing.Image)
         Me.soccerBall.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.soccerBall.Location = New System.Drawing.Point(3, 3)
+        Me.soccerBall.Location = New System.Drawing.Point(4, 4)
+        Me.soccerBall.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.soccerBall.Name = "soccerBall"
-        Me.soccerBall.Size = New System.Drawing.Size(123, 96)
+        Me.soccerBall.Size = New System.Drawing.Size(164, 118)
         Me.soccerBall.TabIndex = 3
         Me.soccerBall.TabStop = False
         '
@@ -1253,9 +1351,10 @@ Partial Class Form1
         '
         Me.StudyHome.BackgroundImage = CType(resources.GetObject("StudyHome.BackgroundImage"), System.Drawing.Image)
         Me.StudyHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.StudyHome.Location = New System.Drawing.Point(231, 243)
+        Me.StudyHome.Location = New System.Drawing.Point(308, 299)
+        Me.StudyHome.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.StudyHome.Name = "StudyHome"
-        Me.StudyHome.Size = New System.Drawing.Size(92, 90)
+        Me.StudyHome.Size = New System.Drawing.Size(123, 111)
         Me.StudyHome.TabIndex = 12
         Me.StudyHome.TabStop = False
         '
@@ -1263,9 +1362,10 @@ Partial Class Form1
         '
         Me.StudyAudio.BackgroundImage = CType(resources.GetObject("StudyAudio.BackgroundImage"), System.Drawing.Image)
         Me.StudyAudio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.StudyAudio.Location = New System.Drawing.Point(123, 242)
+        Me.StudyAudio.Location = New System.Drawing.Point(164, 298)
+        Me.StudyAudio.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.StudyAudio.Name = "StudyAudio"
-        Me.StudyAudio.Size = New System.Drawing.Size(92, 90)
+        Me.StudyAudio.Size = New System.Drawing.Size(123, 111)
         Me.StudyAudio.TabIndex = 11
         Me.StudyAudio.TabStop = False
         '
@@ -1273,9 +1373,10 @@ Partial Class Form1
         '
         Me.StudyBack.BackgroundImage = CType(resources.GetObject("StudyBack.BackgroundImage"), System.Drawing.Image)
         Me.StudyBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.StudyBack.Location = New System.Drawing.Point(-1, 243)
+        Me.StudyBack.Location = New System.Drawing.Point(-1, 299)
+        Me.StudyBack.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.StudyBack.Name = "StudyBack"
-        Me.StudyBack.Size = New System.Drawing.Size(100, 90)
+        Me.StudyBack.Size = New System.Drawing.Size(133, 111)
         Me.StudyBack.TabIndex = 6
         Me.StudyBack.TabStop = False
         '
@@ -1293,9 +1394,10 @@ Partial Class Form1
         Me.StudyDetails.Controls.Add(Me.StudyLabel4)
         Me.StudyDetails.Controls.Add(Me.StudyLabel3)
         Me.StudyDetails.Controls.Add(Me.StudyPic2)
-        Me.StudyDetails.Location = New System.Drawing.Point(219, 207)
+        Me.StudyDetails.Location = New System.Drawing.Point(292, 255)
+        Me.StudyDetails.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.StudyDetails.Name = "StudyDetails"
-        Me.StudyDetails.Size = New System.Drawing.Size(337, 343)
+        Me.StudyDetails.Size = New System.Drawing.Size(449, 422)
         Me.StudyDetails.TabIndex = 25
         Me.StudyDetails.Visible = False
         '
@@ -1303,9 +1405,10 @@ Partial Class Form1
         '
         Me.StudyLabel6.AutoSize = True
         Me.StudyLabel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.StudyLabel6.Location = New System.Drawing.Point(15, 149)
+        Me.StudyLabel6.Location = New System.Drawing.Point(20, 183)
+        Me.StudyLabel6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.StudyLabel6.Name = "StudyLabel6"
-        Me.StudyLabel6.Size = New System.Drawing.Size(66, 29)
+        Me.StudyLabel6.Size = New System.Drawing.Size(91, 37)
         Me.StudyLabel6.TabIndex = 9
         Me.StudyLabel6.Text = "With:"
         '
@@ -1313,9 +1416,10 @@ Partial Class Form1
         '
         Me.StudyLabel7.AutoSize = True
         Me.StudyLabel7.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.StudyLabel7.Location = New System.Drawing.Point(128, 117)
+        Me.StudyLabel7.Location = New System.Drawing.Point(171, 144)
+        Me.StudyLabel7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.StudyLabel7.Name = "StudyLabel7"
-        Me.StudyLabel7.Size = New System.Drawing.Size(150, 29)
+        Me.StudyLabel7.Size = New System.Drawing.Size(194, 37)
         Me.StudyLabel7.TabIndex = 8
         Me.StudyLabel7.Text = "Soccer Field"
         '
@@ -1323,9 +1427,10 @@ Partial Class Form1
         '
         Me.StudyLabel5.AutoSize = True
         Me.StudyLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.StudyLabel5.Location = New System.Drawing.Point(15, 117)
+        Me.StudyLabel5.Location = New System.Drawing.Point(20, 144)
+        Me.StudyLabel5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.StudyLabel5.Name = "StudyLabel5"
-        Me.StudyLabel5.Size = New System.Drawing.Size(90, 29)
+        Me.StudyLabel5.Size = New System.Drawing.Size(120, 37)
         Me.StudyLabel5.TabIndex = 7
         Me.StudyLabel5.Text = "Where:"
         '
@@ -1333,9 +1438,10 @@ Partial Class Form1
         '
         Me.StudyLabel4.AutoSize = True
         Me.StudyLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.StudyLabel4.Location = New System.Drawing.Point(144, 42)
+        Me.StudyLabel4.Location = New System.Drawing.Point(192, 52)
+        Me.StudyLabel4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.StudyLabel4.Name = "StudyLabel4"
-        Me.StudyLabel4.Size = New System.Drawing.Size(152, 29)
+        Me.StudyLabel4.Size = New System.Drawing.Size(201, 37)
         Me.StudyLabel4.TabIndex = 5
         Me.StudyLabel4.Text = "11am - 12pm"
         '
@@ -1343,9 +1449,10 @@ Partial Class Form1
         '
         Me.StudyLabel3.AutoSize = True
         Me.StudyLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.StudyLabel3.Location = New System.Drawing.Point(132, 3)
+        Me.StudyLabel3.Location = New System.Drawing.Point(176, 4)
+        Me.StudyLabel3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.StudyLabel3.Name = "StudyLabel3"
-        Me.StudyLabel3.Size = New System.Drawing.Size(182, 29)
+        Me.StudyLabel3.Size = New System.Drawing.Size(240, 37)
         Me.StudyLabel3.TabIndex = 4
         Me.StudyLabel3.Text = "Soccer Practice"
         '
@@ -1353,9 +1460,10 @@ Partial Class Form1
         '
         Me.StudyPic2.BackgroundImage = CType(resources.GetObject("StudyPic2.BackgroundImage"), System.Drawing.Image)
         Me.StudyPic2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.StudyPic2.Location = New System.Drawing.Point(3, 3)
+        Me.StudyPic2.Location = New System.Drawing.Point(4, 4)
+        Me.StudyPic2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.StudyPic2.Name = "StudyPic2"
-        Me.StudyPic2.Size = New System.Drawing.Size(123, 96)
+        Me.StudyPic2.Size = New System.Drawing.Size(164, 118)
         Me.StudyPic2.TabIndex = 3
         Me.StudyPic2.TabStop = False
         '
@@ -1367,9 +1475,10 @@ Partial Class Form1
         Me.DailySchedPanel.Controls.Add(Me.DateTimePicker2)
         Me.DailySchedPanel.Controls.Add(Me.Label24)
         Me.DailySchedPanel.Controls.Add(Me.Label25)
-        Me.DailySchedPanel.Location = New System.Drawing.Point(916, 88)
+        Me.DailySchedPanel.Location = New System.Drawing.Point(1221, 108)
+        Me.DailySchedPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DailySchedPanel.Name = "DailySchedPanel"
-        Me.DailySchedPanel.Size = New System.Drawing.Size(369, 640)
+        Me.DailySchedPanel.Size = New System.Drawing.Size(492, 788)
         Me.DailySchedPanel.TabIndex = 23
         Me.DailySchedPanel.Visible = False
         '
@@ -1381,17 +1490,19 @@ Partial Class Form1
         Me.Panel3.Controls.Add(Me.Label27)
         Me.Panel3.Controls.Add(Me.Label28)
         Me.Panel3.Controls.Add(Me.PictureBox17)
-        Me.Panel3.Location = New System.Drawing.Point(19, 316)
+        Me.Panel3.Location = New System.Drawing.Point(25, 389)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(331, 130)
+        Me.Panel3.Size = New System.Drawing.Size(441, 160)
         Me.Panel3.TabIndex = 9
         '
         'Button9
         '
         Me.Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button9.Location = New System.Drawing.Point(169, 75)
+        Me.Button9.Location = New System.Drawing.Point(225, 92)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(107, 43)
+        Me.Button9.Size = New System.Drawing.Size(143, 53)
         Me.Button9.TabIndex = 6
         Me.Button9.Text = "Add"
         Me.Button9.UseVisualStyleBackColor = True
@@ -1400,9 +1511,10 @@ Partial Class Form1
         '
         Me.Label27.AutoSize = True
         Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label27.Location = New System.Drawing.Point(161, 42)
+        Me.Label27.Location = New System.Drawing.Point(215, 52)
+        Me.Label27.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(127, 29)
+        Me.Label27.Size = New System.Drawing.Size(171, 37)
         Me.Label27.TabIndex = 7
         Me.Label27.Text = "5pm - 6pm"
         '
@@ -1410,9 +1522,10 @@ Partial Class Form1
         '
         Me.Label28.AutoSize = True
         Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label28.Location = New System.Drawing.Point(153, 13)
+        Me.Label28.Location = New System.Drawing.Point(204, 16)
+        Me.Label28.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(135, 29)
+        Me.Label28.Size = New System.Drawing.Size(178, 37)
         Me.Label28.TabIndex = 6
         Me.Label28.Text = "Study Time"
         '
@@ -1420,9 +1533,10 @@ Partial Class Form1
         '
         Me.PictureBox17.BackgroundImage = CType(resources.GetObject("PictureBox17.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox17.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox17.Location = New System.Drawing.Point(4, 4)
+        Me.PictureBox17.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox17.Name = "PictureBox17"
-        Me.PictureBox17.Size = New System.Drawing.Size(123, 96)
+        Me.PictureBox17.Size = New System.Drawing.Size(164, 118)
         Me.PictureBox17.TabIndex = 4
         Me.PictureBox17.TabStop = False
         '
@@ -1434,18 +1548,20 @@ Partial Class Form1
         Me.Panel2.Controls.Add(Me.Label26)
         Me.Panel2.Controls.Add(Me.PictureBox16)
         Me.Panel2.Controls.Add(Me.Button8)
-        Me.Panel2.Location = New System.Drawing.Point(19, 150)
+        Me.Panel2.Location = New System.Drawing.Point(25, 185)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(331, 125)
+        Me.Panel2.Size = New System.Drawing.Size(441, 153)
         Me.Panel2.TabIndex = 8
         '
         'Label23
         '
         Me.Label23.AutoSize = True
         Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.Location = New System.Drawing.Point(144, 42)
+        Me.Label23.Location = New System.Drawing.Point(192, 52)
+        Me.Label23.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(152, 29)
+        Me.Label23.Size = New System.Drawing.Size(201, 37)
         Me.Label23.TabIndex = 5
         Me.Label23.Text = "11am - 12pm"
         '
@@ -1453,9 +1569,10 @@ Partial Class Form1
         '
         Me.Label26.AutoSize = True
         Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.Location = New System.Drawing.Point(144, 11)
+        Me.Label26.Location = New System.Drawing.Point(192, 14)
+        Me.Label26.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(182, 29)
+        Me.Label26.Size = New System.Drawing.Size(240, 37)
         Me.Label26.TabIndex = 4
         Me.Label26.Text = "Soccer Practice"
         '
@@ -1463,18 +1580,20 @@ Partial Class Form1
         '
         Me.PictureBox16.BackgroundImage = CType(resources.GetObject("PictureBox16.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox16.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox16.Location = New System.Drawing.Point(4, 4)
+        Me.PictureBox16.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox16.Name = "PictureBox16"
-        Me.PictureBox16.Size = New System.Drawing.Size(123, 96)
+        Me.PictureBox16.Size = New System.Drawing.Size(164, 118)
         Me.PictureBox16.TabIndex = 3
         Me.PictureBox16.TabStop = False
         '
         'Button8
         '
         Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.Location = New System.Drawing.Point(164, 75)
+        Me.Button8.Location = New System.Drawing.Point(219, 92)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(107, 43)
+        Me.Button8.Size = New System.Drawing.Size(143, 53)
         Me.Button8.TabIndex = 1
         Me.Button8.Text = "Add"
         Me.Button8.UseVisualStyleBackColor = True
@@ -1483,18 +1602,20 @@ Partial Class Form1
         '
         Me.DateTimePicker2.CustomFormat = "dddd, MMMM dd"
         Me.DateTimePicker2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker2.Location = New System.Drawing.Point(17, 56)
+        Me.DateTimePicker2.Location = New System.Drawing.Point(23, 69)
+        Me.DateTimePicker2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(340, 31)
+        Me.DateTimePicker2.Size = New System.Drawing.Size(452, 38)
         Me.DateTimePicker2.TabIndex = 7
         '
         'Label24
         '
         Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.Location = New System.Drawing.Point(95, 94)
+        Me.Label24.Location = New System.Drawing.Point(127, 116)
+        Me.Label24.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(163, 31)
+        Me.Label24.Size = New System.Drawing.Size(211, 40)
         Me.Label24.TabIndex = 3
         Me.Label24.Text = "Add Events"
         '
@@ -1502,20 +1623,21 @@ Partial Class Form1
         '
         Me.Label25.AutoSize = True
         Me.Label25.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label25.Font = New System.Drawing.Font("Motorwerk", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(2, 9)
+        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label25.Location = New System.Drawing.Point(3, 11)
+        Me.Label25.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(365, 29)
+        Me.Label25.Size = New System.Drawing.Size(482, 55)
         Me.Label25.TabIndex = 0
         Me.Label25.Text = "Child's Daily Schedule"
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ClientSize = New System.Drawing.Size(1367, 810)
+        Me.ClientSize = New System.Drawing.Size(1823, 997)
         Me.Controls.Add(Me.DailySchedPanel)
         Me.Controls.Add(Me.SoccerDetails)
         Me.Controls.Add(Me.SchedulePanel)
@@ -1536,6 +1658,7 @@ Partial Class Form1
         Me.Controls.Add(Me.TimePanel)
         Me.Controls.Add(Me.RightButton)
         Me.Controls.Add(Me.LeftButton)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.TimePanel.ResumeLayout(False)
