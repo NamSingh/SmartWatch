@@ -195,5 +195,17 @@
   <ItemGroup>
     <None Include="Resources\LowVolume.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VideoChat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaper.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

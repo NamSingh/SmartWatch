@@ -30,27 +30,46 @@
             Me.HomePagePanel.Visible = False
             Me.AppPanel.Visible = True
             Me.AppPanel2.Visible = False
+            AppPanel3.Visible = False
 
         ElseIf currentpg = 1 Then
             currentpg = 2
             Me.HomePagePanel.Visible = False
             Me.AppPanel.Visible = False
             Me.AppPanel2.Visible = True
+            AppPanel3.Visible = False
 
         ElseIf currentpg = 2 Then
+            currentpg = 3
+            AppPanel3.Visible = True
+            AppPanel.Visible = False
+            AppPanel2.Visible = False
+            HomePagePanel.Visible = False
+
+        ElseIf currentpg = 3 Then
             currentpg = 0
             Me.HomePagePanel.Visible = True
             Me.AppPanel.Visible = False
             Me.AppPanel2.Visible = False
+            AppPanel3.Visible = False
+
         End If
     End Sub
 
     Private Sub LeftButton_Click(sender As Object, e As EventArgs) Handles LeftButton.Click
         If currentpg = 0 Then
-            currentpg = 2
+            currentpg = 3
+            AppPanel3.Visible = True
             Me.HomePagePanel.Visible = False
             Me.AppPanel.Visible = False
-            Me.AppPanel2.Visible = True
+            Me.AppPanel2.Visible = False
+
+        ElseIf currentpg = 3 Then
+            currentpg = 2
+            AppPanel3.Visible = False
+            AppPanel.Visible = False
+            AppPanel2.Visible = True
+            HomePagePanel.Visible = False
 
         ElseIf currentpg = 1 Then
             currentpg = 0
@@ -186,6 +205,7 @@
         StudyDetails.Visible = False
         IncomingCallPanel.Visible = False
         ContactsPanel.Visible = False
+        AppPanel3.Visible = False
     End Sub
 
     Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles CallHomeButton.Click, AllowanceHome.Click, SettingsHome.Click, GPSHomeButton.Click, StudyHome.Click, SoccerHome.Click, ScheduleHome.Click

@@ -127,6 +127,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend Shared ReadOnly Property internet() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("internet", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend Shared ReadOnly Property Kid() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Kid", resourceCulture)
@@ -160,6 +170,36 @@ Namespace My.Resources
         Friend Shared ReadOnly Property Mom() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Mom", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property music() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("music", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property VideoChat() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("VideoChat", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property wallpaper() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("wallpaper", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
