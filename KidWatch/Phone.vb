@@ -1,7 +1,7 @@
 ﻿Public Class Phone
-    Private Sub DailySchedPanel_Paint(sender As Object, e As PaintEventArgs) Handles DailySchedPanel.Paint
 
-    End Sub
+    Public SentSoccer As Boolean = False
+    Public SentStudy As Boolean = False
 
     Public Sub clearphone()
         ReminderPanel.Visible = False
@@ -12,16 +12,16 @@
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles AddSoccerPractice.Click
+        SentSoccer = True
         Smartwatch.SoccerPanel.Visible = True
     End Sub
 
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles AddStudyTime.Click
+        SentStudy = True
         Smartwatch.StudyPanel.Visible = True
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles AddFundButton.Click
-        ' Label4.Text = "$" + (Convert.ToDouble(TextBox2.Text) + Convert.ToDouble(Label4.Text)).ToString
-        'Label22.Text = Label4.Text
 
         Smartwatch.balance = (Convert.ToDouble(AddFundsBox.Text) + Smartwatch.balance)
 

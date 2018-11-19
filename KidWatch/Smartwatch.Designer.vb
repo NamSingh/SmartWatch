@@ -66,16 +66,18 @@ Partial Class Smartwatch
         Me.SettingPanel = New System.Windows.Forms.Panel()
         Me.LowerVol = New System.Windows.Forms.Button()
         Me.HigherVol = New System.Windows.Forms.Button()
-        Me.ProgressBar2 = New System.Windows.Forms.ProgressBar()
+        Me.VolumeBar = New System.Windows.Forms.ProgressBar()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
+        Me.BrightnessBar = New System.Windows.Forms.ProgressBar()
         Me.HigherBright = New System.Windows.Forms.Button()
         Me.LowerBright = New System.Windows.Forms.Button()
         Me.SettingsHome = New System.Windows.Forms.PictureBox()
         Me.ReminderAppPanel = New System.Windows.Forms.Panel()
         Me.ReminderLabel = New System.Windows.Forms.Label()
         Me.ReminderText = New System.Windows.Forms.Label()
+        Me.MomSaysLabel = New System.Windows.Forms.Label()
+        Me.EndAlertButton = New System.Windows.Forms.Button()
         Me.StudyDetails = New System.Windows.Forms.Panel()
         Me.StudyHome = New System.Windows.Forms.PictureBox()
         Me.StudyAudio = New System.Windows.Forms.PictureBox()
@@ -87,8 +89,6 @@ Partial Class Smartwatch
         Me.StudyLabel4 = New System.Windows.Forms.Label()
         Me.StudyLabel3 = New System.Windows.Forms.Label()
         Me.StudyPic2 = New System.Windows.Forms.PictureBox()
-        Me.MomSaysLabel = New System.Windows.Forms.Label()
-        Me.EndAlertButton = New System.Windows.Forms.Button()
         Me.SoccerDetails = New System.Windows.Forms.Panel()
         Me.SoccerHome = New System.Windows.Forms.PictureBox()
         Me.SoccerAudio = New System.Windows.Forms.PictureBox()
@@ -324,11 +324,12 @@ Partial Class Smartwatch
         '
         Me.GpsPic1.Image = CType(resources.GetObject("GpsPic1.Image"), System.Drawing.Image)
         Me.GpsPic1.InitialImage = Nothing
-        Me.GpsPic1.Location = New System.Drawing.Point(1093, 448)
+        Me.GpsPic1.Location = New System.Drawing.Point(0, 2)
         Me.GpsPic1.Name = "GpsPic1"
         Me.GpsPic1.Size = New System.Drawing.Size(332, 335)
         Me.GpsPic1.TabIndex = 0
         Me.GpsPic1.TabStop = False
+        Me.GpsPic1.Visible = False
         '
         'AllowanceAppPanel
         '
@@ -518,8 +519,10 @@ Partial Class Smartwatch
         '
         Me.GpsAppPanel.Controls.Add(Me.GPSHomeButton)
         Me.GpsAppPanel.Controls.Add(Me.SosButton)
+        Me.GpsAppPanel.Controls.Add(Me.GpsPic1)
+        Me.GpsAppPanel.Controls.Add(Me.GpsPic2)
         Me.GpsAppPanel.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
-        Me.GpsAppPanel.Location = New System.Drawing.Point(1093, 448)
+        Me.GpsAppPanel.Location = New System.Drawing.Point(1065, 444)
         Me.GpsAppPanel.Name = "GpsAppPanel"
         Me.GpsAppPanel.Size = New System.Drawing.Size(337, 343)
         Me.GpsAppPanel.TabIndex = 5
@@ -548,7 +551,7 @@ Partial Class Smartwatch
         '
         Me.GpsPic2.Image = CType(resources.GetObject("GpsPic2.Image"), System.Drawing.Image)
         Me.GpsPic2.InitialImage = Nothing
-        Me.GpsPic2.Location = New System.Drawing.Point(1070, 444)
+        Me.GpsPic2.Location = New System.Drawing.Point(2, 0)
         Me.GpsPic2.Name = "GpsPic2"
         Me.GpsPic2.Size = New System.Drawing.Size(332, 335)
         Me.GpsPic2.TabIndex = 2
@@ -560,10 +563,10 @@ Partial Class Smartwatch
         Me.SettingPanel.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.SettingPanel.Controls.Add(Me.LowerVol)
         Me.SettingPanel.Controls.Add(Me.HigherVol)
-        Me.SettingPanel.Controls.Add(Me.ProgressBar2)
+        Me.SettingPanel.Controls.Add(Me.VolumeBar)
         Me.SettingPanel.Controls.Add(Me.Label8)
         Me.SettingPanel.Controls.Add(Me.Label7)
-        Me.SettingPanel.Controls.Add(Me.ProgressBar1)
+        Me.SettingPanel.Controls.Add(Me.BrightnessBar)
         Me.SettingPanel.Controls.Add(Me.HigherBright)
         Me.SettingPanel.Controls.Add(Me.LowerBright)
         Me.SettingPanel.Controls.Add(Me.SettingsHome)
@@ -592,13 +595,13 @@ Partial Class Smartwatch
         Me.HigherVol.Text = ">"
         Me.HigherVol.UseVisualStyleBackColor = True
         '
-        'ProgressBar2
+        'VolumeBar
         '
-        Me.ProgressBar2.Location = New System.Drawing.Point(43, 211)
-        Me.ProgressBar2.Name = "ProgressBar2"
-        Me.ProgressBar2.Size = New System.Drawing.Size(251, 29)
-        Me.ProgressBar2.TabIndex = 13
-        Me.ProgressBar2.Value = 50
+        Me.VolumeBar.Location = New System.Drawing.Point(43, 211)
+        Me.VolumeBar.Name = "VolumeBar"
+        Me.VolumeBar.Size = New System.Drawing.Size(251, 29)
+        Me.VolumeBar.TabIndex = 13
+        Me.VolumeBar.Value = 50
         '
         'Label8
         '
@@ -618,13 +621,13 @@ Partial Class Smartwatch
         Me.Label7.TabIndex = 11
         Me.Label7.Text = "Brightness"
         '
-        'ProgressBar1
+        'BrightnessBar
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(43, 115)
-        Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(251, 29)
-        Me.ProgressBar1.TabIndex = 10
-        Me.ProgressBar1.Value = 20
+        Me.BrightnessBar.Location = New System.Drawing.Point(43, 115)
+        Me.BrightnessBar.Name = "BrightnessBar"
+        Me.BrightnessBar.Size = New System.Drawing.Size(251, 29)
+        Me.BrightnessBar.TabIndex = 10
+        Me.BrightnessBar.Value = 20
         '
         'HigherBright
         '
@@ -688,6 +691,26 @@ Partial Class Smartwatch
         Me.ReminderText.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.ReminderText.Size = New System.Drawing.Size(0, 31)
         Me.ReminderText.TabIndex = 2
+        '
+        'MomSaysLabel
+        '
+        Me.MomSaysLabel.AutoSize = True
+        Me.MomSaysLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MomSaysLabel.Location = New System.Drawing.Point(90, 100)
+        Me.MomSaysLabel.Name = "MomSaysLabel"
+        Me.MomSaysLabel.Size = New System.Drawing.Size(207, 37)
+        Me.MomSaysLabel.TabIndex = 1
+        Me.MomSaysLabel.Text = "MOM SAYS:"
+        '
+        'EndAlertButton
+        '
+        Me.EndAlertButton.ForeColor = System.Drawing.Color.Red
+        Me.EndAlertButton.Location = New System.Drawing.Point(121, 280)
+        Me.EndAlertButton.Name = "EndAlertButton"
+        Me.EndAlertButton.Size = New System.Drawing.Size(88, 37)
+        Me.EndAlertButton.TabIndex = 0
+        Me.EndAlertButton.Text = "OK"
+        Me.EndAlertButton.UseVisualStyleBackColor = True
         '
         'StudyDetails
         '
@@ -808,26 +831,6 @@ Partial Class Smartwatch
         Me.StudyPic2.Size = New System.Drawing.Size(123, 96)
         Me.StudyPic2.TabIndex = 3
         Me.StudyPic2.TabStop = False
-        '
-        'MomSaysLabel
-        '
-        Me.MomSaysLabel.AutoSize = True
-        Me.MomSaysLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MomSaysLabel.Location = New System.Drawing.Point(90, 100)
-        Me.MomSaysLabel.Name = "MomSaysLabel"
-        Me.MomSaysLabel.Size = New System.Drawing.Size(207, 37)
-        Me.MomSaysLabel.TabIndex = 1
-        Me.MomSaysLabel.Text = "MOM SAYS:"
-        '
-        'EndAlertButton
-        '
-        Me.EndAlertButton.ForeColor = System.Drawing.Color.Red
-        Me.EndAlertButton.Location = New System.Drawing.Point(121, 280)
-        Me.EndAlertButton.Name = "EndAlertButton"
-        Me.EndAlertButton.Size = New System.Drawing.Size(88, 37)
-        Me.EndAlertButton.TabIndex = 0
-        Me.EndAlertButton.Text = "OK"
-        Me.EndAlertButton.UseVisualStyleBackColor = True
         '
         'SoccerDetails
         '
@@ -1057,7 +1060,7 @@ Partial Class Smartwatch
         Me.soccerBall.TabIndex = 3
         Me.soccerBall.TabStop = False
         '
-        'Form1
+        'Smartwatch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -1066,20 +1069,18 @@ Partial Class Smartwatch
         Me.ClientSize = New System.Drawing.Size(1397, 810)
         Me.Controls.Add(Me.SoccerDetails)
         Me.Controls.Add(Me.ScheduleAppPanel)
-        Me.Controls.Add(Me.GpsPic1)
         Me.Controls.Add(Me.StudyDetails)
         Me.Controls.Add(Me.AllowanceAppPanel)
-        Me.Controls.Add(Me.GpsPic2)
         Me.Controls.Add(Me.ReminderAppPanel)
-        Me.Controls.Add(Me.AppPanel2)
         Me.Controls.Add(Me.GpsAppPanel)
+        Me.Controls.Add(Me.AppPanel2)
         Me.Controls.Add(Me.PhoneAppPanel)
         Me.Controls.Add(Me.HomePagePanel)
         Me.Controls.Add(Me.SettingPanel)
         Me.Controls.Add(Me.AppPanel)
         Me.Controls.Add(Me.RightButton)
         Me.Controls.Add(Me.LeftButton)
-        Me.Name = "Form1"
+        Me.Name = "Smartwatch"
         Me.Text = "Form1"
         Me.HomePagePanel.ResumeLayout(False)
         Me.HomePagePanel.PerformLayout()
@@ -1169,13 +1170,13 @@ Partial Class Smartwatch
     Friend WithEvents AllowanceHome As PictureBox
     Friend WithEvents RabbitPicture As PictureBox
     Friend WithEvents SettingPanel As Panel
-    Friend WithEvents ProgressBar1 As ProgressBar
+    Friend WithEvents BrightnessBar As ProgressBar
     Friend WithEvents HigherBright As Button
     Friend WithEvents LowerBright As Button
     Friend WithEvents SettingsHome As PictureBox
     Friend WithEvents LowerVol As Button
     Friend WithEvents HigherVol As Button
-    Friend WithEvents ProgressBar2 As ProgressBar
+    Friend WithEvents VolumeBar As ProgressBar
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents GpsAppPanel As Panel

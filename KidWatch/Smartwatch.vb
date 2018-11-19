@@ -99,15 +99,6 @@
     End Sub
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles PayButton.Click
-        ' If Me.Label4.Text.Equals("$1.50") Then
-        'Me.Label6.Visible = True
-        ' Else
-        'Me.Label4.Text = "$4.50"
-        ' Me.Label6.Visible = True
-        ' Me.Label6.ForeColor = Color.Green
-        ' Me.Label6.Text = "Purchased Tickets!"
-        ' End If
-
 
         If balance < 10 Then
             Me.AllowanceLabel3.Visible = True
@@ -153,36 +144,32 @@
         Me.AllowanceAppPanel.Visible = True
     End Sub
 
-    Private Sub ProgressBar1_Click(sender As Object, e As EventArgs) Handles ProgressBar1.Click
-
-    End Sub
-
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles HigherBright.Click
-        If ProgressBar1.Value = 100 Then
+        If BrightnessBar.Value = 100 Then
         Else
-            ProgressBar1.Value = ProgressBar1.Value + 10
+            BrightnessBar.Value = BrightnessBar.Value + 10
         End If
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles LowerBright.Click
-        If ProgressBar1.Value = 0 Then
+        If BrightnessBar.Value = 0 Then
         Else
-            ProgressBar1.Value = ProgressBar1.Value - 10
+            BrightnessBar.Value = BrightnessBar.Value - 10
         End If
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles HigherVol.Click
-        If ProgressBar2.Value = 100 Then
+        If VolumeBar.Value = 100 Then
         Else
-            ProgressBar2.Value = ProgressBar2.Value + 10
+            VolumeBar.Value = VolumeBar.Value + 10
         End If
 
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles LowerVol.Click
-        If ProgressBar2.Value = 0 Then
+        If VolumeBar.Value = 0 Then
         Else
-            ProgressBar2.Value = ProgressBar2.Value - 10
+            VolumeBar.Value = VolumeBar.Value - 10
         End If
 
     End Sub
@@ -191,16 +178,6 @@
         clear()
         Me.SettingPanel.Visible = True
     End Sub
-
-    Private Sub PhoneFrame_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Label18_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    '================================================================================
 
     Private Sub SosButton_Click(sender As Object, e As EventArgs) Handles SosButton.Click
         Phone.LocateSosPanel.Visible = True
@@ -248,8 +225,13 @@
 
     Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles DateTimePicker1.ValueChanged
         If DateTimePicker1.Value = Today Then
-            SoccerPanel.Visible = True
-            StudyPanel.Visible = True
+            If Phone.SentSoccer Then
+                SoccerPanel.Visible = True
+            End If
+            If Phone.SentStudy Then
+                StudyPanel.Visible = True
+            End If
+
         Else
             SoccerPanel.Visible = False
             StudyPanel.Visible = False
@@ -268,13 +250,4 @@
         currentpg = 0
         HomePagePanel.Visible = True
     End Sub
-
-    Private Sub Button8_Click(sender As Object, e As EventArgs)
-        SoccerPanel.Visible = True
-    End Sub
-
-    Private Sub Button9_Click(sender As Object, e As EventArgs)
-        StudyPanel.Visible = True
-    End Sub
-
 End Class
