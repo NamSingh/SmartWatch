@@ -206,6 +206,7 @@
         IncomingCallPanel.Visible = False
         ContactsPanel.Visible = False
         AppPanel3.Visible = False
+        MessageAppPanel.Visible = False
     End Sub
 
     Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles CallHomeButton.Click, AllowanceHome.Click, SettingsHome.Click, GPSHomeButton.Click, StudyHome.Click, SoccerHome.Click, ScheduleHome.Click
@@ -348,4 +349,10 @@
             VolumeBar2.Value = VolumeBar2.Value + 10
         End If
     End Sub
+
+    Private Sub MessageAppIcon_Click(sender As Object, e As EventArgs) Handles MessageAppIcon.Click
+        clear()
+        MessageAppPanel.Visible = True
+    End Sub
+
 End Class

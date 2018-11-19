@@ -140,10 +140,22 @@ Partial Class Smartwatch
         Me.ContactLabel = New System.Windows.Forms.Label()
         Me.TabPage11 = New System.Windows.Forms.TabPage()
         Me.AppPanel3 = New System.Windows.Forms.Panel()
-        Me.WallpaperIcon = New System.Windows.Forms.PictureBox()
-        Me.VideoChatIcon = New System.Windows.Forms.PictureBox()
-        Me.MusicIcon = New System.Windows.Forms.PictureBox()
         Me.InternetIcon = New System.Windows.Forms.PictureBox()
+        Me.MusicIcon = New System.Windows.Forms.PictureBox()
+        Me.VideoChatIcon = New System.Windows.Forms.PictureBox()
+        Me.WallpaperIcon = New System.Windows.Forms.PictureBox()
+        Me.TabPage12 = New System.Windows.Forms.TabPage()
+        Me.MessageAppPanel = New System.Windows.Forms.Panel()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.BoyPic2 = New System.Windows.Forms.PictureBox()
+        Me.BoyLabel2 = New System.Windows.Forms.Label()
+        Me.MomLabel4 = New System.Windows.Forms.Label()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.MomPic4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.MessagesLabel = New System.Windows.Forms.Label()
         Me.HomePagePanel.SuspendLayout()
         CType(Me.RabbitPicture, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PhoneAppPanel.SuspendLayout()
@@ -210,10 +222,19 @@ Partial Class Smartwatch
         CType(Me.MomPic3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage11.SuspendLayout()
         Me.AppPanel3.SuspendLayout()
-        CType(Me.WallpaperIcon, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.VideoChatIcon, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MusicIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.InternetIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MusicIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.VideoChatIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.WallpaperIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage12.SuspendLayout()
+        Me.MessageAppPanel.SuspendLayout()
+        Me.TableLayoutPanel2.SuspendLayout()
+        CType(Me.BoyPic2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MomPic4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'HomePagePanel
@@ -1199,6 +1220,7 @@ Partial Class Smartwatch
         Me.TabControl1.Controls.Add(Me.TabPage9)
         Me.TabControl1.Controls.Add(Me.TabPage10)
         Me.TabControl1.Controls.Add(Me.TabPage11)
+        Me.TabControl1.Controls.Add(Me.TabPage12)
         Me.TabControl1.Location = New System.Drawing.Point(706, 32)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
@@ -1484,25 +1506,15 @@ Partial Class Smartwatch
         Me.AppPanel3.Size = New System.Drawing.Size(337, 343)
         Me.AppPanel3.TabIndex = 3
         '
-        'WallpaperIcon
+        'InternetIcon
         '
-        Me.WallpaperIcon.Image = Global.KidWatch.My.Resources.Resource1.wallpaper
-        Me.WallpaperIcon.Location = New System.Drawing.Point(3, 3)
-        Me.WallpaperIcon.Name = "WallpaperIcon"
-        Me.WallpaperIcon.Size = New System.Drawing.Size(166, 164)
-        Me.WallpaperIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.WallpaperIcon.TabIndex = 0
-        Me.WallpaperIcon.TabStop = False
-        '
-        'VideoChatIcon
-        '
-        Me.VideoChatIcon.Image = Global.KidWatch.My.Resources.Resource1.VideoChat
-        Me.VideoChatIcon.Location = New System.Drawing.Point(168, 3)
-        Me.VideoChatIcon.Name = "VideoChatIcon"
-        Me.VideoChatIcon.Size = New System.Drawing.Size(166, 164)
-        Me.VideoChatIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.VideoChatIcon.TabIndex = 1
-        Me.VideoChatIcon.TabStop = False
+        Me.InternetIcon.Image = Global.KidWatch.My.Resources.Resource1.internet
+        Me.InternetIcon.Location = New System.Drawing.Point(168, 170)
+        Me.InternetIcon.Name = "InternetIcon"
+        Me.InternetIcon.Size = New System.Drawing.Size(166, 164)
+        Me.InternetIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.InternetIcon.TabIndex = 3
+        Me.InternetIcon.TabStop = False
         '
         'MusicIcon
         '
@@ -1514,15 +1526,178 @@ Partial Class Smartwatch
         Me.MusicIcon.TabIndex = 2
         Me.MusicIcon.TabStop = False
         '
-        'InternetIcon
+        'VideoChatIcon
         '
-        Me.InternetIcon.Image = Global.KidWatch.My.Resources.Resource1.internet
-        Me.InternetIcon.Location = New System.Drawing.Point(168, 170)
-        Me.InternetIcon.Name = "InternetIcon"
-        Me.InternetIcon.Size = New System.Drawing.Size(166, 164)
-        Me.InternetIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.InternetIcon.TabIndex = 3
-        Me.InternetIcon.TabStop = False
+        Me.VideoChatIcon.Image = Global.KidWatch.My.Resources.Resource1.VideoChat
+        Me.VideoChatIcon.Location = New System.Drawing.Point(168, 3)
+        Me.VideoChatIcon.Name = "VideoChatIcon"
+        Me.VideoChatIcon.Size = New System.Drawing.Size(166, 164)
+        Me.VideoChatIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.VideoChatIcon.TabIndex = 1
+        Me.VideoChatIcon.TabStop = False
+        '
+        'WallpaperIcon
+        '
+        Me.WallpaperIcon.Image = Global.KidWatch.My.Resources.Resource1.wallpaper
+        Me.WallpaperIcon.Location = New System.Drawing.Point(3, 3)
+        Me.WallpaperIcon.Name = "WallpaperIcon"
+        Me.WallpaperIcon.Size = New System.Drawing.Size(166, 164)
+        Me.WallpaperIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.WallpaperIcon.TabIndex = 0
+        Me.WallpaperIcon.TabStop = False
+        '
+        'TabPage12
+        '
+        Me.TabPage12.Controls.Add(Me.MessageAppPanel)
+        Me.TabPage12.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage12.Name = "TabPage12"
+        Me.TabPage12.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage12.Size = New System.Drawing.Size(618, 410)
+        Me.TabPage12.TabIndex = 11
+        Me.TabPage12.Text = "TabPage12"
+        Me.TabPage12.UseVisualStyleBackColor = True
+        '
+        'MessageAppPanel
+        '
+        Me.MessageAppPanel.BackColor = System.Drawing.Color.RoyalBlue
+        Me.MessageAppPanel.Controls.Add(Me.TableLayoutPanel2)
+        Me.MessageAppPanel.Controls.Add(Me.MessagesLabel)
+        Me.MessageAppPanel.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
+        Me.MessageAppPanel.Location = New System.Drawing.Point(141, 34)
+        Me.MessageAppPanel.Name = "MessageAppPanel"
+        Me.MessageAppPanel.Size = New System.Drawing.Size(337, 343)
+        Me.MessageAppPanel.TabIndex = 5
+        Me.MessageAppPanel.Visible = False
+        '
+        'TableLayoutPanel2
+        '
+        Me.TableLayoutPanel2.ColumnCount = 3
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.48529!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.51471!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77.0!))
+        Me.TableLayoutPanel2.Controls.Add(Me.BoyPic2, 0, 2)
+        Me.TableLayoutPanel2.Controls.Add(Me.BoyLabel2, 0, 3)
+        Me.TableLayoutPanel2.Controls.Add(Me.MomLabel4, 0, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.PictureBox3, 1, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.MomPic4, 0, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.PictureBox2, 2, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.PictureBox4, 2, 2)
+        Me.TableLayoutPanel2.Controls.Add(Me.PictureBox5, 1, 2)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(3, 52)
+        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
+        Me.TableLayoutPanel2.RowCount = 4
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 101.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(331, 275)
+        Me.TableLayoutPanel2.TabIndex = 9
+        '
+        'BoyPic2
+        '
+        Me.BoyPic2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.BoyPic2.BackgroundImage = Global.KidWatch.My.Resources.Resource1.boy
+        Me.BoyPic2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BoyPic2.Location = New System.Drawing.Point(13, 143)
+        Me.BoyPic2.Name = "BoyPic2"
+        Me.BoyPic2.Size = New System.Drawing.Size(149, 95)
+        Me.BoyPic2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.BoyPic2.TabIndex = 9
+        Me.BoyPic2.TabStop = False
+        '
+        'BoyLabel2
+        '
+        Me.BoyLabel2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.BoyLabel2.AutoSize = True
+        Me.BoyLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BoyLabel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.BoyLabel2.Location = New System.Drawing.Point(57, 243)
+        Me.BoyLabel2.Name = "BoyLabel2"
+        Me.BoyLabel2.Size = New System.Drawing.Size(62, 29)
+        Me.BoyLabel2.TabIndex = 13
+        Me.BoyLabel2.Text = "Jack"
+        '
+        'MomLabel4
+        '
+        Me.MomLabel4.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.MomLabel4.AutoSize = True
+        Me.MomLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MomLabel4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.MomLabel4.Location = New System.Drawing.Point(54, 108)
+        Me.MomLabel4.Name = "MomLabel4"
+        Me.MomLabel4.Size = New System.Drawing.Size(67, 29)
+        Me.MomLabel4.TabIndex = 14
+        Me.MomLabel4.Text = "Mom"
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackgroundImage = Global.KidWatch.My.Resources.Resource1.sms
+        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox3.Location = New System.Drawing.Point(179, 3)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(71, 99)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 16
+        Me.PictureBox3.TabStop = False
+        '
+        'MomPic4
+        '
+        Me.MomPic4.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.MomPic4.BackgroundImage = Global.KidWatch.My.Resources.Resource1.Mom
+        Me.MomPic4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.MomPic4.Location = New System.Drawing.Point(13, 3)
+        Me.MomPic4.Name = "MomPic4"
+        Me.MomPic4.Size = New System.Drawing.Size(149, 99)
+        Me.MomPic4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.MomPic4.TabIndex = 8
+        Me.MomPic4.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackgroundImage = Global.KidWatch.My.Resources.Resource1.camera
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox2.Location = New System.Drawing.Point(256, 3)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(71, 99)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 17
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackgroundImage = Global.KidWatch.My.Resources.Resource1.camera
+        Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox4.Location = New System.Drawing.Point(256, 143)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(71, 95)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 18
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackgroundImage = Global.KidWatch.My.Resources.Resource1.sms
+        Me.PictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox5.Location = New System.Drawing.Point(179, 143)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(71, 95)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox5.TabIndex = 19
+        Me.PictureBox5.TabStop = False
+        '
+        'MessagesLabel
+        '
+        Me.MessagesLabel.AutoSize = True
+        Me.MessagesLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.MessagesLabel.Location = New System.Drawing.Point(97, 10)
+        Me.MessagesLabel.Name = "MessagesLabel"
+        Me.MessagesLabel.Size = New System.Drawing.Size(151, 39)
+        Me.MessagesLabel.TabIndex = 0
+        Me.MessagesLabel.Text = "Contacts"
         '
         'Smartwatch
         '
@@ -1615,10 +1790,21 @@ Partial Class Smartwatch
         CType(Me.MomPic3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage11.ResumeLayout(False)
         Me.AppPanel3.ResumeLayout(False)
-        CType(Me.WallpaperIcon, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.VideoChatIcon, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MusicIcon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.InternetIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MusicIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.VideoChatIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.WallpaperIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage12.ResumeLayout(False)
+        Me.MessageAppPanel.ResumeLayout(False)
+        Me.MessageAppPanel.PerformLayout()
+        Me.TableLayoutPanel2.ResumeLayout(False)
+        Me.TableLayoutPanel2.PerformLayout()
+        CType(Me.BoyPic2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MomPic4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1743,4 +1929,16 @@ Partial Class Smartwatch
     Friend WithEvents InternetIcon As PictureBox
     Friend WithEvents MusicIcon As PictureBox
     Friend WithEvents VideoChatIcon As PictureBox
+    Friend WithEvents TabPage12 As TabPage
+    Friend WithEvents MessageAppPanel As Panel
+    Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
+    Friend WithEvents MomLabel4 As Label
+    Friend WithEvents BoyLabel2 As Label
+    Friend WithEvents BoyPic2 As PictureBox
+    Friend WithEvents MomPic4 As PictureBox
+    Friend WithEvents MessagesLabel As Label
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents PictureBox5 As PictureBox
 End Class
