@@ -117,6 +117,7 @@
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PhoneAppIcon.Click
         clear()
+        DisableSwipe()
         Me.PhoneAppPanel.Visible = True
     End Sub
 
@@ -133,14 +134,17 @@
         Me.StudyDetails.Visible = False
     End Sub
 
-    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles CallHomeButton.Click, AllowanceHome.Click, SettingsHome.Click, GPSHomeButton.Click
+    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles CallHomeButton.Click, AllowanceHome.Click, SettingsHome.Click, GPSHomeButton.Click, StudyHome.Click, SoccerHome.Click, ScheduleHome.Click
         clear()
         Me.HomePagePanel.Visible = True
         currentpg = 0
+        LeftButton.Visible = True
+        RightButton.Visible = True
     End Sub
 
     Private Sub PictureBox10_Click(sender As Object, e As EventArgs) Handles AllowanceAppIcon.Click
         clear()
+        DisableSwipe()
         Me.AllowanceAppPanel.Visible = True
     End Sub
 
@@ -176,6 +180,7 @@
 
     Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles SettingAppIcon.Click
         clear()
+        DisableSwipe()
         Me.SettingPanel.Visible = True
     End Sub
 
@@ -188,6 +193,7 @@
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles GPSAppIcon.Click
         clear()
+        DisableSwipe()
         Me.GpsPic1.Visible = True
         Me.GpsAppPanel.Visible = True
     End Sub
@@ -206,6 +212,7 @@
 
     Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles ScheduleAppIcon.Click
         clear()
+        DisableSwipe()
         DateTimePicker1.Format = DateTimePickerFormat.Custom
         DateTimePicker1.CustomFormat = "dddd, MMMM dd"
         DateTimePicker1.Value = Today
@@ -242,12 +249,11 @@
     Private Sub SheduleBack_Click(sender As Object, e As EventArgs) Handles SoccerBack.Click, StudyBack.Click
         clear()
         ScheduleAppPanel.Visible = True
-
     End Sub
 
-    Private Sub ScheduleHome_Click(sender As Object, e As EventArgs) Handles StudyHome.Click, SoccerHome.Click
-        clear()
-        currentpg = 0
-        HomePagePanel.Visible = True
+    Private Sub DisableSwipe()
+        LeftButton.Visible = False
+        RightButton.Visible = False
     End Sub
+
 End Class
