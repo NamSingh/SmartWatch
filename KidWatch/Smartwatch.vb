@@ -132,6 +132,7 @@
         Me.ScheduleAppPanel.Visible = False
         Me.SoccerDetails.Visible = False
         Me.StudyDetails.Visible = False
+        IncomingCallTab.Visible = False
     End Sub
 
     Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles CallHomeButton.Click, AllowanceHome.Click, SettingsHome.Click, GPSHomeButton.Click, StudyHome.Click, SoccerHome.Click, ScheduleHome.Click
