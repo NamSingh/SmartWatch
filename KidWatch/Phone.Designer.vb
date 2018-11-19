@@ -840,7 +840,7 @@ Partial Class Phone
         '
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label1.AutoSize = True
-        Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(225, 135)
         Me.Label1.Name = "Label1"
@@ -852,7 +852,7 @@ Partial Class Phone
         '
         Me.ChildLabel2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.ChildLabel2.AutoSize = True
-        Me.ChildLabel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.ChildLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ChildLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ChildLabel2.Location = New System.Drawing.Point(41, 135)
         Me.ChildLabel2.Name = "ChildLabel2"
@@ -980,6 +980,7 @@ Partial Class Phone
         '
         Me.PictureBox2.BackgroundImage = Global.KidWatch.My.Resources.Resource1.Man
         Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox2.Location = New System.Drawing.Point(184, 3)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(175, 127)
@@ -990,6 +991,7 @@ Partial Class Phone
         '
         Me.ChildPic3.BackgroundImage = Global.KidWatch.My.Resources.Resource1.Kid
         Me.ChildPic3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.ChildPic3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ChildPic3.Location = New System.Drawing.Point(3, 3)
         Me.ChildPic3.Name = "ChildPic3"
         Me.ChildPic3.Size = New System.Drawing.Size(175, 127)

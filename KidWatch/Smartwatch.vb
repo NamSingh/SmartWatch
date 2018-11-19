@@ -85,6 +85,9 @@
 
     Public Sub CallAccepted()
         CallTimeLabel.Visible = True
+        LowerVolume.Visible = True
+        IncreaseVolume.Visible = True
+        VolumeBar2.Visible = True
         Time = DateTime.Now
         Timer2.Start()
         PhoneAppPanel.BackColor = Color.Green
@@ -145,7 +148,6 @@
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         HomeDateLabel.Text = Today.ToString("dddd, MMMM dd")
-
     End Sub
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles PayButton.Click
@@ -311,5 +313,19 @@
     Private Sub MomPic3_Click(sender As Object, e As EventArgs) Handles MomPic3.Click, MomLabel2.Click
         clear()
         PhoneAppPanel.Visible = True
+    End Sub
+
+    Private Sub LowerVolume_Click(sender As Object, e As EventArgs) Handles LowerVolume.Click
+        If VolumeBar2.Value = 0 Then
+        Else
+            VolumeBar2.Value = VolumeBar2.Value - 10
+        End If
+    End Sub
+
+    Private Sub IncreaseVolume_Click(sender As Object, e As EventArgs) Handles IncreaseVolume.Click
+        If VolumeBar2.Value = 100 Then
+        Else
+            VolumeBar2.Value = VolumeBar2.Value + 10
+        End If
     End Sub
 End Class

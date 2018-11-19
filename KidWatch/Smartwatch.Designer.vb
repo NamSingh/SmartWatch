@@ -32,6 +32,9 @@ Partial Class Smartwatch
         Me.RightButton = New System.Windows.Forms.Button()
         Me.LeftButton = New System.Windows.Forms.Button()
         Me.PhoneAppPanel = New System.Windows.Forms.Panel()
+        Me.VolumeBar2 = New System.Windows.Forms.ProgressBar()
+        Me.IncreaseVolume = New System.Windows.Forms.PictureBox()
+        Me.LowerVolume = New System.Windows.Forms.PictureBox()
         Me.CallEndLabel = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.CallHomeButton = New System.Windows.Forms.PictureBox()
@@ -135,9 +138,14 @@ Partial Class Smartwatch
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.MomPic3 = New System.Windows.Forms.PictureBox()
         Me.ContactLabel = New System.Windows.Forms.Label()
+        Me.TabPage11 = New System.Windows.Forms.TabPage()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.HomePagePanel.SuspendLayout()
         CType(Me.RabbitPicture, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PhoneAppPanel.SuspendLayout()
+        CType(Me.IncreaseVolume, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LowerVolume, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CallHomeButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EndCallButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CallButton, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -197,6 +205,9 @@ Partial Class Smartwatch
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MomPic3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage11.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'HomePagePanel
@@ -270,6 +281,9 @@ Partial Class Smartwatch
         'PhoneAppPanel
         '
         Me.PhoneAppPanel.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.PhoneAppPanel.Controls.Add(Me.VolumeBar2)
+        Me.PhoneAppPanel.Controls.Add(Me.IncreaseVolume)
+        Me.PhoneAppPanel.Controls.Add(Me.LowerVolume)
         Me.PhoneAppPanel.Controls.Add(Me.CallEndLabel)
         Me.PhoneAppPanel.Controls.Add(Me.Label1)
         Me.PhoneAppPanel.Controls.Add(Me.CallHomeButton)
@@ -284,11 +298,44 @@ Partial Class Smartwatch
         Me.PhoneAppPanel.Size = New System.Drawing.Size(337, 343)
         Me.PhoneAppPanel.TabIndex = 1
         '
+        'VolumeBar2
+        '
+        Me.VolumeBar2.Location = New System.Drawing.Point(76, 184)
+        Me.VolumeBar2.Name = "VolumeBar2"
+        Me.VolumeBar2.Size = New System.Drawing.Size(196, 42)
+        Me.VolumeBar2.TabIndex = 12
+        Me.VolumeBar2.Value = 20
+        Me.VolumeBar2.Visible = False
+        '
+        'IncreaseVolume
+        '
+        Me.IncreaseVolume.BackgroundImage = Global.KidWatch.My.Resources.Resource1.HighVolume
+        Me.IncreaseVolume.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.IncreaseVolume.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.IncreaseVolume.Location = New System.Drawing.Point(278, 168)
+        Me.IncreaseVolume.Name = "IncreaseVolume"
+        Me.IncreaseVolume.Size = New System.Drawing.Size(56, 58)
+        Me.IncreaseVolume.TabIndex = 11
+        Me.IncreaseVolume.TabStop = False
+        Me.IncreaseVolume.Visible = False
+        '
+        'LowerVolume
+        '
+        Me.LowerVolume.BackgroundImage = Global.KidWatch.My.Resources.Resource1.LowVolume
+        Me.LowerVolume.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.LowerVolume.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.LowerVolume.Location = New System.Drawing.Point(9, 168)
+        Me.LowerVolume.Name = "LowerVolume"
+        Me.LowerVolume.Size = New System.Drawing.Size(61, 58)
+        Me.LowerVolume.TabIndex = 10
+        Me.LowerVolume.TabStop = False
+        Me.LowerVolume.Visible = False
+        '
         'CallEndLabel
         '
         Me.CallEndLabel.AutoSize = True
         Me.CallEndLabel.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.CallEndLabel.Location = New System.Drawing.Point(73, 291)
+        Me.CallEndLabel.Location = New System.Drawing.Point(76, 291)
         Me.CallEndLabel.Name = "CallEndLabel"
         Me.CallEndLabel.Size = New System.Drawing.Size(185, 39)
         Me.CallEndLabel.TabIndex = 8
@@ -320,7 +367,7 @@ Partial Class Smartwatch
         Me.CallTimeLabel.AutoSize = True
         Me.CallTimeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CallTimeLabel.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.CallTimeLabel.Location = New System.Drawing.Point(132, 232)
+        Me.CallTimeLabel.Location = New System.Drawing.Point(142, 244)
         Me.CallTimeLabel.Name = "CallTimeLabel"
         Me.CallTimeLabel.Size = New System.Drawing.Size(61, 20)
         Me.CallTimeLabel.TabIndex = 5
@@ -331,7 +378,7 @@ Partial Class Smartwatch
         'EndCallButton
         '
         Me.EndCallButton.Image = CType(resources.GetObject("EndCallButton.Image"), System.Drawing.Image)
-        Me.EndCallButton.Location = New System.Drawing.Point(136, 279)
+        Me.EndCallButton.Location = New System.Drawing.Point(133, 279)
         Me.EndCallButton.Name = "EndCallButton"
         Me.EndCallButton.Size = New System.Drawing.Size(70, 61)
         Me.EndCallButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -352,10 +399,11 @@ Partial Class Smartwatch
         'MomLabel
         '
         Me.MomLabel.AutoSize = True
+        Me.MomLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MomLabel.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.MomLabel.Location = New System.Drawing.Point(120, 184)
+        Me.MomLabel.Location = New System.Drawing.Point(132, 144)
         Me.MomLabel.Name = "MomLabel"
-        Me.MomLabel.Size = New System.Drawing.Size(99, 39)
+        Me.MomLabel.Size = New System.Drawing.Size(72, 29)
         Me.MomLabel.TabIndex = 2
         Me.MomLabel.Text = "MOM"
         '
@@ -363,9 +411,9 @@ Partial Class Smartwatch
         '
         Me.MomPicture.BackgroundImage = Global.KidWatch.My.Resources.Resource1.Mom
         Me.MomPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.MomPicture.Location = New System.Drawing.Point(73, 3)
+        Me.MomPicture.Location = New System.Drawing.Point(92, 0)
         Me.MomPicture.Name = "MomPicture"
-        Me.MomPicture.Size = New System.Drawing.Size(191, 178)
+        Me.MomPicture.Size = New System.Drawing.Size(152, 141)
         Me.MomPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.MomPicture.TabIndex = 1
         Me.MomPicture.TabStop = False
@@ -1144,6 +1192,7 @@ Partial Class Smartwatch
         Me.TabControl1.Controls.Add(Me.TabPage8)
         Me.TabControl1.Controls.Add(Me.TabPage9)
         Me.TabControl1.Controls.Add(Me.TabPage10)
+        Me.TabControl1.Controls.Add(Me.TabPage11)
         Me.TabControl1.Location = New System.Drawing.Point(706, 32)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
@@ -1350,11 +1399,12 @@ Partial Class Smartwatch
         '
         Me.MomLabel2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.MomLabel2.AutoSize = True
+        Me.MomLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.MomLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MomLabel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.MomLabel2.Location = New System.Drawing.Point(42, 179)
+        Me.MomLabel2.Location = New System.Drawing.Point(41, 178)
         Me.MomLabel2.Name = "MomLabel2"
-        Me.MomLabel2.Size = New System.Drawing.Size(80, 33)
+        Me.MomLabel2.Size = New System.Drawing.Size(82, 35)
         Me.MomLabel2.TabIndex = 14
         Me.MomLabel2.Text = "Mom"
         '
@@ -1362,11 +1412,12 @@ Partial Class Smartwatch
         '
         Me.FrinedLabel.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.FrinedLabel.AutoSize = True
+        Me.FrinedLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.FrinedLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FrinedLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.FrinedLabel.Location = New System.Drawing.Point(210, 179)
+        Me.FrinedLabel.Location = New System.Drawing.Point(209, 178)
         Me.FrinedLabel.Name = "FrinedLabel"
-        Me.FrinedLabel.Size = New System.Drawing.Size(76, 33)
+        Me.FrinedLabel.Size = New System.Drawing.Size(78, 35)
         Me.FrinedLabel.TabIndex = 13
         Me.FrinedLabel.Text = "Jack"
         '
@@ -1374,6 +1425,7 @@ Partial Class Smartwatch
         '
         Me.PictureBox1.BackgroundImage = Global.KidWatch.My.Resources.Resource1.boy
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox1.Location = New System.Drawing.Point(168, 3)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(159, 170)
@@ -1385,6 +1437,7 @@ Partial Class Smartwatch
         '
         Me.MomPic3.BackgroundImage = Global.KidWatch.My.Resources.Resource1.Mom
         Me.MomPic3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.MomPic3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.MomPic3.Location = New System.Drawing.Point(3, 3)
         Me.MomPic3.Name = "MomPic3"
         Me.MomPic3.Size = New System.Drawing.Size(159, 170)
@@ -1401,6 +1454,36 @@ Partial Class Smartwatch
         Me.ContactLabel.Size = New System.Drawing.Size(151, 39)
         Me.ContactLabel.TabIndex = 0
         Me.ContactLabel.Text = "Contacts"
+        '
+        'TabPage11
+        '
+        Me.TabPage11.Controls.Add(Me.Panel1)
+        Me.TabPage11.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage11.Name = "TabPage11"
+        Me.TabPage11.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage11.Size = New System.Drawing.Size(618, 410)
+        Me.TabPage11.TabIndex = 10
+        Me.TabPage11.Text = "TabPage11"
+        Me.TabPage11.UseVisualStyleBackColor = True
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.PictureBox5)
+        Me.Panel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
+        Me.Panel1.Location = New System.Drawing.Point(6, 6)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(337, 343)
+        Me.Panel1.TabIndex = 3
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(166, 164)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox5.TabIndex = 0
+        Me.PictureBox5.TabStop = False
         '
         'Smartwatch
         '
@@ -1420,6 +1503,8 @@ Partial Class Smartwatch
         CType(Me.RabbitPicture, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PhoneAppPanel.ResumeLayout(False)
         Me.PhoneAppPanel.PerformLayout()
+        CType(Me.IncreaseVolume, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LowerVolume, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CallHomeButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EndCallButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CallButton, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1489,6 +1574,9 @@ Partial Class Smartwatch
         Me.TableLayoutPanel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MomPic3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage11.ResumeLayout(False)
+        Me.Panel1.ResumeLayout(False)
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1604,4 +1692,10 @@ Partial Class Smartwatch
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents MomPic3 As PictureBox
     Friend WithEvents ContactLabel As Label
+    Friend WithEvents TabPage11 As TabPage
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents IncreaseVolume As PictureBox
+    Friend WithEvents LowerVolume As PictureBox
+    Friend WithEvents VolumeBar2 As ProgressBar
 End Class
