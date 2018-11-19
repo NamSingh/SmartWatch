@@ -28,11 +28,9 @@ Partial Class Phone
         Me.AddStudyTime = New System.Windows.Forms.Button()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label28 = New System.Windows.Forms.Label()
-        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
-        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
         Me.AddSoccerPractice = New System.Windows.Forms.Button()
         Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
         Me.Label24 = New System.Windows.Forms.Label()
@@ -44,48 +42,83 @@ Partial Class Phone
         Me.AddFundButton = New System.Windows.Forms.Button()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.HomePage = New System.Windows.Forms.Panel()
-        Me.HomeEditSchedule = New System.Windows.Forms.Label()
-        Me.HomeSendMoney = New System.Windows.Forms.Label()
-        Me.HomeFindChild = New System.Windows.Forms.Label()
-        Me.HomeSendReminder = New System.Windows.Forms.Label()
+        Me.CallChildButton = New System.Windows.Forms.Button()
+        Me.FindChildButton = New System.Windows.Forms.Button()
+        Me.EditScheduleButton = New System.Windows.Forms.Button()
+        Me.SendMoneyButton = New System.Windows.Forms.Button()
+        Me.SendReminderBut = New System.Windows.Forms.Button()
         Me.HomePageTitle = New System.Windows.Forms.Label()
         Me.LocateSosPanel = New System.Windows.Forms.Panel()
-        Me.LocateChildPic = New System.Windows.Forms.PictureBox()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.SendLocButton = New System.Windows.Forms.Button()
-        Me.LocateChildPicBox = New System.Windows.Forms.PictureBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.BackButton = New System.Windows.Forms.Button()
         Me.ReminderPanel = New System.Windows.Forms.Panel()
         Me.ReminderText = New System.Windows.Forms.TextBox()
         Me.SendReminderButton = New System.Windows.Forms.Button()
         Me.Label18 = New System.Windows.Forms.Label()
-        Me.PhoneFrame = New System.Windows.Forms.PictureBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.TabPage6 = New System.Windows.Forms.TabPage()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.ChildNameLabel = New System.Windows.Forms.Label()
+        Me.IncomingCallLabel = New System.Windows.Forms.Label()
+        Me.TabPage7 = New System.Windows.Forms.TabPage()
+        Me.CallChildPanel = New System.Windows.Forms.Panel()
+        Me.CallChildLabel = New System.Windows.Forms.Label()
+        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
+        Me.LocateChildPic = New System.Windows.Forms.PictureBox()
+        Me.LocateChildPicBox = New System.Windows.Forms.PictureBox()
+        Me.AcceptCallPic = New System.Windows.Forms.PictureBox()
+        Me.DeclineCallPic = New System.Windows.Forms.PictureBox()
+        Me.ChildPicture = New System.Windows.Forms.PictureBox()
+        Me.CallPic = New System.Windows.Forms.PictureBox()
+        Me.KidPic = New System.Windows.Forms.PictureBox()
+        Me.PhoneFrame = New System.Windows.Forms.PictureBox()
+        Me.UpcomingFeaturesButton = New System.Windows.Forms.Button()
+        Me.TabPage8 = New System.Windows.Forms.TabPage()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Biometrics = New System.Windows.Forms.Button()
+        Me.ManageMusic = New System.Windows.Forms.Button()
+        Me.ManageMessages = New System.Windows.Forms.Button()
+        Me.ConfigureWatch = New System.Windows.Forms.Button()
+        Me.Games = New System.Windows.Forms.Button()
+        Me.UpcomingLabel = New System.Windows.Forms.Label()
         Me.DailySchedPanel.SuspendLayout()
         Me.Panel3.SuspendLayout()
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
-        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.FundsPanel.SuspendLayout()
         Me.HomePage.SuspendLayout()
         Me.LocateSosPanel.SuspendLayout()
-        CType(Me.LocateChildPic, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LocateChildPicBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ReminderPanel.SuspendLayout()
-        CType(Me.PhoneFrame, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         Me.TabPage4.SuspendLayout()
         Me.TabPage5.SuspendLayout()
+        Me.TabPage6.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        Me.TabPage7.SuspendLayout()
+        Me.CallChildPanel.SuspendLayout()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LocateChildPic, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LocateChildPicBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AcceptCallPic, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DeclineCallPic, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ChildPicture, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CallPic, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.KidPic, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PhoneFrame, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage8.SuspendLayout()
+        Me.Panel4.SuspendLayout()
         Me.SuspendLayout()
         '
         'DailySchedPanel
@@ -145,16 +178,6 @@ Partial Class Phone
         Me.Label28.TabIndex = 6
         Me.Label28.Text = "Study Time"
         '
-        'PictureBox17
-        '
-        Me.PictureBox17.BackgroundImage = CType(resources.GetObject("PictureBox17.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox17.Location = New System.Drawing.Point(3, 3)
-        Me.PictureBox17.Name = "PictureBox17"
-        Me.PictureBox17.Size = New System.Drawing.Size(123, 96)
-        Me.PictureBox17.TabIndex = 4
-        Me.PictureBox17.TabStop = False
-        '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.Sienna
@@ -187,16 +210,6 @@ Partial Class Phone
         Me.Label26.Size = New System.Drawing.Size(182, 29)
         Me.Label26.TabIndex = 4
         Me.Label26.Text = "Soccer Practice"
-        '
-        'PictureBox16
-        '
-        Me.PictureBox16.BackgroundImage = CType(resources.GetObject("PictureBox16.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox16.Location = New System.Drawing.Point(3, 3)
-        Me.PictureBox16.Name = "PictureBox16"
-        Me.PictureBox16.Size = New System.Drawing.Size(123, 96)
-        Me.PictureBox16.TabIndex = 3
-        Me.PictureBox16.TabStop = False
         '
         'AddSoccerPractice
         '
@@ -304,62 +317,74 @@ Partial Class Phone
         'HomePage
         '
         Me.HomePage.BackColor = System.Drawing.Color.Salmon
-        Me.HomePage.Controls.Add(Me.HomeEditSchedule)
-        Me.HomePage.Controls.Add(Me.HomeSendMoney)
-        Me.HomePage.Controls.Add(Me.HomeFindChild)
-        Me.HomePage.Controls.Add(Me.HomeSendReminder)
+        Me.HomePage.Controls.Add(Me.UpcomingFeaturesButton)
+        Me.HomePage.Controls.Add(Me.CallChildButton)
+        Me.HomePage.Controls.Add(Me.FindChildButton)
+        Me.HomePage.Controls.Add(Me.EditScheduleButton)
+        Me.HomePage.Controls.Add(Me.SendMoneyButton)
+        Me.HomePage.Controls.Add(Me.SendReminderBut)
         Me.HomePage.Controls.Add(Me.HomePageTitle)
         Me.HomePage.Location = New System.Drawing.Point(22, 20)
         Me.HomePage.Name = "HomePage"
         Me.HomePage.Size = New System.Drawing.Size(369, 640)
         Me.HomePage.TabIndex = 25
         '
-        'HomeEditSchedule
+        'CallChildButton
         '
-        Me.HomeEditSchedule.AutoSize = True
-        Me.HomeEditSchedule.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HomeEditSchedule.Location = New System.Drawing.Point(3, 441)
-        Me.HomeEditSchedule.Name = "HomeEditSchedule"
-        Me.HomeEditSchedule.Size = New System.Drawing.Size(317, 39)
-        Me.HomeEditSchedule.TabIndex = 4
-        Me.HomeEditSchedule.Text = "Edit Daily Schedule"
+        Me.CallChildButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CallChildButton.Location = New System.Drawing.Point(69, 83)
+        Me.CallChildButton.Name = "CallChildButton"
+        Me.CallChildButton.Size = New System.Drawing.Size(227, 70)
+        Me.CallChildButton.TabIndex = 9
+        Me.CallChildButton.Text = "Call Child"
+        Me.CallChildButton.UseVisualStyleBackColor = True
         '
-        'HomeSendMoney
+        'FindChildButton
         '
-        Me.HomeSendMoney.AutoSize = True
-        Me.HomeSendMoney.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HomeSendMoney.Location = New System.Drawing.Point(3, 342)
-        Me.HomeSendMoney.Name = "HomeSendMoney"
-        Me.HomeSendMoney.Size = New System.Drawing.Size(210, 39)
-        Me.HomeSendMoney.TabIndex = 3
-        Me.HomeSendMoney.Text = "Send Money"
+        Me.FindChildButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FindChildButton.Location = New System.Drawing.Point(72, 235)
+        Me.FindChildButton.Name = "FindChildButton"
+        Me.FindChildButton.Size = New System.Drawing.Size(227, 70)
+        Me.FindChildButton.TabIndex = 8
+        Me.FindChildButton.Text = "Find Child"
+        Me.FindChildButton.UseVisualStyleBackColor = True
         '
-        'HomeFindChild
+        'EditScheduleButton
         '
-        Me.HomeFindChild.AutoSize = True
-        Me.HomeFindChild.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HomeFindChild.Location = New System.Drawing.Point(3, 250)
-        Me.HomeFindChild.Name = "HomeFindChild"
-        Me.HomeFindChild.Size = New System.Drawing.Size(172, 39)
-        Me.HomeFindChild.TabIndex = 2
-        Me.HomeFindChild.Text = "Find Child"
+        Me.EditScheduleButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EditScheduleButton.Location = New System.Drawing.Point(69, 387)
+        Me.EditScheduleButton.Name = "EditScheduleButton"
+        Me.EditScheduleButton.Size = New System.Drawing.Size(227, 70)
+        Me.EditScheduleButton.TabIndex = 7
+        Me.EditScheduleButton.Text = "Edit Daily Schedule"
+        Me.EditScheduleButton.UseVisualStyleBackColor = True
         '
-        'HomeSendReminder
+        'SendMoneyButton
         '
-        Me.HomeSendReminder.AutoSize = True
-        Me.HomeSendReminder.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HomeSendReminder.Location = New System.Drawing.Point(3, 165)
-        Me.HomeSendReminder.Name = "HomeSendReminder"
-        Me.HomeSendReminder.Size = New System.Drawing.Size(257, 39)
-        Me.HomeSendReminder.TabIndex = 1
-        Me.HomeSendReminder.Text = "Send Reminder"
+        Me.SendMoneyButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SendMoneyButton.Location = New System.Drawing.Point(72, 311)
+        Me.SendMoneyButton.Name = "SendMoneyButton"
+        Me.SendMoneyButton.Size = New System.Drawing.Size(227, 70)
+        Me.SendMoneyButton.TabIndex = 6
+        Me.SendMoneyButton.Text = "Send Money"
+        Me.SendMoneyButton.UseVisualStyleBackColor = True
+        '
+        'SendReminderBut
+        '
+        Me.SendReminderBut.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SendReminderBut.Location = New System.Drawing.Point(69, 159)
+        Me.SendReminderBut.Name = "SendReminderBut"
+        Me.SendReminderBut.Size = New System.Drawing.Size(227, 70)
+        Me.SendReminderBut.TabIndex = 5
+        Me.SendReminderBut.Text = "Send Reminder"
+        Me.SendReminderBut.UseVisualStyleBackColor = True
         '
         'HomePageTitle
         '
         Me.HomePageTitle.AutoSize = True
         Me.HomePageTitle.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.HomePageTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HomePageTitle.Location = New System.Drawing.Point(3, 0)
+        Me.HomePageTitle.Location = New System.Drawing.Point(10, 12)
         Me.HomePageTitle.Name = "HomePageTitle"
         Me.HomePageTitle.Size = New System.Drawing.Size(349, 41)
         Me.HomePageTitle.TabIndex = 0
@@ -379,17 +404,6 @@ Partial Class Phone
         Me.LocateSosPanel.Size = New System.Drawing.Size(369, 640)
         Me.LocateSosPanel.TabIndex = 28
         Me.LocateSosPanel.Visible = False
-        '
-        'LocateChildPic
-        '
-        Me.LocateChildPic.Image = CType(resources.GetObject("LocateChildPic.Image"), System.Drawing.Image)
-        Me.LocateChildPic.InitialImage = Nothing
-        Me.LocateChildPic.Location = New System.Drawing.Point(16, 91)
-        Me.LocateChildPic.Name = "LocateChildPic"
-        Me.LocateChildPic.Size = New System.Drawing.Size(332, 298)
-        Me.LocateChildPic.TabIndex = 7
-        Me.LocateChildPic.TabStop = False
-        Me.LocateChildPic.Visible = False
         '
         'Label19
         '
@@ -418,16 +432,6 @@ Partial Class Phone
         Me.SendLocButton.TabIndex = 4
         Me.SendLocButton.Text = "Send Location"
         Me.SendLocButton.UseVisualStyleBackColor = True
-        '
-        'LocateChildPicBox
-        '
-        Me.LocateChildPicBox.Image = CType(resources.GetObject("LocateChildPicBox.Image"), System.Drawing.Image)
-        Me.LocateChildPicBox.InitialImage = Nothing
-        Me.LocateChildPicBox.Location = New System.Drawing.Point(16, 91)
-        Me.LocateChildPicBox.Name = "LocateChildPicBox"
-        Me.LocateChildPicBox.Size = New System.Drawing.Size(332, 298)
-        Me.LocateChildPicBox.TabIndex = 3
-        Me.LocateChildPicBox.TabStop = False
         '
         'Label16
         '
@@ -491,16 +495,6 @@ Partial Class Phone
         Me.Label18.TabIndex = 0
         Me.Label18.Text = "Send Reminder"
         '
-        'PhoneFrame
-        '
-        Me.PhoneFrame.Image = CType(resources.GetObject("PhoneFrame.Image"), System.Drawing.Image)
-        Me.PhoneFrame.Location = New System.Drawing.Point(2, 1)
-        Me.PhoneFrame.Name = "PhoneFrame"
-        Me.PhoneFrame.Size = New System.Drawing.Size(394, 786)
-        Me.PhoneFrame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PhoneFrame.TabIndex = 24
-        Me.PhoneFrame.TabStop = False
-        '
         'TabControl1
         '
         Me.TabControl1.Controls.Add(Me.TabPage1)
@@ -508,6 +502,9 @@ Partial Class Phone
         Me.TabControl1.Controls.Add(Me.TabPage3)
         Me.TabControl1.Controls.Add(Me.TabPage4)
         Me.TabControl1.Controls.Add(Me.TabPage5)
+        Me.TabControl1.Controls.Add(Me.TabPage6)
+        Me.TabControl1.Controls.Add(Me.TabPage7)
+        Me.TabControl1.Controls.Add(Me.TabPage8)
         Me.TabControl1.Location = New System.Drawing.Point(402, 1)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
@@ -569,6 +566,286 @@ Partial Class Phone
         Me.TabPage5.Text = "TabPage5"
         Me.TabPage5.UseVisualStyleBackColor = True
         '
+        'TabPage6
+        '
+        Me.TabPage6.Controls.Add(Me.Panel1)
+        Me.TabPage6.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage6.Name = "TabPage6"
+        Me.TabPage6.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage6.Size = New System.Drawing.Size(506, 765)
+        Me.TabPage6.TabIndex = 5
+        Me.TabPage6.Text = "TabPage6"
+        Me.TabPage6.UseVisualStyleBackColor = True
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Salmon
+        Me.Panel1.Controls.Add(Me.AcceptCallPic)
+        Me.Panel1.Controls.Add(Me.DeclineCallPic)
+        Me.Panel1.Controls.Add(Me.ChildPicture)
+        Me.Panel1.Controls.Add(Me.ChildNameLabel)
+        Me.Panel1.Controls.Add(Me.IncomingCallLabel)
+        Me.Panel1.Location = New System.Drawing.Point(69, 62)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(369, 640)
+        Me.Panel1.TabIndex = 26
+        '
+        'ChildNameLabel
+        '
+        Me.ChildNameLabel.AutoSize = True
+        Me.ChildNameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ChildNameLabel.Location = New System.Drawing.Point(136, 279)
+        Me.ChildNameLabel.Name = "ChildNameLabel"
+        Me.ChildNameLabel.Size = New System.Drawing.Size(96, 39)
+        Me.ChildNameLabel.TabIndex = 9
+        Me.ChildNameLabel.Text = "Child"
+        '
+        'IncomingCallLabel
+        '
+        Me.IncomingCallLabel.AutoSize = True
+        Me.IncomingCallLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IncomingCallLabel.Location = New System.Drawing.Point(5, 12)
+        Me.IncomingCallLabel.Name = "IncomingCallLabel"
+        Me.IncomingCallLabel.Size = New System.Drawing.Size(358, 39)
+        Me.IncomingCallLabel.TabIndex = 0
+        Me.IncomingCallLabel.Text = "Incoming Call From...."
+        '
+        'TabPage7
+        '
+        Me.TabPage7.Controls.Add(Me.CallChildPanel)
+        Me.TabPage7.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage7.Name = "TabPage7"
+        Me.TabPage7.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage7.Size = New System.Drawing.Size(506, 765)
+        Me.TabPage7.TabIndex = 6
+        Me.TabPage7.Text = "TabPage7"
+        Me.TabPage7.UseVisualStyleBackColor = True
+        '
+        'CallChildPanel
+        '
+        Me.CallChildPanel.BackColor = System.Drawing.Color.Coral
+        Me.CallChildPanel.Controls.Add(Me.CallPic)
+        Me.CallChildPanel.Controls.Add(Me.KidPic)
+        Me.CallChildPanel.Controls.Add(Me.CallChildLabel)
+        Me.CallChildPanel.Location = New System.Drawing.Point(69, 62)
+        Me.CallChildPanel.Name = "CallChildPanel"
+        Me.CallChildPanel.Size = New System.Drawing.Size(369, 640)
+        Me.CallChildPanel.TabIndex = 27
+        Me.CallChildPanel.Visible = False
+        '
+        'CallChildLabel
+        '
+        Me.CallChildLabel.AutoSize = True
+        Me.CallChildLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.CallChildLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CallChildLabel.Location = New System.Drawing.Point(101, 36)
+        Me.CallChildLabel.Name = "CallChildLabel"
+        Me.CallChildLabel.Size = New System.Drawing.Size(167, 41)
+        Me.CallChildLabel.TabIndex = 0
+        Me.CallChildLabel.Text = "Call Child"
+        '
+        'PictureBox17
+        '
+        Me.PictureBox17.BackgroundImage = CType(resources.GetObject("PictureBox17.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox17.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox17.Name = "PictureBox17"
+        Me.PictureBox17.Size = New System.Drawing.Size(123, 96)
+        Me.PictureBox17.TabIndex = 4
+        Me.PictureBox17.TabStop = False
+        '
+        'PictureBox16
+        '
+        Me.PictureBox16.BackgroundImage = CType(resources.GetObject("PictureBox16.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox16.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox16.Name = "PictureBox16"
+        Me.PictureBox16.Size = New System.Drawing.Size(123, 96)
+        Me.PictureBox16.TabIndex = 3
+        Me.PictureBox16.TabStop = False
+        '
+        'LocateChildPic
+        '
+        Me.LocateChildPic.Image = CType(resources.GetObject("LocateChildPic.Image"), System.Drawing.Image)
+        Me.LocateChildPic.InitialImage = Nothing
+        Me.LocateChildPic.Location = New System.Drawing.Point(16, 91)
+        Me.LocateChildPic.Name = "LocateChildPic"
+        Me.LocateChildPic.Size = New System.Drawing.Size(332, 298)
+        Me.LocateChildPic.TabIndex = 7
+        Me.LocateChildPic.TabStop = False
+        Me.LocateChildPic.Visible = False
+        '
+        'LocateChildPicBox
+        '
+        Me.LocateChildPicBox.Image = CType(resources.GetObject("LocateChildPicBox.Image"), System.Drawing.Image)
+        Me.LocateChildPicBox.InitialImage = Nothing
+        Me.LocateChildPicBox.Location = New System.Drawing.Point(16, 91)
+        Me.LocateChildPicBox.Name = "LocateChildPicBox"
+        Me.LocateChildPicBox.Size = New System.Drawing.Size(332, 298)
+        Me.LocateChildPicBox.TabIndex = 3
+        Me.LocateChildPicBox.TabStop = False
+        '
+        'AcceptCallPic
+        '
+        Me.AcceptCallPic.BackgroundImage = Global.KidWatch.My.Resources.Resource1.AcceptCall
+        Me.AcceptCallPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.AcceptCallPic.Location = New System.Drawing.Point(255, 433)
+        Me.AcceptCallPic.Name = "AcceptCallPic"
+        Me.AcceptCallPic.Size = New System.Drawing.Size(100, 98)
+        Me.AcceptCallPic.TabIndex = 12
+        Me.AcceptCallPic.TabStop = False
+        '
+        'DeclineCallPic
+        '
+        Me.DeclineCallPic.BackgroundImage = CType(resources.GetObject("DeclineCallPic.BackgroundImage"), System.Drawing.Image)
+        Me.DeclineCallPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.DeclineCallPic.Location = New System.Drawing.Point(17, 433)
+        Me.DeclineCallPic.Name = "DeclineCallPic"
+        Me.DeclineCallPic.Size = New System.Drawing.Size(100, 98)
+        Me.DeclineCallPic.TabIndex = 11
+        Me.DeclineCallPic.TabStop = False
+        '
+        'ChildPicture
+        '
+        Me.ChildPicture.BackgroundImage = Global.KidWatch.My.Resources.Resource1.Kid
+        Me.ChildPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.ChildPicture.Location = New System.Drawing.Point(84, 70)
+        Me.ChildPicture.Name = "ChildPicture"
+        Me.ChildPicture.Size = New System.Drawing.Size(200, 206)
+        Me.ChildPicture.TabIndex = 10
+        Me.ChildPicture.TabStop = False
+        '
+        'CallPic
+        '
+        Me.CallPic.BackgroundImage = Global.KidWatch.My.Resources.Resource1.AcceptCall
+        Me.CallPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CallPic.Location = New System.Drawing.Point(116, 368)
+        Me.CallPic.Name = "CallPic"
+        Me.CallPic.Size = New System.Drawing.Size(137, 126)
+        Me.CallPic.TabIndex = 2
+        Me.CallPic.TabStop = False
+        '
+        'KidPic
+        '
+        Me.KidPic.BackgroundImage = Global.KidWatch.My.Resources.Resource1.Kid
+        Me.KidPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.KidPic.Location = New System.Drawing.Point(65, 110)
+        Me.KidPic.Name = "KidPic"
+        Me.KidPic.Size = New System.Drawing.Size(238, 227)
+        Me.KidPic.TabIndex = 1
+        Me.KidPic.TabStop = False
+        '
+        'PhoneFrame
+        '
+        Me.PhoneFrame.Image = CType(resources.GetObject("PhoneFrame.Image"), System.Drawing.Image)
+        Me.PhoneFrame.Location = New System.Drawing.Point(2, 1)
+        Me.PhoneFrame.Name = "PhoneFrame"
+        Me.PhoneFrame.Size = New System.Drawing.Size(394, 786)
+        Me.PhoneFrame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PhoneFrame.TabIndex = 24
+        Me.PhoneFrame.TabStop = False
+        '
+        'UpcomingFeaturesButton
+        '
+        Me.UpcomingFeaturesButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UpcomingFeaturesButton.Location = New System.Drawing.Point(72, 463)
+        Me.UpcomingFeaturesButton.Name = "UpcomingFeaturesButton"
+        Me.UpcomingFeaturesButton.Size = New System.Drawing.Size(227, 70)
+        Me.UpcomingFeaturesButton.TabIndex = 10
+        Me.UpcomingFeaturesButton.Text = "Upcoming Features"
+        Me.UpcomingFeaturesButton.UseVisualStyleBackColor = True
+        '
+        'TabPage8
+        '
+        Me.TabPage8.Controls.Add(Me.Panel4)
+        Me.TabPage8.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage8.Name = "TabPage8"
+        Me.TabPage8.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage8.Size = New System.Drawing.Size(506, 765)
+        Me.TabPage8.TabIndex = 7
+        Me.TabPage8.Text = "TabPage8"
+        Me.TabPage8.UseVisualStyleBackColor = True
+        '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.Salmon
+        Me.Panel4.Controls.Add(Me.Biometrics)
+        Me.Panel4.Controls.Add(Me.ManageMusic)
+        Me.Panel4.Controls.Add(Me.ManageMessages)
+        Me.Panel4.Controls.Add(Me.ConfigureWatch)
+        Me.Panel4.Controls.Add(Me.Games)
+        Me.Panel4.Controls.Add(Me.UpcomingLabel)
+        Me.Panel4.Location = New System.Drawing.Point(69, 62)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(369, 640)
+        Me.Panel4.TabIndex = 26
+        '
+        'Biometrics
+        '
+        Me.Biometrics.Enabled = False
+        Me.Biometrics.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Biometrics.Location = New System.Drawing.Point(71, 121)
+        Me.Biometrics.Name = "Biometrics"
+        Me.Biometrics.Size = New System.Drawing.Size(227, 70)
+        Me.Biometrics.TabIndex = 9
+        Me.Biometrics.Text = "Biometrics"
+        Me.Biometrics.UseVisualStyleBackColor = True
+        '
+        'ManageMusic
+        '
+        Me.ManageMusic.Enabled = False
+        Me.ManageMusic.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ManageMusic.Location = New System.Drawing.Point(71, 273)
+        Me.ManageMusic.Name = "ManageMusic"
+        Me.ManageMusic.Size = New System.Drawing.Size(227, 70)
+        Me.ManageMusic.TabIndex = 8
+        Me.ManageMusic.Text = "Manage Music"
+        Me.ManageMusic.UseVisualStyleBackColor = True
+        '
+        'ManageMessages
+        '
+        Me.ManageMessages.Enabled = False
+        Me.ManageMessages.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ManageMessages.Location = New System.Drawing.Point(71, 425)
+        Me.ManageMessages.Name = "ManageMessages"
+        Me.ManageMessages.Size = New System.Drawing.Size(227, 70)
+        Me.ManageMessages.TabIndex = 7
+        Me.ManageMessages.Text = "Manage Messages"
+        Me.ManageMessages.UseVisualStyleBackColor = True
+        '
+        'ConfigureWatch
+        '
+        Me.ConfigureWatch.Enabled = False
+        Me.ConfigureWatch.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ConfigureWatch.Location = New System.Drawing.Point(71, 349)
+        Me.ConfigureWatch.Name = "ConfigureWatch"
+        Me.ConfigureWatch.Size = New System.Drawing.Size(227, 70)
+        Me.ConfigureWatch.TabIndex = 6
+        Me.ConfigureWatch.Text = "Configure Smartwatch"
+        Me.ConfigureWatch.UseVisualStyleBackColor = True
+        '
+        'Games
+        '
+        Me.Games.Enabled = False
+        Me.Games.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Games.Location = New System.Drawing.Point(71, 197)
+        Me.Games.Name = "Games"
+        Me.Games.Size = New System.Drawing.Size(227, 70)
+        Me.Games.TabIndex = 5
+        Me.Games.Text = "Games"
+        Me.Games.UseVisualStyleBackColor = True
+        '
+        'UpcomingLabel
+        '
+        Me.UpcomingLabel.AutoSize = True
+        Me.UpcomingLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.UpcomingLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UpcomingLabel.Location = New System.Drawing.Point(23, 50)
+        Me.UpcomingLabel.Name = "UpcomingLabel"
+        Me.UpcomingLabel.Size = New System.Drawing.Size(322, 41)
+        Me.UpcomingLabel.TabIndex = 0
+        Me.UpcomingLabel.Text = "Upcoming Features"
+        '
         'Phone
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -577,34 +854,48 @@ Partial Class Phone
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.BackButton)
         Me.Controls.Add(Me.PhoneFrame)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Phone"
         Me.Text = "Phone"
         Me.DailySchedPanel.ResumeLayout(False)
         Me.DailySchedPanel.PerformLayout()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
         Me.FundsPanel.ResumeLayout(False)
         Me.FundsPanel.PerformLayout()
         Me.HomePage.ResumeLayout(False)
         Me.HomePage.PerformLayout()
         Me.LocateSosPanel.ResumeLayout(False)
         Me.LocateSosPanel.PerformLayout()
-        CType(Me.LocateChildPic, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LocateChildPicBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ReminderPanel.ResumeLayout(False)
         Me.ReminderPanel.PerformLayout()
-        CType(Me.PhoneFrame, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage4.ResumeLayout(False)
         Me.TabPage5.ResumeLayout(False)
+        Me.TabPage6.ResumeLayout(False)
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        Me.TabPage7.ResumeLayout(False)
+        Me.CallChildPanel.ResumeLayout(False)
+        Me.CallChildPanel.PerformLayout()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LocateChildPic, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LocateChildPicBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AcceptCallPic, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DeclineCallPic, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ChildPicture, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CallPic, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.KidPic, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PhoneFrame, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage8.ResumeLayout(False)
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -630,10 +921,6 @@ Partial Class Phone
     Friend WithEvents AddFundButton As Button
     Friend WithEvents Label20 As Label
     Friend WithEvents HomePage As Panel
-    Friend WithEvents HomeEditSchedule As Label
-    Friend WithEvents HomeSendMoney As Label
-    Friend WithEvents HomeFindChild As Label
-    Friend WithEvents HomeSendReminder As Label
     Friend WithEvents HomePageTitle As Label
     Friend WithEvents LocateSosPanel As Panel
     Friend WithEvents LocateChildPic As PictureBox
@@ -654,4 +941,30 @@ Partial Class Phone
     Friend WithEvents TabPage3 As TabPage
     Friend WithEvents TabPage4 As TabPage
     Friend WithEvents TabPage5 As TabPage
+    Friend WithEvents FindChildButton As Button
+    Friend WithEvents EditScheduleButton As Button
+    Friend WithEvents SendMoneyButton As Button
+    Friend WithEvents SendReminderBut As Button
+    Friend WithEvents TabPage6 As TabPage
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents IncomingCallLabel As Label
+    Friend WithEvents ChildNameLabel As Label
+    Friend WithEvents CallChildButton As Button
+    Friend WithEvents TabPage7 As TabPage
+    Friend WithEvents CallChildPanel As Panel
+    Friend WithEvents CallChildLabel As Label
+    Friend WithEvents CallPic As PictureBox
+    Friend WithEvents KidPic As PictureBox
+    Friend WithEvents AcceptCallPic As PictureBox
+    Friend WithEvents DeclineCallPic As PictureBox
+    Friend WithEvents ChildPicture As PictureBox
+    Friend WithEvents UpcomingFeaturesButton As Button
+    Friend WithEvents TabPage8 As TabPage
+    Friend WithEvents Panel4 As Panel
+    Friend WithEvents Biometrics As Button
+    Friend WithEvents ManageMusic As Button
+    Friend WithEvents ManageMessages As Button
+    Friend WithEvents ConfigureWatch As Button
+    Friend WithEvents Games As Button
+    Friend WithEvents UpcomingLabel As Label
 End Class

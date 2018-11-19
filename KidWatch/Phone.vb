@@ -30,24 +30,25 @@
         Label22.Text = Smartwatch.AllowanceLabel2.Text
     End Sub
 
-    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles HomeSendReminder.Click
+    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles SendReminderBut.Click
         clearphone()
         ReminderPanel.Visible = True
     End Sub
 
-    Private Sub Label11_Click(sender As Object, e As EventArgs) Handles HomeFindChild.Click
+    Private Sub Label11_Click(sender As Object, e As EventArgs) Handles FindChildButton.Click
+        clearphone()
         LocateSosPanel.Visible = True
-        LocateSosPanel.BringToFront()
     End Sub
 
-    Private Sub Label12_Click(sender As Object, e As EventArgs) Handles HomeSendMoney.Click
+    Private Sub Label12_Click(sender As Object, e As EventArgs) Handles SendMoneyButton.Click
+        clearphone()
         Label22.Text = Smartwatch.AllowanceLabel2.Text
         FundsPanel.Visible = True
         FundsPanel.BringToFront()
 
     End Sub
 
-    Private Sub Label13_Click(sender As Object, e As EventArgs) Handles HomeEditSchedule.Click
+    Private Sub Label13_Click(sender As Object, e As EventArgs) Handles EditScheduleButton.Click
         clearphone()
         DailySchedPanel.Visible = True
     End Sub
@@ -77,4 +78,7 @@
         HomePage.Visible = True
     End Sub
 
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles CallChildLabel.Click
+
+    End Sub
 End Class
