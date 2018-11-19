@@ -307,10 +307,13 @@ Partial Class Smartwatch
         Me.CallTimeLabel.AutoSize = True
         Me.CallTimeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CallTimeLabel.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.CallTimeLabel.Location = New System.Drawing.Point(123, 238)
+        Me.CallTimeLabel.Location = New System.Drawing.Point(132, 232)
         Me.CallTimeLabel.Name = "CallTimeLabel"
-        Me.CallTimeLabel.Size = New System.Drawing.Size(0, 20)
+        Me.CallTimeLabel.Size = New System.Drawing.Size(61, 20)
         Me.CallTimeLabel.TabIndex = 5
+        Me.CallTimeLabel.Text = "Default"
+        Me.CallTimeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.CallTimeLabel.Visible = False
         '
         'EndCallButton
         '
@@ -1257,7 +1260,6 @@ Partial Class Smartwatch
         Me.DeclineCall.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.DeclineCall.TabIndex = 10
         Me.DeclineCall.TabStop = False
-        Me.DeclineCall.Visible = False
         '
         'AcceptCall
         '

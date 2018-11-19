@@ -690,6 +690,7 @@ Partial Class Phone
         Me.CallTimeLabel.Size = New System.Drawing.Size(101, 31)
         Me.CallTimeLabel.TabIndex = 12
         Me.CallTimeLabel.Text = "Default"
+        Me.CallTimeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.CallTimeLabel.Visible = False
         '
         'CallChildLabel

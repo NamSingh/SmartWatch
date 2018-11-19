@@ -66,27 +66,80 @@
         End If
     End Sub
 
-    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles CallButton.Click
-        Me.CallButton.Visible = False
-        Me.EndCallButton.Visible = True
-        Me.CallHomeButton.Visible = False
-        Me.PhoneAppPanel.BackColor = Color.Green
-        Time = DateTime.Now
-        Timer2.Start()
-    End Sub
-
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
         Dim Difference As TimeSpan = DateTime.Now.Subtract(Time)
         CallTimeLabel.Text = Difference.Days.ToString & ":" & Difference.Hours.ToString & ":" & Difference.Minutes.ToString & ":" & Difference.Seconds.ToString & "." & Difference.Milliseconds.ToString
     End Sub
 
-    Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles EndCallButton.Click
-        Me.EndCallButton.Visible = False
-        Me.CallButton.Visible = False
-        Me.CallHomeButton.Visible = True
-        Me.PhoneAppPanel.BackColor = Color.Red
-        Me.CallEndLabel.Visible = True
+
+    Private Sub PlaceCall(sender As Object, e As EventArgs) Handles CallButton.Click
+        CallButton.Visible = False
+        EndCallButton.Visible = True
+        CallHomeButton.Visible = False
+        PhoneAppPanel.BackColor = Color.Orange
+        CallTimeLabel.Text = ". . . ."
+        CallTimeLabel.Visible = True
+
+    End Sub
+
+    Public Sub CallAccepted()
+        CallTimeLabel.Visible = True
+        Time = DateTime.Now
+        Timer2.Start()
+        PhoneAppPanel.BackColor = Color.Green
+    End Sub
+
+    Public Sub CallDeclined()
+        PhoneAppPanel.BackColor = Color.Maroon
+        EndCallButton.Visible = False
+        CallButton.Visible = False
+        CallHomeButton.Visible = True
+        CallTimeLabel.Text = "Declined"
+    End Sub
+
+    Public Sub CallEnded()
+        EndCallButton.Visible = False
+        CallButton.Visible = False
+        CallHomeButton.Visible = True
+        PhoneAppPanel.BackColor = Color.Red
+        CallEndLabel.Visible = True
         Timer2.Stop()
+    End Sub
+
+    Private Sub EndCall(sender As Object, e As EventArgs) Handles EndCallButton.Click
+        EndCallButton.Visible = False
+        CallButton.Visible = False
+        CallHomeButton.Visible = True
+        PhoneAppPanel.BackColor = Color.Red
+        CallEndLabel.Visible = True
+        Timer2.Stop()
+        Phone.CallEnded()
+    End Sub
+
+    Public Sub IncomingCall()
+        IncomingCallPanel.Visible = True
+        IncomingCallPanel.BringToFront()
+        DisableSwipe()
+    End Sub
+
+    Private Sub AcceptCall_Click(sender As Object, e As EventArgs) Handles AcceptCall.Click
+        Phone.CallAccepted()
+        clear()
+
+        CallButton.Visible = False
+        EndCallButton.Visible = True
+        CallHomeButton.Visible = False
+        PhoneAppPanel.Visible = True
+        Me.CallAccepted()
+        DisableSwipe()
+
+    End Sub
+
+    Private Sub DeclineCall_Click(sender As Object, e As EventArgs) Handles DeclineCall.Click
+        Phone.CallDeclined()
+        IncomingCallPanel.Visible = False
+        LeftButton.Visible = True
+        RightButton.Visible = True
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -118,16 +171,16 @@
     End Sub
 
     Public Sub clear()
-        Me.HomePagePanel.Visible = False
-        Me.AppPanel.Visible = False
-        Me.PhoneAppPanel.Visible = False
-        Me.AllowanceAppPanel.Visible = False
-        Me.AppPanel2.Visible = False
-        Me.SettingPanel.Visible = False
-        Me.GpsAppPanel.Visible = False
-        Me.ScheduleAppPanel.Visible = False
-        Me.SoccerDetails.Visible = False
-        Me.StudyDetails.Visible = False
+        HomePagePanel.Visible = False
+        AppPanel.Visible = False
+        PhoneAppPanel.Visible = False
+        AllowanceAppPanel.Visible = False
+        AppPanel2.Visible = False
+        SettingPanel.Visible = False
+        GpsAppPanel.Visible = False
+        ScheduleAppPanel.Visible = False
+        SoccerDetails.Visible = False
+        StudyDetails.Visible = False
         IncomingCallPanel.Visible = False
     End Sub
 

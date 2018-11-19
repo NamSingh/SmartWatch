@@ -115,12 +115,30 @@
         CallTimeLabel.Text = ". . . ."
         CallChildPanel.BackColor = Color.Orange
 
+        Smartwatch.IncomingCall()
     End Sub
 
-    Public Sub AcceptCall()
+    Public Sub CallAccepted()
         CallChildPanel.BackColor = Color.Green
         Time = DateTime.Now
         Timer1.Start()
+    End Sub
+
+    Public Sub CallDeclined()
+        CallChildPanel.BackColor = Color.Maroon
+        EndCallPic.Visible = False
+        CallPic.Visible = False
+        BackButton.Visible = True
+        CallTimeLabel.Text = "Declined"
+    End Sub
+
+    Public Sub CallEnded()
+        EndCallPic.Visible = False
+        CallPic.Visible = False
+        BackButton.Visible = True
+        CallChildPanel.BackColor = Color.Red
+        CallEndLabel.Visible = True
+        Timer1.Stop()
     End Sub
 
     Private Sub EndCall(sender As Object, e As EventArgs) Handles EndCallPic.Click
@@ -130,6 +148,7 @@
         CallChildPanel.BackColor = Color.Red
         CallEndLabel.Visible = True
         Timer1.Stop()
+        Smartwatch.CallEnded()
     End Sub
 
     Public Sub RecieveCall()
@@ -139,7 +158,7 @@
 
     Private Sub AcceptCallPic_Click(sender As Object, e As EventArgs) Handles AcceptCallPic.Click
         clearphone()
-        AcceptCall()
+
     End Sub
 
     Private Sub DeclineCallPic_Click(sender As Object, e As EventArgs) Handles DeclineCallPic.Click
