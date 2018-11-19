@@ -2,6 +2,7 @@
 
     Public SentSoccer As Boolean = False
     Public SentStudy As Boolean = False
+    Dim Time As New DateTime
 
     Public Sub clearphone()
         ReminderPanel.Visible = False
@@ -12,6 +13,7 @@
         UpcomingFeaturesPanel.Visible = False
         IncomingCallPanel.Visible = False
         CallChildPanel.Visible = False
+        ContactsPanel.Visible = False
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles AddSoccerPractice.Click
@@ -90,8 +92,58 @@
         UpcomingFeaturesPanel.Visible = True
     End Sub
 
-    Private Sub CallChildButton_Click(sender As Object, e As EventArgs) Handles CallChildButton.Click
+    Private Sub CallChildButton_Click(sender As Object, e As EventArgs) Handles MakeCall.Click
+        clearphone()
+        ContactsPanel.Visible = True
+    End Sub
+
+    Private Sub ChildPic3_Click(sender As Object, e As EventArgs) Handles ChildPic3.Click, ChildLabel2.Click
         clearphone()
         CallChildPanel.Visible = True
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Dim Difference As TimeSpan = DateTime.Now.Subtract(Time)
+        CallTimeLabel.Text = Difference.Days.ToString & ":" & Difference.Hours.ToString & ":" & Difference.Minutes.ToString & ":" & Difference.Seconds.ToString & "." & Difference.Milliseconds.ToString
+    End Sub
+
+    Private Sub PlaceCall(sender As Object, e As EventArgs) Handles CallPic.Click
+        CallPic.Visible = False
+        EndCallPic.Visible = True
+        BackButton.Visible = False
+        CallTimeLabel.Visible = True
+        CallTimeLabel.Text = ". . . ."
+        CallChildPanel.BackColor = Color.Orange
+
+    End Sub
+
+    Public Sub AcceptCall()
+        CallChildPanel.BackColor = Color.Green
+        Time = DateTime.Now
+        Timer1.Start()
+    End Sub
+
+    Private Sub EndCall(sender As Object, e As EventArgs) Handles EndCallPic.Click
+        EndCallPic.Visible = False
+        CallPic.Visible = False
+        BackButton.Visible = True
+        CallChildPanel.BackColor = Color.Red
+        CallEndLabel.Visible = True
+        Timer1.Stop()
+    End Sub
+
+    Public Sub RecieveCall()
+        BackButton.Visible = False
+        IncomingCallPanel.Visible = True
+    End Sub
+
+    Private Sub AcceptCallPic_Click(sender As Object, e As EventArgs) Handles AcceptCallPic.Click
+        clearphone()
+        AcceptCall()
+    End Sub
+
+    Private Sub DeclineCallPic_Click(sender As Object, e As EventArgs) Handles DeclineCallPic.Click
+        BackButton.Visible = True
+        IncomingCallPanel.Visible = False
     End Sub
 End Class

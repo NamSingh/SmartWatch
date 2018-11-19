@@ -22,6 +22,7 @@ Partial Class Phone
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Phone))
         Me.DailySchedPanel = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
@@ -42,7 +43,8 @@ Partial Class Phone
         Me.AddFundButton = New System.Windows.Forms.Button()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.HomePage = New System.Windows.Forms.Panel()
-        Me.CallChildButton = New System.Windows.Forms.Button()
+        Me.UpcomingFeaturesButton = New System.Windows.Forms.Button()
+        Me.MakeCall = New System.Windows.Forms.Button()
         Me.FindChildButton = New System.Windows.Forms.Button()
         Me.EditScheduleButton = New System.Windows.Forms.Button()
         Me.SendMoneyButton = New System.Windows.Forms.Button()
@@ -70,8 +72,9 @@ Partial Class Phone
         Me.IncomingCallLabel = New System.Windows.Forms.Label()
         Me.TabPage7 = New System.Windows.Forms.TabPage()
         Me.CallChildPanel = New System.Windows.Forms.Panel()
+        Me.CallEndLabel = New System.Windows.Forms.Label()
+        Me.CallTimeLabel = New System.Windows.Forms.Label()
         Me.CallChildLabel = New System.Windows.Forms.Label()
-        Me.UpcomingFeaturesButton = New System.Windows.Forms.Button()
         Me.TabPage8 = New System.Windows.Forms.TabPage()
         Me.UpcomingFeaturesPanel = New System.Windows.Forms.Panel()
         Me.Biometrics = New System.Windows.Forms.Button()
@@ -80,6 +83,13 @@ Partial Class Phone
         Me.ConfigureWatch = New System.Windows.Forms.Button()
         Me.Games = New System.Windows.Forms.Button()
         Me.UpcomingLabel = New System.Windows.Forms.Label()
+        Me.TabPage9 = New System.Windows.Forms.TabPage()
+        Me.ContactsPanel = New System.Windows.Forms.Panel()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.ChildLabel2 = New System.Windows.Forms.Label()
+        Me.ContactsLabel = New System.Windows.Forms.Label()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         Me.PictureBox16 = New System.Windows.Forms.PictureBox()
         Me.LocateChildPic = New System.Windows.Forms.PictureBox()
@@ -87,8 +97,11 @@ Partial Class Phone
         Me.AcceptCallPic = New System.Windows.Forms.PictureBox()
         Me.DeclineCallPic = New System.Windows.Forms.PictureBox()
         Me.ChildPicture = New System.Windows.Forms.PictureBox()
+        Me.EndCallPic = New System.Windows.Forms.PictureBox()
         Me.CallPic = New System.Windows.Forms.PictureBox()
         Me.KidPic = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.ChildPic3 = New System.Windows.Forms.PictureBox()
         Me.PhoneFrame = New System.Windows.Forms.PictureBox()
         Me.DailySchedPanel.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -109,6 +122,9 @@ Partial Class Phone
         Me.CallChildPanel.SuspendLayout()
         Me.TabPage8.SuspendLayout()
         Me.UpcomingFeaturesPanel.SuspendLayout()
+        Me.TabPage9.SuspendLayout()
+        Me.ContactsPanel.SuspendLayout()
+        Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LocateChildPic, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -116,8 +132,11 @@ Partial Class Phone
         CType(Me.AcceptCallPic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DeclineCallPic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ChildPicture, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EndCallPic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CallPic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KidPic, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ChildPic3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PhoneFrame, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -318,7 +337,7 @@ Partial Class Phone
         '
         Me.HomePage.BackColor = System.Drawing.Color.Salmon
         Me.HomePage.Controls.Add(Me.UpcomingFeaturesButton)
-        Me.HomePage.Controls.Add(Me.CallChildButton)
+        Me.HomePage.Controls.Add(Me.MakeCall)
         Me.HomePage.Controls.Add(Me.FindChildButton)
         Me.HomePage.Controls.Add(Me.EditScheduleButton)
         Me.HomePage.Controls.Add(Me.SendMoneyButton)
@@ -329,15 +348,26 @@ Partial Class Phone
         Me.HomePage.Size = New System.Drawing.Size(369, 640)
         Me.HomePage.TabIndex = 25
         '
-        'CallChildButton
+        'UpcomingFeaturesButton
         '
-        Me.CallChildButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CallChildButton.Location = New System.Drawing.Point(69, 83)
-        Me.CallChildButton.Name = "CallChildButton"
-        Me.CallChildButton.Size = New System.Drawing.Size(227, 70)
-        Me.CallChildButton.TabIndex = 9
-        Me.CallChildButton.Text = "Call Child"
-        Me.CallChildButton.UseVisualStyleBackColor = True
+        Me.UpcomingFeaturesButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UpcomingFeaturesButton.Location = New System.Drawing.Point(72, 463)
+        Me.UpcomingFeaturesButton.Name = "UpcomingFeaturesButton"
+        Me.UpcomingFeaturesButton.Size = New System.Drawing.Size(227, 70)
+        Me.UpcomingFeaturesButton.TabIndex = 10
+        Me.UpcomingFeaturesButton.Text = "Upcoming Features"
+        Me.UpcomingFeaturesButton.UseVisualStyleBackColor = True
+        '
+        'MakeCall
+        '
+        Me.MakeCall.AllowDrop = True
+        Me.MakeCall.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MakeCall.Location = New System.Drawing.Point(69, 83)
+        Me.MakeCall.Name = "MakeCall"
+        Me.MakeCall.Size = New System.Drawing.Size(227, 70)
+        Me.MakeCall.TabIndex = 9
+        Me.MakeCall.Text = "Call"
+        Me.MakeCall.UseVisualStyleBackColor = True
         '
         'FindChildButton
         '
@@ -505,10 +535,11 @@ Partial Class Phone
         Me.TabControl1.Controls.Add(Me.TabPage6)
         Me.TabControl1.Controls.Add(Me.TabPage7)
         Me.TabControl1.Controls.Add(Me.TabPage8)
+        Me.TabControl1.Controls.Add(Me.TabPage9)
         Me.TabControl1.Location = New System.Drawing.Point(402, 1)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(514, 791)
+        Me.TabControl1.Size = New System.Drawing.Size(556, 791)
         Me.TabControl1.TabIndex = 31
         '
         'TabPage1
@@ -517,7 +548,7 @@ Partial Class Phone
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(506, 765)
+        Me.TabPage1.Size = New System.Drawing.Size(548, 765)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "TabPage1"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -528,7 +559,7 @@ Partial Class Phone
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(506, 765)
+        Me.TabPage2.Size = New System.Drawing.Size(548, 765)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "TabPage2"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -539,7 +570,7 @@ Partial Class Phone
         Me.TabPage3.Location = New System.Drawing.Point(4, 22)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(506, 765)
+        Me.TabPage3.Size = New System.Drawing.Size(548, 765)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "TabPage3"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -550,7 +581,7 @@ Partial Class Phone
         Me.TabPage4.Location = New System.Drawing.Point(4, 22)
         Me.TabPage4.Name = "TabPage4"
         Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage4.Size = New System.Drawing.Size(506, 765)
+        Me.TabPage4.Size = New System.Drawing.Size(548, 765)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "TabPage4"
         Me.TabPage4.UseVisualStyleBackColor = True
@@ -561,7 +592,7 @@ Partial Class Phone
         Me.TabPage5.Location = New System.Drawing.Point(4, 22)
         Me.TabPage5.Name = "TabPage5"
         Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage5.Size = New System.Drawing.Size(506, 765)
+        Me.TabPage5.Size = New System.Drawing.Size(548, 765)
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "TabPage5"
         Me.TabPage5.UseVisualStyleBackColor = True
@@ -572,14 +603,14 @@ Partial Class Phone
         Me.TabPage6.Location = New System.Drawing.Point(4, 22)
         Me.TabPage6.Name = "TabPage6"
         Me.TabPage6.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage6.Size = New System.Drawing.Size(506, 765)
+        Me.TabPage6.Size = New System.Drawing.Size(548, 765)
         Me.TabPage6.TabIndex = 5
         Me.TabPage6.Text = "TabPage6"
         Me.TabPage6.UseVisualStyleBackColor = True
         '
         'IncomingCallPanel
         '
-        Me.IncomingCallPanel.BackColor = System.Drawing.Color.Salmon
+        Me.IncomingCallPanel.BackColor = System.Drawing.Color.LightSkyBlue
         Me.IncomingCallPanel.Controls.Add(Me.AcceptCallPic)
         Me.IncomingCallPanel.Controls.Add(Me.DeclineCallPic)
         Me.IncomingCallPanel.Controls.Add(Me.ChildPicture)
@@ -595,7 +626,7 @@ Partial Class Phone
         '
         Me.ChildNameLabel.AutoSize = True
         Me.ChildNameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ChildNameLabel.Location = New System.Drawing.Point(136, 279)
+        Me.ChildNameLabel.Location = New System.Drawing.Point(136, 312)
         Me.ChildNameLabel.Name = "ChildNameLabel"
         Me.ChildNameLabel.Size = New System.Drawing.Size(96, 39)
         Me.ChildNameLabel.TabIndex = 9
@@ -605,7 +636,7 @@ Partial Class Phone
         '
         Me.IncomingCallLabel.AutoSize = True
         Me.IncomingCallLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IncomingCallLabel.Location = New System.Drawing.Point(5, 12)
+        Me.IncomingCallLabel.Location = New System.Drawing.Point(5, 29)
         Me.IncomingCallLabel.Name = "IncomingCallLabel"
         Me.IncomingCallLabel.Size = New System.Drawing.Size(358, 39)
         Me.IncomingCallLabel.TabIndex = 0
@@ -617,7 +648,7 @@ Partial Class Phone
         Me.TabPage7.Location = New System.Drawing.Point(4, 22)
         Me.TabPage7.Name = "TabPage7"
         Me.TabPage7.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage7.Size = New System.Drawing.Size(506, 765)
+        Me.TabPage7.Size = New System.Drawing.Size(548, 765)
         Me.TabPage7.TabIndex = 6
         Me.TabPage7.Text = "TabPage7"
         Me.TabPage7.UseVisualStyleBackColor = True
@@ -625,6 +656,9 @@ Partial Class Phone
         'CallChildPanel
         '
         Me.CallChildPanel.BackColor = System.Drawing.Color.Coral
+        Me.CallChildPanel.Controls.Add(Me.EndCallPic)
+        Me.CallChildPanel.Controls.Add(Me.CallEndLabel)
+        Me.CallChildPanel.Controls.Add(Me.CallTimeLabel)
         Me.CallChildPanel.Controls.Add(Me.CallPic)
         Me.CallChildPanel.Controls.Add(Me.KidPic)
         Me.CallChildPanel.Controls.Add(Me.CallChildLabel)
@@ -633,6 +667,30 @@ Partial Class Phone
         Me.CallChildPanel.Size = New System.Drawing.Size(369, 640)
         Me.CallChildPanel.TabIndex = 27
         Me.CallChildPanel.Visible = False
+        '
+        'CallEndLabel
+        '
+        Me.CallEndLabel.AutoSize = True
+        Me.CallEndLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CallEndLabel.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.CallEndLabel.Location = New System.Drawing.Point(94, 439)
+        Me.CallEndLabel.Name = "CallEndLabel"
+        Me.CallEndLabel.Size = New System.Drawing.Size(185, 39)
+        Me.CallEndLabel.TabIndex = 13
+        Me.CallEndLabel.Text = "Call Ended"
+        Me.CallEndLabel.Visible = False
+        '
+        'CallTimeLabel
+        '
+        Me.CallTimeLabel.AutoSize = True
+        Me.CallTimeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CallTimeLabel.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.CallTimeLabel.Location = New System.Drawing.Point(131, 340)
+        Me.CallTimeLabel.Name = "CallTimeLabel"
+        Me.CallTimeLabel.Size = New System.Drawing.Size(101, 31)
+        Me.CallTimeLabel.TabIndex = 12
+        Me.CallTimeLabel.Text = "Default"
+        Me.CallTimeLabel.Visible = False
         '
         'CallChildLabel
         '
@@ -645,23 +703,13 @@ Partial Class Phone
         Me.CallChildLabel.TabIndex = 0
         Me.CallChildLabel.Text = "Call Child"
         '
-        'UpcomingFeaturesButton
-        '
-        Me.UpcomingFeaturesButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.UpcomingFeaturesButton.Location = New System.Drawing.Point(72, 463)
-        Me.UpcomingFeaturesButton.Name = "UpcomingFeaturesButton"
-        Me.UpcomingFeaturesButton.Size = New System.Drawing.Size(227, 70)
-        Me.UpcomingFeaturesButton.TabIndex = 10
-        Me.UpcomingFeaturesButton.Text = "Upcoming Features"
-        Me.UpcomingFeaturesButton.UseVisualStyleBackColor = True
-        '
         'TabPage8
         '
         Me.TabPage8.Controls.Add(Me.UpcomingFeaturesPanel)
         Me.TabPage8.Location = New System.Drawing.Point(4, 22)
         Me.TabPage8.Name = "TabPage8"
         Me.TabPage8.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage8.Size = New System.Drawing.Size(506, 765)
+        Me.TabPage8.Size = New System.Drawing.Size(548, 765)
         Me.TabPage8.TabIndex = 7
         Me.TabPage8.Text = "TabPage8"
         Me.TabPage8.UseVisualStyleBackColor = True
@@ -747,6 +795,84 @@ Partial Class Phone
         Me.UpcomingLabel.TabIndex = 0
         Me.UpcomingLabel.Text = "Upcoming Features"
         '
+        'TabPage9
+        '
+        Me.TabPage9.Controls.Add(Me.ContactsPanel)
+        Me.TabPage9.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage9.Name = "TabPage9"
+        Me.TabPage9.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage9.Size = New System.Drawing.Size(548, 765)
+        Me.TabPage9.TabIndex = 8
+        Me.TabPage9.Text = "TabPage9"
+        Me.TabPage9.UseVisualStyleBackColor = True
+        '
+        'ContactsPanel
+        '
+        Me.ContactsPanel.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ContactsPanel.BackColor = System.Drawing.Color.Salmon
+        Me.ContactsPanel.Controls.Add(Me.TableLayoutPanel1)
+        Me.ContactsPanel.Controls.Add(Me.ContactsLabel)
+        Me.ContactsPanel.Location = New System.Drawing.Point(90, 62)
+        Me.ContactsPanel.Name = "ContactsPanel"
+        Me.ContactsPanel.Size = New System.Drawing.Size(369, 640)
+        Me.ContactsPanel.TabIndex = 27
+        Me.ContactsPanel.Visible = False
+        '
+        'TableLayoutPanel1
+        '
+        Me.TableLayoutPanel1.ColumnCount = 2
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.Controls.Add(Me.PictureBox2, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.ChildPic3, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label1, 1, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.ChildLabel2, 0, 1)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(3, 106)
+        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+        Me.TableLayoutPanel1.RowCount = 2
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 74.86034!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.13967!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(363, 179)
+        Me.TableLayoutPanel1.TabIndex = 10
+        '
+        'Label1
+        '
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label1.AutoSize = True
+        Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(225, 135)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(93, 41)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "Jake"
+        '
+        'ChildLabel2
+        '
+        Me.ChildLabel2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ChildLabel2.AutoSize = True
+        Me.ChildLabel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.ChildLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ChildLabel2.Location = New System.Drawing.Point(41, 135)
+        Me.ChildLabel2.Name = "ChildLabel2"
+        Me.ChildLabel2.Size = New System.Drawing.Size(98, 41)
+        Me.ChildLabel2.TabIndex = 3
+        Me.ChildLabel2.Text = "Child"
+        '
+        'ContactsLabel
+        '
+        Me.ContactsLabel.AutoSize = True
+        Me.ContactsLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.ContactsLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ContactsLabel.Location = New System.Drawing.Point(106, 50)
+        Me.ContactsLabel.Name = "ContactsLabel"
+        Me.ContactsLabel.Size = New System.Drawing.Size(157, 41)
+        Me.ContactsLabel.TabIndex = 0
+        Me.ContactsLabel.Text = "Contacts"
+        '
+        'Timer1
+        '
+        '
         'PictureBox17
         '
         Me.PictureBox17.BackgroundImage = CType(resources.GetObject("PictureBox17.BackgroundImage"), System.Drawing.Image)
@@ -790,7 +916,7 @@ Partial Class Phone
         '
         'AcceptCallPic
         '
-        Me.AcceptCallPic.BackgroundImage = Global.KidWatch.My.Resources.Resource1.AcceptCall
+        Me.AcceptCallPic.BackgroundImage = CType(resources.GetObject("AcceptCallPic.BackgroundImage"), System.Drawing.Image)
         Me.AcceptCallPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.AcceptCallPic.Location = New System.Drawing.Point(255, 433)
         Me.AcceptCallPic.Name = "AcceptCallPic"
@@ -812,17 +938,28 @@ Partial Class Phone
         '
         Me.ChildPicture.BackgroundImage = Global.KidWatch.My.Resources.Resource1.Kid
         Me.ChildPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.ChildPicture.Location = New System.Drawing.Point(84, 70)
+        Me.ChildPicture.Location = New System.Drawing.Point(84, 95)
         Me.ChildPicture.Name = "ChildPicture"
         Me.ChildPicture.Size = New System.Drawing.Size(200, 206)
         Me.ChildPicture.TabIndex = 10
         Me.ChildPicture.TabStop = False
         '
+        'EndCallPic
+        '
+        Me.EndCallPic.Image = CType(resources.GetObject("EndCallPic.Image"), System.Drawing.Image)
+        Me.EndCallPic.Location = New System.Drawing.Point(116, 396)
+        Me.EndCallPic.Name = "EndCallPic"
+        Me.EndCallPic.Size = New System.Drawing.Size(137, 126)
+        Me.EndCallPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.EndCallPic.TabIndex = 14
+        Me.EndCallPic.TabStop = False
+        Me.EndCallPic.Visible = False
+        '
         'CallPic
         '
-        Me.CallPic.BackgroundImage = Global.KidWatch.My.Resources.Resource1.AcceptCall
+        Me.CallPic.BackgroundImage = CType(resources.GetObject("CallPic.BackgroundImage"), System.Drawing.Image)
         Me.CallPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.CallPic.Location = New System.Drawing.Point(116, 368)
+        Me.CallPic.Location = New System.Drawing.Point(116, 396)
         Me.CallPic.Name = "CallPic"
         Me.CallPic.Size = New System.Drawing.Size(137, 126)
         Me.CallPic.TabIndex = 2
@@ -838,6 +975,26 @@ Partial Class Phone
         Me.KidPic.TabIndex = 1
         Me.KidPic.TabStop = False
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackgroundImage = Global.KidWatch.My.Resources.Resource1.Man
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox2.Location = New System.Drawing.Point(184, 3)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(175, 127)
+        Me.PictureBox2.TabIndex = 1
+        Me.PictureBox2.TabStop = False
+        '
+        'ChildPic3
+        '
+        Me.ChildPic3.BackgroundImage = Global.KidWatch.My.Resources.Resource1.Kid
+        Me.ChildPic3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.ChildPic3.Location = New System.Drawing.Point(3, 3)
+        Me.ChildPic3.Name = "ChildPic3"
+        Me.ChildPic3.Size = New System.Drawing.Size(175, 127)
+        Me.ChildPic3.TabIndex = 0
+        Me.ChildPic3.TabStop = False
+        '
         'PhoneFrame
         '
         Me.PhoneFrame.Image = CType(resources.GetObject("PhoneFrame.Image"), System.Drawing.Image)
@@ -852,7 +1009,7 @@ Partial Class Phone
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(949, 804)
+        Me.ClientSize = New System.Drawing.Size(960, 804)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.BackButton)
         Me.Controls.Add(Me.PhoneFrame)
@@ -888,6 +1045,11 @@ Partial Class Phone
         Me.TabPage8.ResumeLayout(False)
         Me.UpcomingFeaturesPanel.ResumeLayout(False)
         Me.UpcomingFeaturesPanel.PerformLayout()
+        Me.TabPage9.ResumeLayout(False)
+        Me.ContactsPanel.ResumeLayout(False)
+        Me.ContactsPanel.PerformLayout()
+        Me.TableLayoutPanel1.ResumeLayout(False)
+        Me.TableLayoutPanel1.PerformLayout()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LocateChildPic, System.ComponentModel.ISupportInitialize).EndInit()
@@ -895,8 +1057,11 @@ Partial Class Phone
         CType(Me.AcceptCallPic, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DeclineCallPic, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ChildPicture, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EndCallPic, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CallPic, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KidPic, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ChildPic3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PhoneFrame, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -951,7 +1116,7 @@ Partial Class Phone
     Friend WithEvents IncomingCallPanel As Panel
     Friend WithEvents IncomingCallLabel As Label
     Friend WithEvents ChildNameLabel As Label
-    Friend WithEvents CallChildButton As Button
+    Friend WithEvents MakeCall As Button
     Friend WithEvents TabPage7 As TabPage
     Friend WithEvents CallChildPanel As Panel
     Friend WithEvents CallChildLabel As Label
@@ -969,4 +1134,16 @@ Partial Class Phone
     Friend WithEvents ConfigureWatch As Button
     Friend WithEvents Games As Button
     Friend WithEvents UpcomingLabel As Label
+    Friend WithEvents TabPage9 As TabPage
+    Friend WithEvents ContactsPanel As Panel
+    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents ContactsLabel As Label
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents ChildPic3 As PictureBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents ChildLabel2 As Label
+    Friend WithEvents CallEndLabel As Label
+    Friend WithEvents CallTimeLabel As Label
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents EndCallPic As PictureBox
 End Class

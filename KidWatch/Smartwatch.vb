@@ -1,7 +1,7 @@
 ﻿Public Class Smartwatch
 
     Private currentpg = 0
-    Public Time As New DateTime
+    Dim Time As New DateTime
     Public balance = 6.51
     Public Sub New()
 
@@ -66,17 +66,13 @@
         End If
     End Sub
 
-    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
-        Me.PictureBox5.Visible = False
-        Me.CallButton.Visible = True
+    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles CallButton.Click
+        Me.CallButton.Visible = False
+        Me.EndCallButton.Visible = True
         Me.CallHomeButton.Visible = False
         Me.PhoneAppPanel.BackColor = Color.Green
         Time = DateTime.Now
         Timer2.Start()
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles CallTimeLabel.Click
-
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
@@ -84,9 +80,9 @@
         CallTimeLabel.Text = Difference.Days.ToString & ":" & Difference.Hours.ToString & ":" & Difference.Minutes.ToString & ":" & Difference.Seconds.ToString & "." & Difference.Milliseconds.ToString
     End Sub
 
-    Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles CallButton.Click
+    Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles EndCallButton.Click
+        Me.EndCallButton.Visible = False
         Me.CallButton.Visible = False
-        Me.PictureBox5.Visible = False
         Me.CallHomeButton.Visible = True
         Me.PhoneAppPanel.BackColor = Color.Red
         Me.CallEndLabel.Visible = True
@@ -132,7 +128,7 @@
         Me.ScheduleAppPanel.Visible = False
         Me.SoccerDetails.Visible = False
         Me.StudyDetails.Visible = False
-        IncomingCallTab.Visible = False
+        IncomingCallPanel.Visible = False
     End Sub
 
     Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles CallHomeButton.Click, AllowanceHome.Click, SettingsHome.Click, GPSHomeButton.Click, StudyHome.Click, SoccerHome.Click, ScheduleHome.Click
