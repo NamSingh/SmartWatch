@@ -90,6 +90,14 @@ Partial Class Phone
         Me.ChildLabel2 = New System.Windows.Forms.Label()
         Me.ContactsLabel = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Messages = New System.Windows.Forms.Button()
+        Me.TabPage10 = New System.Windows.Forms.TabPage()
+        Me.MessagePanel = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.SendMsg = New System.Windows.Forms.Button()
+        Me.MessageFromChild = New System.Windows.Forms.TextBox()
+        Me.MessageToChild = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         Me.PictureBox16 = New System.Windows.Forms.PictureBox()
         Me.LocateChildPic = New System.Windows.Forms.PictureBox()
@@ -125,6 +133,8 @@ Partial Class Phone
         Me.TabPage9.SuspendLayout()
         Me.ContactsPanel.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
+        Me.TabPage10.SuspendLayout()
+        Me.MessagePanel.SuspendLayout()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LocateChildPic, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -336,6 +346,7 @@ Partial Class Phone
         'HomePage
         '
         Me.HomePage.BackColor = System.Drawing.Color.Salmon
+        Me.HomePage.Controls.Add(Me.Messages)
         Me.HomePage.Controls.Add(Me.UpcomingFeaturesButton)
         Me.HomePage.Controls.Add(Me.MakeCall)
         Me.HomePage.Controls.Add(Me.FindChildButton)
@@ -351,7 +362,7 @@ Partial Class Phone
         'UpcomingFeaturesButton
         '
         Me.UpcomingFeaturesButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.UpcomingFeaturesButton.Location = New System.Drawing.Point(72, 463)
+        Me.UpcomingFeaturesButton.Location = New System.Drawing.Point(72, 539)
         Me.UpcomingFeaturesButton.Name = "UpcomingFeaturesButton"
         Me.UpcomingFeaturesButton.Size = New System.Drawing.Size(227, 70)
         Me.UpcomingFeaturesButton.TabIndex = 10
@@ -372,7 +383,7 @@ Partial Class Phone
         'FindChildButton
         '
         Me.FindChildButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FindChildButton.Location = New System.Drawing.Point(72, 235)
+        Me.FindChildButton.Location = New System.Drawing.Point(72, 311)
         Me.FindChildButton.Name = "FindChildButton"
         Me.FindChildButton.Size = New System.Drawing.Size(227, 70)
         Me.FindChildButton.TabIndex = 8
@@ -382,7 +393,7 @@ Partial Class Phone
         'EditScheduleButton
         '
         Me.EditScheduleButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.EditScheduleButton.Location = New System.Drawing.Point(69, 387)
+        Me.EditScheduleButton.Location = New System.Drawing.Point(69, 463)
         Me.EditScheduleButton.Name = "EditScheduleButton"
         Me.EditScheduleButton.Size = New System.Drawing.Size(227, 70)
         Me.EditScheduleButton.TabIndex = 7
@@ -392,7 +403,7 @@ Partial Class Phone
         'SendMoneyButton
         '
         Me.SendMoneyButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SendMoneyButton.Location = New System.Drawing.Point(72, 311)
+        Me.SendMoneyButton.Location = New System.Drawing.Point(72, 387)
         Me.SendMoneyButton.Name = "SendMoneyButton"
         Me.SendMoneyButton.Size = New System.Drawing.Size(227, 70)
         Me.SendMoneyButton.TabIndex = 6
@@ -402,7 +413,7 @@ Partial Class Phone
         'SendReminderBut
         '
         Me.SendReminderBut.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SendReminderBut.Location = New System.Drawing.Point(69, 159)
+        Me.SendReminderBut.Location = New System.Drawing.Point(69, 235)
         Me.SendReminderBut.Name = "SendReminderBut"
         Me.SendReminderBut.Size = New System.Drawing.Size(227, 70)
         Me.SendReminderBut.TabIndex = 5
@@ -536,6 +547,7 @@ Partial Class Phone
         Me.TabControl1.Controls.Add(Me.TabPage7)
         Me.TabControl1.Controls.Add(Me.TabPage8)
         Me.TabControl1.Controls.Add(Me.TabPage9)
+        Me.TabControl1.Controls.Add(Me.TabPage10)
         Me.TabControl1.Location = New System.Drawing.Point(402, 1)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
@@ -874,6 +886,94 @@ Partial Class Phone
         'Timer1
         '
         '
+        'Messages
+        '
+        Me.Messages.AllowDrop = True
+        Me.Messages.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Messages.Location = New System.Drawing.Point(72, 159)
+        Me.Messages.Name = "Messages"
+        Me.Messages.Size = New System.Drawing.Size(227, 70)
+        Me.Messages.TabIndex = 11
+        Me.Messages.Text = "Messages"
+        Me.Messages.UseVisualStyleBackColor = True
+        '
+        'TabPage10
+        '
+        Me.TabPage10.Controls.Add(Me.MessagePanel)
+        Me.TabPage10.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage10.Name = "TabPage10"
+        Me.TabPage10.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage10.Size = New System.Drawing.Size(548, 765)
+        Me.TabPage10.TabIndex = 9
+        Me.TabPage10.Text = "TabPage10"
+        Me.TabPage10.UseVisualStyleBackColor = True
+        '
+        'MessagePanel
+        '
+        Me.MessagePanel.BackColor = System.Drawing.Color.Salmon
+        Me.MessagePanel.Controls.Add(Me.Label3)
+        Me.MessagePanel.Controls.Add(Me.MessageToChild)
+        Me.MessagePanel.Controls.Add(Me.MessageFromChild)
+        Me.MessagePanel.Controls.Add(Me.SendMsg)
+        Me.MessagePanel.Controls.Add(Me.Label2)
+        Me.MessagePanel.Location = New System.Drawing.Point(90, 62)
+        Me.MessagePanel.Name = "MessagePanel"
+        Me.MessagePanel.Size = New System.Drawing.Size(369, 640)
+        Me.MessagePanel.TabIndex = 27
+        Me.MessagePanel.Visible = False
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(24, 50)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(321, 41)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Message from child"
+        '
+        'SendMsg
+        '
+        Me.SendMsg.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SendMsg.Location = New System.Drawing.Point(71, 553)
+        Me.SendMsg.Name = "SendMsg"
+        Me.SendMsg.Size = New System.Drawing.Size(227, 70)
+        Me.SendMsg.TabIndex = 5
+        Me.SendMsg.Text = "Send Message"
+        Me.SendMsg.UseVisualStyleBackColor = True
+        '
+        'MessageFromChild
+        '
+        Me.MessageFromChild.Enabled = False
+        Me.MessageFromChild.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MessageFromChild.Location = New System.Drawing.Point(26, 104)
+        Me.MessageFromChild.Multiline = True
+        Me.MessageFromChild.Name = "MessageFromChild"
+        Me.MessageFromChild.Size = New System.Drawing.Size(308, 239)
+        Me.MessageFromChild.TabIndex = 10
+        Me.MessageFromChild.Text = "Hi Mom!" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "I'm having fun with dan!"
+        '
+        'MessageToChild
+        '
+        Me.MessageToChild.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MessageToChild.Location = New System.Drawing.Point(26, 429)
+        Me.MessageToChild.Multiline = True
+        Me.MessageToChild.Name = "MessageToChild"
+        Me.MessageToChild.Size = New System.Drawing.Size(308, 96)
+        Me.MessageToChild.TabIndex = 11
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(71, 371)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(238, 41)
+        Me.Label3.TabIndex = 12
+        Me.Label3.Text = "New Message"
+        '
         'PictureBox17
         '
         Me.PictureBox17.BackgroundImage = CType(resources.GetObject("PictureBox17.BackgroundImage"), System.Drawing.Image)
@@ -1053,6 +1153,9 @@ Partial Class Phone
         Me.ContactsPanel.PerformLayout()
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
+        Me.TabPage10.ResumeLayout(False)
+        Me.MessagePanel.ResumeLayout(False)
+        Me.MessagePanel.PerformLayout()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LocateChildPic, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1149,4 +1252,12 @@ Partial Class Phone
     Friend WithEvents CallTimeLabel As Label
     Friend WithEvents Timer1 As Timer
     Friend WithEvents EndCallPic As PictureBox
+    Friend WithEvents Messages As Button
+    Friend WithEvents TabPage10 As TabPage
+    Friend WithEvents MessagePanel As Panel
+    Friend WithEvents Label3 As Label
+    Friend WithEvents MessageToChild As TextBox
+    Friend WithEvents MessageFromChild As TextBox
+    Friend WithEvents SendMsg As Button
+    Friend WithEvents Label2 As Label
 End Class

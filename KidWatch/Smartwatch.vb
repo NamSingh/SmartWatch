@@ -207,9 +207,11 @@
         ContactsPanel.Visible = False
         AppPanel3.Visible = False
         MessageAppPanel.Visible = False
+        CameraMessagePanel.Visible = False
     End Sub
 
-    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles CallHomeButton.Click, AllowanceHome.Click, SettingsHome.Click, GPSHomeButton.Click, StudyHome.Click, SoccerHome.Click, ScheduleHome.Click
+    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles CallHomeButton.Click, AllowanceHome.Click, SettingsHome.Click, GPSHomeButton.Click, StudyHome.Click, SoccerHome.Click, ScheduleHome.Click, MessagingHomeButton.Click, SMSMomHome.Click, CameraHome.Click
+
         clear()
         Me.HomePagePanel.Visible = True
         currentpg = 0
@@ -353,6 +355,22 @@
     Private Sub MessageAppIcon_Click(sender As Object, e As EventArgs) Handles MessageAppIcon.Click
         clear()
         MessageAppPanel.Visible = True
+        DisableSwipe()
     End Sub
 
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        clear()
+        SMSMomPanel.Visible = True
+        DisableSwipe()
+    End Sub
+
+    Private Sub Reply_Click(sender As Object, e As EventArgs) Handles Reply.Click
+        Phone.MessageFromChild.Text = "Ok, Talk to you later"
+    End Sub
+
+    Private Sub PictureBox2_Click_1(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        clear()
+        CameraMessagePanel.Visible = True
+        DisableSwipe()
+    End Sub
 End Class

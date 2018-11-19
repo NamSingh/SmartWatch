@@ -213,5 +213,29 @@
   <ItemGroup>
     <None Include="Resources\sms.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reply.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tree1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tree2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tree3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tree4.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

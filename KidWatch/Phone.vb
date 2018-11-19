@@ -14,6 +14,7 @@
         IncomingCallPanel.Visible = False
         CallChildPanel.Visible = False
         ContactsPanel.Visible = False
+        MessagePanel.Visible = False
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles AddSoccerPractice.Click
@@ -173,5 +174,15 @@
         Smartwatch.CallDeclined()
         BackButton.Visible = True
         IncomingCallPanel.Visible = False
+    End Sub
+
+    Private Sub SendMsg_Click(sender As Object, e As EventArgs) Handles SendMsg.Click
+        Smartwatch.MessageFromMom.Text = MessageToChild.Text
+        MessageToChild.Text = ""
+    End Sub
+
+    Private Sub Messages_Click(sender As Object, e As EventArgs) Handles Messages.Click
+        clearphone()
+        MessagePanel.Visible = True
     End Sub
 End Class
