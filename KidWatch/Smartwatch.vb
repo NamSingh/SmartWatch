@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class Smartwatch
 
     Private currentpg = 0
     Public Time As New DateTime

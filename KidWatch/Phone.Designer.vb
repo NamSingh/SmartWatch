@@ -25,7 +25,7 @@ Partial Class Phone
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Phone))
         Me.DailySchedPanel = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Button9 = New System.Windows.Forms.Button()
+        Me.AddStudyTime = New System.Windows.Forms.Button()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label28 = New System.Windows.Forms.Label()
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
@@ -33,33 +33,33 @@ Partial Class Phone
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.PictureBox16 = New System.Windows.Forms.PictureBox()
-        Me.Button8 = New System.Windows.Forms.Button()
+        Me.AddSoccerPractice = New System.Windows.Forms.Button()
         Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.FundsPanel = New System.Windows.Forms.Panel()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Button7 = New System.Windows.Forms.Button()
+        Me.AddFundsBox = New System.Windows.Forms.TextBox()
+        Me.AddFundButton = New System.Windows.Forms.Button()
         Me.Label20 = New System.Windows.Forms.Label()
-        Me.SamsungMain = New System.Windows.Forms.Panel()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
+        Me.HomePage = New System.Windows.Forms.Panel()
+        Me.HomeEditSchedule = New System.Windows.Forms.Label()
+        Me.HomeSendMoney = New System.Windows.Forms.Label()
+        Me.HomeFindChild = New System.Windows.Forms.Label()
+        Me.HomeSendReminder = New System.Windows.Forms.Label()
+        Me.HomePageTitle = New System.Windows.Forms.Label()
         Me.LocateSosPanel = New System.Windows.Forms.Panel()
-        Me.SendLocPic = New System.Windows.Forms.PictureBox()
+        Me.LocateChildPic = New System.Windows.Forms.PictureBox()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
-        Me.SendLoc = New System.Windows.Forms.Button()
+        Me.SendLocButton = New System.Windows.Forms.Button()
         Me.LocateChildPicBox = New System.Windows.Forms.PictureBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.BackButton = New System.Windows.Forms.Button()
         Me.ReminderPanel = New System.Windows.Forms.Panel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button6 = New System.Windows.Forms.Button()
+        Me.ReminderText = New System.Windows.Forms.TextBox()
+        Me.SendReminderButton = New System.Windows.Forms.Button()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.PhoneFrame = New System.Windows.Forms.PictureBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
@@ -74,9 +74,9 @@ Partial Class Phone
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.FundsPanel.SuspendLayout()
-        Me.SamsungMain.SuspendLayout()
+        Me.HomePage.SuspendLayout()
         Me.LocateSosPanel.SuspendLayout()
-        CType(Me.SendLocPic, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LocateChildPic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LocateChildPicBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ReminderPanel.SuspendLayout()
         CType(Me.PhoneFrame, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -106,7 +106,7 @@ Partial Class Phone
         '
         Me.Panel3.BackColor = System.Drawing.Color.Sienna
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel3.Controls.Add(Me.Button9)
+        Me.Panel3.Controls.Add(Me.AddStudyTime)
         Me.Panel3.Controls.Add(Me.Label27)
         Me.Panel3.Controls.Add(Me.Label28)
         Me.Panel3.Controls.Add(Me.PictureBox17)
@@ -115,15 +115,15 @@ Partial Class Phone
         Me.Panel3.Size = New System.Drawing.Size(331, 130)
         Me.Panel3.TabIndex = 9
         '
-        'Button9
+        'AddStudyTime
         '
-        Me.Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button9.Location = New System.Drawing.Point(169, 75)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(107, 43)
-        Me.Button9.TabIndex = 6
-        Me.Button9.Text = "Add"
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.AddStudyTime.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AddStudyTime.Location = New System.Drawing.Point(169, 75)
+        Me.AddStudyTime.Name = "AddStudyTime"
+        Me.AddStudyTime.Size = New System.Drawing.Size(107, 43)
+        Me.AddStudyTime.TabIndex = 6
+        Me.AddStudyTime.Text = "Add"
+        Me.AddStudyTime.UseVisualStyleBackColor = True
         '
         'Label27
         '
@@ -162,7 +162,7 @@ Partial Class Phone
         Me.Panel2.Controls.Add(Me.Label23)
         Me.Panel2.Controls.Add(Me.Label26)
         Me.Panel2.Controls.Add(Me.PictureBox16)
-        Me.Panel2.Controls.Add(Me.Button8)
+        Me.Panel2.Controls.Add(Me.AddSoccerPractice)
         Me.Panel2.Location = New System.Drawing.Point(19, 150)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(331, 125)
@@ -198,15 +198,15 @@ Partial Class Phone
         Me.PictureBox16.TabIndex = 3
         Me.PictureBox16.TabStop = False
         '
-        'Button8
+        'AddSoccerPractice
         '
-        Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.Location = New System.Drawing.Point(164, 75)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(107, 43)
-        Me.Button8.TabIndex = 1
-        Me.Button8.Text = "Add"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.AddSoccerPractice.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AddSoccerPractice.Location = New System.Drawing.Point(164, 75)
+        Me.AddSoccerPractice.Name = "AddSoccerPractice"
+        Me.AddSoccerPractice.Size = New System.Drawing.Size(107, 43)
+        Me.AddSoccerPractice.TabIndex = 1
+        Me.AddSoccerPractice.Text = "Add"
+        Me.AddSoccerPractice.UseVisualStyleBackColor = True
         '
         'DateTimePicker2
         '
@@ -243,8 +243,8 @@ Partial Class Phone
         Me.FundsPanel.BackColor = System.Drawing.Color.Coral
         Me.FundsPanel.Controls.Add(Me.Label22)
         Me.FundsPanel.Controls.Add(Me.Label21)
-        Me.FundsPanel.Controls.Add(Me.TextBox2)
-        Me.FundsPanel.Controls.Add(Me.Button7)
+        Me.FundsPanel.Controls.Add(Me.AddFundsBox)
+        Me.FundsPanel.Controls.Add(Me.AddFundButton)
         Me.FundsPanel.Controls.Add(Me.Label20)
         Me.FundsPanel.Location = New System.Drawing.Point(6, 3)
         Me.FundsPanel.Name = "FundsPanel"
@@ -272,23 +272,23 @@ Partial Class Phone
         Me.Label21.TabIndex = 3
         Me.Label21.Text = "Balance"
         '
-        'TextBox2
+        'AddFundsBox
         '
-        Me.TextBox2.Location = New System.Drawing.Point(102, 167)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(168, 74)
-        Me.TextBox2.TabIndex = 2
+        Me.AddFundsBox.Location = New System.Drawing.Point(102, 167)
+        Me.AddFundsBox.Multiline = True
+        Me.AddFundsBox.Name = "AddFundsBox"
+        Me.AddFundsBox.Size = New System.Drawing.Size(168, 74)
+        Me.AddFundsBox.TabIndex = 2
         '
-        'Button7
+        'AddFundButton
         '
-        Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(102, 262)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(175, 73)
-        Me.Button7.TabIndex = 1
-        Me.Button7.Text = "Send"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.AddFundButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AddFundButton.Location = New System.Drawing.Point(102, 262)
+        Me.AddFundButton.Name = "AddFundButton"
+        Me.AddFundButton.Size = New System.Drawing.Size(175, 73)
+        Me.AddFundButton.TabIndex = 1
+        Me.AddFundButton.Text = "Send"
+        Me.AddFundButton.UseVisualStyleBackColor = True
         '
         'Label20
         '
@@ -301,77 +301,77 @@ Partial Class Phone
         Me.Label20.TabIndex = 0
         Me.Label20.Text = "Send Funds"
         '
-        'SamsungMain
+        'HomePage
         '
-        Me.SamsungMain.BackColor = System.Drawing.Color.Salmon
-        Me.SamsungMain.Controls.Add(Me.Label13)
-        Me.SamsungMain.Controls.Add(Me.Label12)
-        Me.SamsungMain.Controls.Add(Me.Label11)
-        Me.SamsungMain.Controls.Add(Me.Label10)
-        Me.SamsungMain.Controls.Add(Me.Label9)
-        Me.SamsungMain.Location = New System.Drawing.Point(22, 20)
-        Me.SamsungMain.Name = "SamsungMain"
-        Me.SamsungMain.Size = New System.Drawing.Size(369, 640)
-        Me.SamsungMain.TabIndex = 25
+        Me.HomePage.BackColor = System.Drawing.Color.Salmon
+        Me.HomePage.Controls.Add(Me.HomeEditSchedule)
+        Me.HomePage.Controls.Add(Me.HomeSendMoney)
+        Me.HomePage.Controls.Add(Me.HomeFindChild)
+        Me.HomePage.Controls.Add(Me.HomeSendReminder)
+        Me.HomePage.Controls.Add(Me.HomePageTitle)
+        Me.HomePage.Location = New System.Drawing.Point(22, 20)
+        Me.HomePage.Name = "HomePage"
+        Me.HomePage.Size = New System.Drawing.Size(369, 640)
+        Me.HomePage.TabIndex = 25
         '
-        'Label13
+        'HomeEditSchedule
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(3, 441)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(317, 39)
-        Me.Label13.TabIndex = 4
-        Me.Label13.Text = "Edit Daily Schedule"
+        Me.HomeEditSchedule.AutoSize = True
+        Me.HomeEditSchedule.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HomeEditSchedule.Location = New System.Drawing.Point(3, 441)
+        Me.HomeEditSchedule.Name = "HomeEditSchedule"
+        Me.HomeEditSchedule.Size = New System.Drawing.Size(317, 39)
+        Me.HomeEditSchedule.TabIndex = 4
+        Me.HomeEditSchedule.Text = "Edit Daily Schedule"
         '
-        'Label12
+        'HomeSendMoney
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(3, 342)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(210, 39)
-        Me.Label12.TabIndex = 3
-        Me.Label12.Text = "Send Money"
+        Me.HomeSendMoney.AutoSize = True
+        Me.HomeSendMoney.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HomeSendMoney.Location = New System.Drawing.Point(3, 342)
+        Me.HomeSendMoney.Name = "HomeSendMoney"
+        Me.HomeSendMoney.Size = New System.Drawing.Size(210, 39)
+        Me.HomeSendMoney.TabIndex = 3
+        Me.HomeSendMoney.Text = "Send Money"
         '
-        'Label11
+        'HomeFindChild
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(3, 250)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(172, 39)
-        Me.Label11.TabIndex = 2
-        Me.Label11.Text = "Find Child"
+        Me.HomeFindChild.AutoSize = True
+        Me.HomeFindChild.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HomeFindChild.Location = New System.Drawing.Point(3, 250)
+        Me.HomeFindChild.Name = "HomeFindChild"
+        Me.HomeFindChild.Size = New System.Drawing.Size(172, 39)
+        Me.HomeFindChild.TabIndex = 2
+        Me.HomeFindChild.Text = "Find Child"
         '
-        'Label10
+        'HomeSendReminder
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(3, 165)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(257, 39)
-        Me.Label10.TabIndex = 1
-        Me.Label10.Text = "Send Reminder"
+        Me.HomeSendReminder.AutoSize = True
+        Me.HomeSendReminder.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HomeSendReminder.Location = New System.Drawing.Point(3, 165)
+        Me.HomeSendReminder.Name = "HomeSendReminder"
+        Me.HomeSendReminder.Size = New System.Drawing.Size(257, 39)
+        Me.HomeSendReminder.TabIndex = 1
+        Me.HomeSendReminder.Text = "Send Reminder"
         '
-        'Label9
+        'HomePageTitle
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(3, 0)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(349, 41)
-        Me.Label9.TabIndex = 0
-        Me.Label9.Text = "KidWatch Parent App"
+        Me.HomePageTitle.AutoSize = True
+        Me.HomePageTitle.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.HomePageTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HomePageTitle.Location = New System.Drawing.Point(3, 0)
+        Me.HomePageTitle.Name = "HomePageTitle"
+        Me.HomePageTitle.Size = New System.Drawing.Size(349, 41)
+        Me.HomePageTitle.TabIndex = 0
+        Me.HomePageTitle.Text = "KidWatch Parent App"
         '
         'LocateSosPanel
         '
         Me.LocateSosPanel.BackColor = System.Drawing.Color.Orange
-        Me.LocateSosPanel.Controls.Add(Me.SendLocPic)
+        Me.LocateSosPanel.Controls.Add(Me.LocateChildPic)
         Me.LocateSosPanel.Controls.Add(Me.Label19)
         Me.LocateSosPanel.Controls.Add(Me.Label17)
-        Me.LocateSosPanel.Controls.Add(Me.SendLoc)
+        Me.LocateSosPanel.Controls.Add(Me.SendLocButton)
         Me.LocateSosPanel.Controls.Add(Me.LocateChildPicBox)
         Me.LocateSosPanel.Controls.Add(Me.Label16)
         Me.LocateSosPanel.Location = New System.Drawing.Point(21, 21)
@@ -380,16 +380,16 @@ Partial Class Phone
         Me.LocateSosPanel.TabIndex = 28
         Me.LocateSosPanel.Visible = False
         '
-        'SendLocPic
+        'LocateChildPic
         '
-        Me.SendLocPic.Image = CType(resources.GetObject("SendLocPic.Image"), System.Drawing.Image)
-        Me.SendLocPic.InitialImage = Nothing
-        Me.SendLocPic.Location = New System.Drawing.Point(16, 91)
-        Me.SendLocPic.Name = "SendLocPic"
-        Me.SendLocPic.Size = New System.Drawing.Size(332, 298)
-        Me.SendLocPic.TabIndex = 7
-        Me.SendLocPic.TabStop = False
-        Me.SendLocPic.Visible = False
+        Me.LocateChildPic.Image = CType(resources.GetObject("LocateChildPic.Image"), System.Drawing.Image)
+        Me.LocateChildPic.InitialImage = Nothing
+        Me.LocateChildPic.Location = New System.Drawing.Point(16, 91)
+        Me.LocateChildPic.Name = "LocateChildPic"
+        Me.LocateChildPic.Size = New System.Drawing.Size(332, 298)
+        Me.LocateChildPic.TabIndex = 7
+        Me.LocateChildPic.TabStop = False
+        Me.LocateChildPic.Visible = False
         '
         'Label19
         '
@@ -410,14 +410,14 @@ Partial Class Phone
         Me.Label17.TabIndex = 5
         Me.Label17.Text = "Child"
         '
-        'SendLoc
+        'SendLocButton
         '
-        Me.SendLoc.Location = New System.Drawing.Point(119, 421)
-        Me.SendLoc.Name = "SendLoc"
-        Me.SendLoc.Size = New System.Drawing.Size(122, 62)
-        Me.SendLoc.TabIndex = 4
-        Me.SendLoc.Text = "Send Location"
-        Me.SendLoc.UseVisualStyleBackColor = True
+        Me.SendLocButton.Location = New System.Drawing.Point(119, 421)
+        Me.SendLocButton.Name = "SendLocButton"
+        Me.SendLocButton.Size = New System.Drawing.Size(122, 62)
+        Me.SendLocButton.TabIndex = 4
+        Me.SendLocButton.Text = "Send Location"
+        Me.SendLocButton.UseVisualStyleBackColor = True
         '
         'LocateChildPicBox
         '
@@ -453,8 +453,8 @@ Partial Class Phone
         'ReminderPanel
         '
         Me.ReminderPanel.BackColor = System.Drawing.Color.Coral
-        Me.ReminderPanel.Controls.Add(Me.TextBox1)
-        Me.ReminderPanel.Controls.Add(Me.Button6)
+        Me.ReminderPanel.Controls.Add(Me.ReminderText)
+        Me.ReminderPanel.Controls.Add(Me.SendReminderButton)
         Me.ReminderPanel.Controls.Add(Me.Label18)
         Me.ReminderPanel.Location = New System.Drawing.Point(21, 6)
         Me.ReminderPanel.Name = "ReminderPanel"
@@ -462,23 +462,23 @@ Partial Class Phone
         Me.ReminderPanel.TabIndex = 26
         Me.ReminderPanel.Visible = False
         '
-        'TextBox1
+        'ReminderText
         '
-        Me.TextBox1.Location = New System.Drawing.Point(48, 63)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(284, 121)
-        Me.TextBox1.TabIndex = 2
+        Me.ReminderText.Location = New System.Drawing.Point(48, 63)
+        Me.ReminderText.Multiline = True
+        Me.ReminderText.Name = "ReminderText"
+        Me.ReminderText.Size = New System.Drawing.Size(284, 121)
+        Me.ReminderText.TabIndex = 2
         '
-        'Button6
+        'SendReminderButton
         '
-        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(98, 248)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(175, 73)
-        Me.Button6.TabIndex = 1
-        Me.Button6.Text = "Send"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.SendReminderButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SendReminderButton.Location = New System.Drawing.Point(98, 248)
+        Me.SendReminderButton.Name = "SendReminderButton"
+        Me.SendReminderButton.Size = New System.Drawing.Size(175, 73)
+        Me.SendReminderButton.TabIndex = 1
+        Me.SendReminderButton.Text = "Send"
+        Me.SendReminderButton.UseVisualStyleBackColor = True
         '
         'Label18
         '
@@ -560,7 +560,7 @@ Partial Class Phone
         '
         'TabPage5
         '
-        Me.TabPage5.Controls.Add(Me.SamsungMain)
+        Me.TabPage5.Controls.Add(Me.HomePage)
         Me.TabPage5.Location = New System.Drawing.Point(4, 22)
         Me.TabPage5.Name = "TabPage5"
         Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
@@ -590,11 +590,11 @@ Partial Class Phone
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
         Me.FundsPanel.ResumeLayout(False)
         Me.FundsPanel.PerformLayout()
-        Me.SamsungMain.ResumeLayout(False)
-        Me.SamsungMain.PerformLayout()
+        Me.HomePage.ResumeLayout(False)
+        Me.HomePage.PerformLayout()
         Me.LocateSosPanel.ResumeLayout(False)
         Me.LocateSosPanel.PerformLayout()
-        CType(Me.SendLocPic, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LocateChildPic, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LocateChildPicBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ReminderPanel.ResumeLayout(False)
         Me.ReminderPanel.PerformLayout()
@@ -611,7 +611,7 @@ Partial Class Phone
 
     Friend WithEvents DailySchedPanel As Panel
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents Button9 As Button
+    Friend WithEvents AddStudyTime As Button
     Friend WithEvents Label27 As Label
     Friend WithEvents Label28 As Label
     Friend WithEvents PictureBox17 As PictureBox
@@ -619,33 +619,33 @@ Partial Class Phone
     Friend WithEvents Label23 As Label
     Friend WithEvents Label26 As Label
     Friend WithEvents PictureBox16 As PictureBox
-    Friend WithEvents Button8 As Button
+    Friend WithEvents AddSoccerPractice As Button
     Friend WithEvents DateTimePicker2 As DateTimePicker
     Friend WithEvents Label24 As Label
     Friend WithEvents Label25 As Label
     Friend WithEvents FundsPanel As Panel
     Friend WithEvents Label22 As Label
     Friend WithEvents Label21 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Button7 As Button
+    Friend WithEvents AddFundsBox As TextBox
+    Friend WithEvents AddFundButton As Button
     Friend WithEvents Label20 As Label
-    Friend WithEvents SamsungMain As Panel
-    Friend WithEvents Label13 As Label
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label9 As Label
+    Friend WithEvents HomePage As Panel
+    Friend WithEvents HomeEditSchedule As Label
+    Friend WithEvents HomeSendMoney As Label
+    Friend WithEvents HomeFindChild As Label
+    Friend WithEvents HomeSendReminder As Label
+    Friend WithEvents HomePageTitle As Label
     Friend WithEvents LocateSosPanel As Panel
-    Friend WithEvents SendLocPic As PictureBox
+    Friend WithEvents LocateChildPic As PictureBox
     Friend WithEvents Label19 As Label
     Friend WithEvents Label17 As Label
-    Friend WithEvents SendLoc As Button
+    Friend WithEvents SendLocButton As Button
     Friend WithEvents LocateChildPicBox As PictureBox
     Friend WithEvents Label16 As Label
     Friend WithEvents BackButton As Button
     Friend WithEvents ReminderPanel As Panel
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button6 As Button
+    Friend WithEvents ReminderText As TextBox
+    Friend WithEvents SendReminderButton As Button
     Friend WithEvents Label18 As Label
     Friend WithEvents PhoneFrame As PictureBox
     Friend WithEvents TabControl1 As TabControl
