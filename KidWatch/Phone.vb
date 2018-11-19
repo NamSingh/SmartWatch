@@ -185,4 +185,8 @@
         clearphone()
         MessagePanel.Visible = True
     End Sub
+
+    Private Sub ReminderText_TextChanged(sender As Object, e As EventArgs) Handles ReminderText.TextChanged
+
+    End Sub
 End Class

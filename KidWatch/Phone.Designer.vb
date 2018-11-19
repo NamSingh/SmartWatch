@@ -60,22 +60,13 @@ Partial Class Phone
         Me.ReminderText = New System.Windows.Forms.TextBox()
         Me.SendReminderButton = New System.Windows.Forms.Button()
         Me.Label18 = New System.Windows.Forms.Label()
-        Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.TabPage4 = New System.Windows.Forms.TabPage()
-        Me.TabPage5 = New System.Windows.Forms.TabPage()
-        Me.TabPage6 = New System.Windows.Forms.TabPage()
         Me.IncomingCallPanel = New System.Windows.Forms.Panel()
         Me.ChildNameLabel = New System.Windows.Forms.Label()
         Me.IncomingCallLabel = New System.Windows.Forms.Label()
-        Me.TabPage7 = New System.Windows.Forms.TabPage()
         Me.CallChildPanel = New System.Windows.Forms.Panel()
         Me.CallEndLabel = New System.Windows.Forms.Label()
         Me.CallTimeLabel = New System.Windows.Forms.Label()
         Me.CallChildLabel = New System.Windows.Forms.Label()
-        Me.TabPage8 = New System.Windows.Forms.TabPage()
         Me.UpcomingFeaturesPanel = New System.Windows.Forms.Panel()
         Me.Biometrics = New System.Windows.Forms.Button()
         Me.ManageMusic = New System.Windows.Forms.Button()
@@ -83,7 +74,6 @@ Partial Class Phone
         Me.ConfigureWatch = New System.Windows.Forms.Button()
         Me.Games = New System.Windows.Forms.Button()
         Me.UpcomingLabel = New System.Windows.Forms.Label()
-        Me.TabPage9 = New System.Windows.Forms.TabPage()
         Me.ContactsPanel = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -91,7 +81,6 @@ Partial Class Phone
         Me.ContactsLabel = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Messages = New System.Windows.Forms.Button()
-        Me.TabPage10 = New System.Windows.Forms.TabPage()
         Me.MessagePanel = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.SendMsg = New System.Windows.Forms.Button()
@@ -118,22 +107,11 @@ Partial Class Phone
         Me.HomePage.SuspendLayout()
         Me.LocateSosPanel.SuspendLayout()
         Me.ReminderPanel.SuspendLayout()
-        Me.TabControl1.SuspendLayout()
-        Me.TabPage1.SuspendLayout()
-        Me.TabPage2.SuspendLayout()
-        Me.TabPage3.SuspendLayout()
-        Me.TabPage4.SuspendLayout()
-        Me.TabPage5.SuspendLayout()
-        Me.TabPage6.SuspendLayout()
         Me.IncomingCallPanel.SuspendLayout()
-        Me.TabPage7.SuspendLayout()
         Me.CallChildPanel.SuspendLayout()
-        Me.TabPage8.SuspendLayout()
         Me.UpcomingFeaturesPanel.SuspendLayout()
-        Me.TabPage9.SuspendLayout()
         Me.ContactsPanel.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
-        Me.TabPage10.SuspendLayout()
         Me.MessagePanel.SuspendLayout()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -158,7 +136,7 @@ Partial Class Phone
         Me.DailySchedPanel.Controls.Add(Me.DateTimePicker2)
         Me.DailySchedPanel.Controls.Add(Me.Label24)
         Me.DailySchedPanel.Controls.Add(Me.Label25)
-        Me.DailySchedPanel.Location = New System.Drawing.Point(6, 6)
+        Me.DailySchedPanel.Location = New System.Drawing.Point(13, 68)
         Me.DailySchedPanel.Name = "DailySchedPanel"
         Me.DailySchedPanel.Size = New System.Drawing.Size(369, 640)
         Me.DailySchedPanel.TabIndex = 30
@@ -288,7 +266,7 @@ Partial Class Phone
         Me.FundsPanel.Controls.Add(Me.AddFundsBox)
         Me.FundsPanel.Controls.Add(Me.AddFundButton)
         Me.FundsPanel.Controls.Add(Me.Label20)
-        Me.FundsPanel.Location = New System.Drawing.Point(6, 3)
+        Me.FundsPanel.Location = New System.Drawing.Point(13, 70)
         Me.FundsPanel.Name = "FundsPanel"
         Me.FundsPanel.Size = New System.Drawing.Size(369, 640)
         Me.FundsPanel.TabIndex = 29
@@ -354,7 +332,7 @@ Partial Class Phone
         Me.HomePage.Controls.Add(Me.SendMoneyButton)
         Me.HomePage.Controls.Add(Me.SendReminderBut)
         Me.HomePage.Controls.Add(Me.HomePageTitle)
-        Me.HomePage.Location = New System.Drawing.Point(22, 20)
+        Me.HomePage.Location = New System.Drawing.Point(12, 70)
         Me.HomePage.Name = "HomePage"
         Me.HomePage.Size = New System.Drawing.Size(369, 640)
         Me.HomePage.TabIndex = 25
@@ -440,7 +418,7 @@ Partial Class Phone
         Me.LocateSosPanel.Controls.Add(Me.SendLocButton)
         Me.LocateSosPanel.Controls.Add(Me.LocateChildPicBox)
         Me.LocateSosPanel.Controls.Add(Me.Label16)
-        Me.LocateSosPanel.Location = New System.Drawing.Point(21, 21)
+        Me.LocateSosPanel.Location = New System.Drawing.Point(13, 68)
         Me.LocateSosPanel.Name = "LocateSosPanel"
         Me.LocateSosPanel.Size = New System.Drawing.Size(369, 640)
         Me.LocateSosPanel.TabIndex = 28
@@ -501,7 +479,7 @@ Partial Class Phone
         Me.ReminderPanel.Controls.Add(Me.ReminderText)
         Me.ReminderPanel.Controls.Add(Me.SendReminderButton)
         Me.ReminderPanel.Controls.Add(Me.Label18)
-        Me.ReminderPanel.Location = New System.Drawing.Point(21, 6)
+        Me.ReminderPanel.Location = New System.Drawing.Point(12, 69)
         Me.ReminderPanel.Name = "ReminderPanel"
         Me.ReminderPanel.Size = New System.Drawing.Size(369, 640)
         Me.ReminderPanel.TabIndex = 26
@@ -509,7 +487,7 @@ Partial Class Phone
         '
         'ReminderText
         '
-        Me.ReminderText.Location = New System.Drawing.Point(48, 63)
+        Me.ReminderText.Location = New System.Drawing.Point(48, 87)
         Me.ReminderText.Multiline = True
         Me.ReminderText.Name = "ReminderText"
         Me.ReminderText.Size = New System.Drawing.Size(284, 121)
@@ -530,95 +508,11 @@ Partial Class Phone
         Me.Label18.AutoSize = True
         Me.Label18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(65, 0)
+        Me.Label18.Location = New System.Drawing.Point(53, 17)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(259, 41)
         Me.Label18.TabIndex = 0
         Me.Label18.Text = "Send Reminder"
-        '
-        'TabControl1
-        '
-        Me.TabControl1.Controls.Add(Me.TabPage1)
-        Me.TabControl1.Controls.Add(Me.TabPage2)
-        Me.TabControl1.Controls.Add(Me.TabPage3)
-        Me.TabControl1.Controls.Add(Me.TabPage4)
-        Me.TabControl1.Controls.Add(Me.TabPage5)
-        Me.TabControl1.Controls.Add(Me.TabPage6)
-        Me.TabControl1.Controls.Add(Me.TabPage7)
-        Me.TabControl1.Controls.Add(Me.TabPage8)
-        Me.TabControl1.Controls.Add(Me.TabPage9)
-        Me.TabControl1.Controls.Add(Me.TabPage10)
-        Me.TabControl1.Location = New System.Drawing.Point(402, 1)
-        Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(556, 791)
-        Me.TabControl1.TabIndex = 31
-        '
-        'TabPage1
-        '
-        Me.TabPage1.Controls.Add(Me.DailySchedPanel)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(548, 765)
-        Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "TabPage1"
-        Me.TabPage1.UseVisualStyleBackColor = True
-        '
-        'TabPage2
-        '
-        Me.TabPage2.Controls.Add(Me.FundsPanel)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(548, 765)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "TabPage2"
-        Me.TabPage2.UseVisualStyleBackColor = True
-        '
-        'TabPage3
-        '
-        Me.TabPage3.Controls.Add(Me.ReminderPanel)
-        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(548, 765)
-        Me.TabPage3.TabIndex = 2
-        Me.TabPage3.Text = "TabPage3"
-        Me.TabPage3.UseVisualStyleBackColor = True
-        '
-        'TabPage4
-        '
-        Me.TabPage4.Controls.Add(Me.LocateSosPanel)
-        Me.TabPage4.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage4.Size = New System.Drawing.Size(548, 765)
-        Me.TabPage4.TabIndex = 3
-        Me.TabPage4.Text = "TabPage4"
-        Me.TabPage4.UseVisualStyleBackColor = True
-        '
-        'TabPage5
-        '
-        Me.TabPage5.Controls.Add(Me.HomePage)
-        Me.TabPage5.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage5.Size = New System.Drawing.Size(548, 765)
-        Me.TabPage5.TabIndex = 4
-        Me.TabPage5.Text = "TabPage5"
-        Me.TabPage5.UseVisualStyleBackColor = True
-        '
-        'TabPage6
-        '
-        Me.TabPage6.Controls.Add(Me.IncomingCallPanel)
-        Me.TabPage6.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage6.Name = "TabPage6"
-        Me.TabPage6.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage6.Size = New System.Drawing.Size(548, 765)
-        Me.TabPage6.TabIndex = 5
-        Me.TabPage6.Text = "TabPage6"
-        Me.TabPage6.UseVisualStyleBackColor = True
         '
         'IncomingCallPanel
         '
@@ -628,7 +522,7 @@ Partial Class Phone
         Me.IncomingCallPanel.Controls.Add(Me.ChildPicture)
         Me.IncomingCallPanel.Controls.Add(Me.ChildNameLabel)
         Me.IncomingCallPanel.Controls.Add(Me.IncomingCallLabel)
-        Me.IncomingCallPanel.Location = New System.Drawing.Point(69, 62)
+        Me.IncomingCallPanel.Location = New System.Drawing.Point(13, 68)
         Me.IncomingCallPanel.Name = "IncomingCallPanel"
         Me.IncomingCallPanel.Size = New System.Drawing.Size(369, 640)
         Me.IncomingCallPanel.TabIndex = 26
@@ -654,17 +548,6 @@ Partial Class Phone
         Me.IncomingCallLabel.TabIndex = 0
         Me.IncomingCallLabel.Text = "Incoming Call From...."
         '
-        'TabPage7
-        '
-        Me.TabPage7.Controls.Add(Me.CallChildPanel)
-        Me.TabPage7.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage7.Name = "TabPage7"
-        Me.TabPage7.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage7.Size = New System.Drawing.Size(548, 765)
-        Me.TabPage7.TabIndex = 6
-        Me.TabPage7.Text = "TabPage7"
-        Me.TabPage7.UseVisualStyleBackColor = True
-        '
         'CallChildPanel
         '
         Me.CallChildPanel.BackColor = System.Drawing.Color.Coral
@@ -674,7 +557,7 @@ Partial Class Phone
         Me.CallChildPanel.Controls.Add(Me.CallPic)
         Me.CallChildPanel.Controls.Add(Me.KidPic)
         Me.CallChildPanel.Controls.Add(Me.CallChildLabel)
-        Me.CallChildPanel.Location = New System.Drawing.Point(69, 62)
+        Me.CallChildPanel.Location = New System.Drawing.Point(14, 70)
         Me.CallChildPanel.Name = "CallChildPanel"
         Me.CallChildPanel.Size = New System.Drawing.Size(369, 640)
         Me.CallChildPanel.TabIndex = 27
@@ -716,17 +599,6 @@ Partial Class Phone
         Me.CallChildLabel.TabIndex = 0
         Me.CallChildLabel.Text = "Call Child"
         '
-        'TabPage8
-        '
-        Me.TabPage8.Controls.Add(Me.UpcomingFeaturesPanel)
-        Me.TabPage8.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage8.Name = "TabPage8"
-        Me.TabPage8.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage8.Size = New System.Drawing.Size(548, 765)
-        Me.TabPage8.TabIndex = 7
-        Me.TabPage8.Text = "TabPage8"
-        Me.TabPage8.UseVisualStyleBackColor = True
-        '
         'UpcomingFeaturesPanel
         '
         Me.UpcomingFeaturesPanel.BackColor = System.Drawing.Color.Salmon
@@ -736,7 +608,7 @@ Partial Class Phone
         Me.UpcomingFeaturesPanel.Controls.Add(Me.ConfigureWatch)
         Me.UpcomingFeaturesPanel.Controls.Add(Me.Games)
         Me.UpcomingFeaturesPanel.Controls.Add(Me.UpcomingLabel)
-        Me.UpcomingFeaturesPanel.Location = New System.Drawing.Point(69, 62)
+        Me.UpcomingFeaturesPanel.Location = New System.Drawing.Point(13, 71)
         Me.UpcomingFeaturesPanel.Name = "UpcomingFeaturesPanel"
         Me.UpcomingFeaturesPanel.Size = New System.Drawing.Size(369, 640)
         Me.UpcomingFeaturesPanel.TabIndex = 26
@@ -808,24 +680,13 @@ Partial Class Phone
         Me.UpcomingLabel.TabIndex = 0
         Me.UpcomingLabel.Text = "Upcoming Features"
         '
-        'TabPage9
-        '
-        Me.TabPage9.Controls.Add(Me.ContactsPanel)
-        Me.TabPage9.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage9.Name = "TabPage9"
-        Me.TabPage9.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage9.Size = New System.Drawing.Size(548, 765)
-        Me.TabPage9.TabIndex = 8
-        Me.TabPage9.Text = "TabPage9"
-        Me.TabPage9.UseVisualStyleBackColor = True
-        '
         'ContactsPanel
         '
         Me.ContactsPanel.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.ContactsPanel.BackColor = System.Drawing.Color.Salmon
         Me.ContactsPanel.Controls.Add(Me.TableLayoutPanel1)
         Me.ContactsPanel.Controls.Add(Me.ContactsLabel)
-        Me.ContactsPanel.Location = New System.Drawing.Point(90, 62)
+        Me.ContactsPanel.Location = New System.Drawing.Point(11, 71)
         Me.ContactsPanel.Name = "ContactsPanel"
         Me.ContactsPanel.Size = New System.Drawing.Size(369, 640)
         Me.ContactsPanel.TabIndex = 27
@@ -897,17 +758,6 @@ Partial Class Phone
         Me.Messages.Text = "Messages"
         Me.Messages.UseVisualStyleBackColor = True
         '
-        'TabPage10
-        '
-        Me.TabPage10.Controls.Add(Me.MessagePanel)
-        Me.TabPage10.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage10.Name = "TabPage10"
-        Me.TabPage10.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage10.Size = New System.Drawing.Size(548, 765)
-        Me.TabPage10.TabIndex = 9
-        Me.TabPage10.Text = "TabPage10"
-        Me.TabPage10.UseVisualStyleBackColor = True
-        '
         'MessagePanel
         '
         Me.MessagePanel.BackColor = System.Drawing.Color.Salmon
@@ -916,7 +766,7 @@ Partial Class Phone
         Me.MessagePanel.Controls.Add(Me.MessageFromChild)
         Me.MessagePanel.Controls.Add(Me.SendMsg)
         Me.MessagePanel.Controls.Add(Me.Label2)
-        Me.MessagePanel.Location = New System.Drawing.Point(90, 62)
+        Me.MessagePanel.Location = New System.Drawing.Point(13, 71)
         Me.MessagePanel.Name = "MessagePanel"
         Me.MessagePanel.Size = New System.Drawing.Size(369, 640)
         Me.MessagePanel.TabIndex = 27
@@ -1112,8 +962,17 @@ Partial Class Phone
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(960, 804)
-        Me.Controls.Add(Me.TabControl1)
+        Me.ClientSize = New System.Drawing.Size(393, 804)
+        Me.Controls.Add(Me.DailySchedPanel)
+        Me.Controls.Add(Me.FundsPanel)
+        Me.Controls.Add(Me.ReminderPanel)
+        Me.Controls.Add(Me.LocateSosPanel)
+        Me.Controls.Add(Me.IncomingCallPanel)
+        Me.Controls.Add(Me.CallChildPanel)
+        Me.Controls.Add(Me.UpcomingFeaturesPanel)
+        Me.Controls.Add(Me.ContactsPanel)
+        Me.Controls.Add(Me.MessagePanel)
+        Me.Controls.Add(Me.HomePage)
         Me.Controls.Add(Me.BackButton)
         Me.Controls.Add(Me.PhoneFrame)
         Me.Margin = New System.Windows.Forms.Padding(2)
@@ -1133,27 +992,16 @@ Partial Class Phone
         Me.LocateSosPanel.PerformLayout()
         Me.ReminderPanel.ResumeLayout(False)
         Me.ReminderPanel.PerformLayout()
-        Me.TabControl1.ResumeLayout(False)
-        Me.TabPage1.ResumeLayout(False)
-        Me.TabPage2.ResumeLayout(False)
-        Me.TabPage3.ResumeLayout(False)
-        Me.TabPage4.ResumeLayout(False)
-        Me.TabPage5.ResumeLayout(False)
-        Me.TabPage6.ResumeLayout(False)
         Me.IncomingCallPanel.ResumeLayout(False)
         Me.IncomingCallPanel.PerformLayout()
-        Me.TabPage7.ResumeLayout(False)
         Me.CallChildPanel.ResumeLayout(False)
         Me.CallChildPanel.PerformLayout()
-        Me.TabPage8.ResumeLayout(False)
         Me.UpcomingFeaturesPanel.ResumeLayout(False)
         Me.UpcomingFeaturesPanel.PerformLayout()
-        Me.TabPage9.ResumeLayout(False)
         Me.ContactsPanel.ResumeLayout(False)
         Me.ContactsPanel.PerformLayout()
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
-        Me.TabPage10.ResumeLayout(False)
         Me.MessagePanel.ResumeLayout(False)
         Me.MessagePanel.PerformLayout()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1208,22 +1056,14 @@ Partial Class Phone
     Friend WithEvents SendReminderButton As Button
     Friend WithEvents Label18 As Label
     Friend WithEvents PhoneFrame As PictureBox
-    Friend WithEvents TabControl1 As TabControl
-    Friend WithEvents TabPage1 As TabPage
-    Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents TabPage3 As TabPage
-    Friend WithEvents TabPage4 As TabPage
-    Friend WithEvents TabPage5 As TabPage
     Friend WithEvents FindChildButton As Button
     Friend WithEvents EditScheduleButton As Button
     Friend WithEvents SendMoneyButton As Button
     Friend WithEvents SendReminderBut As Button
-    Friend WithEvents TabPage6 As TabPage
     Friend WithEvents IncomingCallPanel As Panel
     Friend WithEvents IncomingCallLabel As Label
     Friend WithEvents ChildNameLabel As Label
     Friend WithEvents MakeCall As Button
-    Friend WithEvents TabPage7 As TabPage
     Friend WithEvents CallChildPanel As Panel
     Friend WithEvents CallChildLabel As Label
     Friend WithEvents CallPic As PictureBox
@@ -1232,7 +1072,6 @@ Partial Class Phone
     Friend WithEvents DeclineCallPic As PictureBox
     Friend WithEvents ChildPicture As PictureBox
     Friend WithEvents UpcomingFeaturesButton As Button
-    Friend WithEvents TabPage8 As TabPage
     Friend WithEvents UpcomingFeaturesPanel As Panel
     Friend WithEvents Biometrics As Button
     Friend WithEvents ManageMusic As Button
@@ -1240,7 +1079,6 @@ Partial Class Phone
     Friend WithEvents ConfigureWatch As Button
     Friend WithEvents Games As Button
     Friend WithEvents UpcomingLabel As Label
-    Friend WithEvents TabPage9 As TabPage
     Friend WithEvents ContactsPanel As Panel
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents ContactsLabel As Label
@@ -1253,7 +1091,6 @@ Partial Class Phone
     Friend WithEvents Timer1 As Timer
     Friend WithEvents EndCallPic As PictureBox
     Friend WithEvents Messages As Button
-    Friend WithEvents TabPage10 As TabPage
     Friend WithEvents MessagePanel As Panel
     Friend WithEvents Label3 As Label
     Friend WithEvents MessageToChild As TextBox
