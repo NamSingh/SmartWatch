@@ -80,6 +80,7 @@
         CallTimeLabel.Text = ". . . ."
         CallTimeLabel.Visible = True
 
+        Phone.IncomingCall()
     End Sub
 
     Public Sub CallAccepted()
@@ -167,7 +168,7 @@
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PhoneAppIcon.Click
         clear()
         DisableSwipe()
-        Me.PhoneAppPanel.Visible = True
+        ContactsPanel.Visible = True
     End Sub
 
     Public Sub clear()
@@ -182,6 +183,7 @@
         SoccerDetails.Visible = False
         StudyDetails.Visible = False
         IncomingCallPanel.Visible = False
+        ContactsPanel.Visible = False
     End Sub
 
     Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles CallHomeButton.Click, AllowanceHome.Click, SettingsHome.Click, GPSHomeButton.Click, StudyHome.Click, SoccerHome.Click, ScheduleHome.Click
@@ -306,4 +308,8 @@
         RightButton.Visible = False
     End Sub
 
+    Private Sub MomPic3_Click(sender As Object, e As EventArgs) Handles MomPic3.Click, MomLabel2.Click
+        clear()
+        PhoneAppPanel.Visible = True
+    End Sub
 End Class

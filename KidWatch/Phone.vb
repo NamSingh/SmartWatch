@@ -120,6 +120,7 @@
 
     Public Sub CallAccepted()
         CallChildPanel.BackColor = Color.Green
+        CallTimeLabel.Visible = True
         Time = DateTime.Now
         Timer1.Start()
     End Sub
@@ -151,17 +152,25 @@
         Smartwatch.CallEnded()
     End Sub
 
-    Public Sub RecieveCall()
-        BackButton.Visible = False
+    Public Sub IncomingCall()
         IncomingCallPanel.Visible = True
+        IncomingCallPanel.BringToFront()
+        BackButton.Visible = False
     End Sub
 
     Private Sub AcceptCallPic_Click(sender As Object, e As EventArgs) Handles AcceptCallPic.Click
         clearphone()
+        Smartwatch.CallAccepted()
 
+        CallPic.Visible = False
+        EndCallPic.Visible = True
+        BackButton.Visible = False
+        CallChildPanel.Visible = True
+        Me.CallAccepted()
     End Sub
 
     Private Sub DeclineCallPic_Click(sender As Object, e As EventArgs) Handles DeclineCallPic.Click
+        Smartwatch.CallDeclined()
         BackButton.Visible = True
         IncomingCallPanel.Visible = False
     End Sub

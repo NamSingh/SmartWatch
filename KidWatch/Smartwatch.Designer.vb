@@ -127,6 +127,14 @@ Partial Class Smartwatch
         Me.AcceptCall = New System.Windows.Forms.PictureBox()
         Me.MomPic2 = New System.Windows.Forms.PictureBox()
         Me.MomCallingLabel = New System.Windows.Forms.Label()
+        Me.TabPage10 = New System.Windows.Forms.TabPage()
+        Me.ContactsPanel = New System.Windows.Forms.Panel()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.MomLabel2 = New System.Windows.Forms.Label()
+        Me.FrinedLabel = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.MomPic3 = New System.Windows.Forms.PictureBox()
+        Me.ContactLabel = New System.Windows.Forms.Label()
         Me.HomePagePanel.SuspendLayout()
         CType(Me.RabbitPicture, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PhoneAppPanel.SuspendLayout()
@@ -184,6 +192,11 @@ Partial Class Smartwatch
         CType(Me.DeclineCall, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AcceptCall, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MomPic2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage10.SuspendLayout()
+        Me.ContactsPanel.SuspendLayout()
+        Me.TableLayoutPanel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MomPic3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'HomePagePanel
@@ -1130,10 +1143,11 @@ Partial Class Smartwatch
         Me.TabControl1.Controls.Add(Me.TabPage7)
         Me.TabControl1.Controls.Add(Me.TabPage8)
         Me.TabControl1.Controls.Add(Me.TabPage9)
-        Me.TabControl1.Location = New System.Drawing.Point(706, 31)
+        Me.TabControl1.Controls.Add(Me.TabPage10)
+        Me.TabControl1.Location = New System.Drawing.Point(706, 32)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(626, 437)
+        Me.TabControl1.Size = New System.Drawing.Size(626, 436)
         Me.TabControl1.TabIndex = 26
         '
         'TabPage1
@@ -1142,7 +1156,7 @@ Partial Class Smartwatch
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(618, 411)
+        Me.TabPage1.Size = New System.Drawing.Size(618, 410)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "TabPage1"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -1153,7 +1167,7 @@ Partial Class Smartwatch
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(618, 411)
+        Me.TabPage2.Size = New System.Drawing.Size(618, 410)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "TabPage2"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -1164,7 +1178,7 @@ Partial Class Smartwatch
         Me.TabPage3.Location = New System.Drawing.Point(4, 22)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(618, 411)
+        Me.TabPage3.Size = New System.Drawing.Size(618, 410)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "TabPage3"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -1175,7 +1189,7 @@ Partial Class Smartwatch
         Me.TabPage4.Location = New System.Drawing.Point(4, 22)
         Me.TabPage4.Name = "TabPage4"
         Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage4.Size = New System.Drawing.Size(618, 411)
+        Me.TabPage4.Size = New System.Drawing.Size(618, 410)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "TabPage4"
         Me.TabPage4.UseVisualStyleBackColor = True
@@ -1188,7 +1202,7 @@ Partial Class Smartwatch
         Me.TabPage5.Location = New System.Drawing.Point(4, 22)
         Me.TabPage5.Name = "TabPage5"
         Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage5.Size = New System.Drawing.Size(618, 411)
+        Me.TabPage5.Size = New System.Drawing.Size(618, 410)
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "TabPage5"
         Me.TabPage5.UseVisualStyleBackColor = True
@@ -1199,7 +1213,7 @@ Partial Class Smartwatch
         Me.TabPage6.Location = New System.Drawing.Point(4, 22)
         Me.TabPage6.Name = "TabPage6"
         Me.TabPage6.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage6.Size = New System.Drawing.Size(618, 411)
+        Me.TabPage6.Size = New System.Drawing.Size(618, 410)
         Me.TabPage6.TabIndex = 5
         Me.TabPage6.Text = "TabPage6"
         Me.TabPage6.UseVisualStyleBackColor = True
@@ -1210,7 +1224,7 @@ Partial Class Smartwatch
         Me.TabPage7.Location = New System.Drawing.Point(4, 22)
         Me.TabPage7.Name = "TabPage7"
         Me.TabPage7.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage7.Size = New System.Drawing.Size(618, 411)
+        Me.TabPage7.Size = New System.Drawing.Size(618, 410)
         Me.TabPage7.TabIndex = 6
         Me.TabPage7.Text = "TabPage7"
         Me.TabPage7.UseVisualStyleBackColor = True
@@ -1221,7 +1235,7 @@ Partial Class Smartwatch
         Me.TabPage8.Location = New System.Drawing.Point(4, 22)
         Me.TabPage8.Name = "TabPage8"
         Me.TabPage8.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage8.Size = New System.Drawing.Size(618, 411)
+        Me.TabPage8.Size = New System.Drawing.Size(618, 410)
         Me.TabPage8.TabIndex = 7
         Me.TabPage8.Text = "TabPage8"
         Me.TabPage8.UseVisualStyleBackColor = True
@@ -1232,7 +1246,7 @@ Partial Class Smartwatch
         Me.TabPage9.Location = New System.Drawing.Point(4, 22)
         Me.TabPage9.Name = "TabPage9"
         Me.TabPage9.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage9.Size = New System.Drawing.Size(618, 411)
+        Me.TabPage9.Size = New System.Drawing.Size(618, 410)
         Me.TabPage9.TabIndex = 8
         Me.TabPage9.Text = "TabPage9"
         Me.TabPage9.UseVisualStyleBackColor = True
@@ -1291,6 +1305,102 @@ Partial Class Smartwatch
         Me.MomCallingLabel.Size = New System.Drawing.Size(207, 39)
         Me.MomCallingLabel.TabIndex = 0
         Me.MomCallingLabel.Text = "Mom Calling"
+        '
+        'TabPage10
+        '
+        Me.TabPage10.Controls.Add(Me.ContactsPanel)
+        Me.TabPage10.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage10.Name = "TabPage10"
+        Me.TabPage10.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage10.Size = New System.Drawing.Size(618, 410)
+        Me.TabPage10.TabIndex = 9
+        Me.TabPage10.Text = "TabPage10"
+        Me.TabPage10.UseVisualStyleBackColor = True
+        '
+        'ContactsPanel
+        '
+        Me.ContactsPanel.BackColor = System.Drawing.Color.RoyalBlue
+        Me.ContactsPanel.Controls.Add(Me.TableLayoutPanel1)
+        Me.ContactsPanel.Controls.Add(Me.ContactLabel)
+        Me.ContactsPanel.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
+        Me.ContactsPanel.Location = New System.Drawing.Point(141, 34)
+        Me.ContactsPanel.Name = "ContactsPanel"
+        Me.ContactsPanel.Size = New System.Drawing.Size(337, 343)
+        Me.ContactsPanel.TabIndex = 4
+        Me.ContactsPanel.Visible = False
+        '
+        'TableLayoutPanel1
+        '
+        Me.TableLayoutPanel1.ColumnCount = 2
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.Controls.Add(Me.MomLabel2, 0, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.FrinedLabel, 1, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.PictureBox1, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.MomPic3, 0, 0)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(3, 78)
+        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+        Me.TableLayoutPanel1.RowCount = 2
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.94444!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.05556!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(331, 216)
+        Me.TableLayoutPanel1.TabIndex = 9
+        '
+        'MomLabel2
+        '
+        Me.MomLabel2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.MomLabel2.AutoSize = True
+        Me.MomLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MomLabel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.MomLabel2.Location = New System.Drawing.Point(42, 179)
+        Me.MomLabel2.Name = "MomLabel2"
+        Me.MomLabel2.Size = New System.Drawing.Size(80, 33)
+        Me.MomLabel2.TabIndex = 14
+        Me.MomLabel2.Text = "Mom"
+        '
+        'FrinedLabel
+        '
+        Me.FrinedLabel.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.FrinedLabel.AutoSize = True
+        Me.FrinedLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FrinedLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.FrinedLabel.Location = New System.Drawing.Point(210, 179)
+        Me.FrinedLabel.Name = "FrinedLabel"
+        Me.FrinedLabel.Size = New System.Drawing.Size(76, 33)
+        Me.FrinedLabel.TabIndex = 13
+        Me.FrinedLabel.Text = "Jack"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = Global.KidWatch.My.Resources.Resource1.boy
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox1.Location = New System.Drawing.Point(168, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(159, 170)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 9
+        Me.PictureBox1.TabStop = False
+        '
+        'MomPic3
+        '
+        Me.MomPic3.BackgroundImage = Global.KidWatch.My.Resources.Resource1.Mom
+        Me.MomPic3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.MomPic3.Location = New System.Drawing.Point(3, 3)
+        Me.MomPic3.Name = "MomPic3"
+        Me.MomPic3.Size = New System.Drawing.Size(159, 170)
+        Me.MomPic3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.MomPic3.TabIndex = 8
+        Me.MomPic3.TabStop = False
+        '
+        'ContactLabel
+        '
+        Me.ContactLabel.AutoSize = True
+        Me.ContactLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.ContactLabel.Location = New System.Drawing.Point(97, 10)
+        Me.ContactLabel.Name = "ContactLabel"
+        Me.ContactLabel.Size = New System.Drawing.Size(151, 39)
+        Me.ContactLabel.TabIndex = 0
+        Me.ContactLabel.Text = "Contacts"
         '
         'Smartwatch
         '
@@ -1372,6 +1482,13 @@ Partial Class Smartwatch
         CType(Me.DeclineCall, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AcceptCall, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MomPic2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage10.ResumeLayout(False)
+        Me.ContactsPanel.ResumeLayout(False)
+        Me.ContactsPanel.PerformLayout()
+        Me.TableLayoutPanel1.ResumeLayout(False)
+        Me.TableLayoutPanel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MomPic3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1479,4 +1596,12 @@ Partial Class Smartwatch
     Friend WithEvents MomPic2 As PictureBox
     Friend WithEvents DeclineCall As PictureBox
     Friend WithEvents AcceptCall As PictureBox
+    Friend WithEvents TabPage10 As TabPage
+    Friend WithEvents ContactsPanel As Panel
+    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents MomLabel2 As Label
+    Friend WithEvents FrinedLabel As Label
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents MomPic3 As PictureBox
+    Friend WithEvents ContactLabel As Label
 End Class
