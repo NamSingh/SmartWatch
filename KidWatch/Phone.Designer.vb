@@ -65,12 +65,21 @@ Partial Class Phone
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
         Me.TabPage6 = New System.Windows.Forms.TabPage()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.IncomingCallPanel = New System.Windows.Forms.Panel()
         Me.ChildNameLabel = New System.Windows.Forms.Label()
         Me.IncomingCallLabel = New System.Windows.Forms.Label()
         Me.TabPage7 = New System.Windows.Forms.TabPage()
         Me.CallChildPanel = New System.Windows.Forms.Panel()
         Me.CallChildLabel = New System.Windows.Forms.Label()
+        Me.UpcomingFeaturesButton = New System.Windows.Forms.Button()
+        Me.TabPage8 = New System.Windows.Forms.TabPage()
+        Me.UpcomingFeaturesPanel = New System.Windows.Forms.Panel()
+        Me.Biometrics = New System.Windows.Forms.Button()
+        Me.ManageMusic = New System.Windows.Forms.Button()
+        Me.ManageMessages = New System.Windows.Forms.Button()
+        Me.ConfigureWatch = New System.Windows.Forms.Button()
+        Me.Games = New System.Windows.Forms.Button()
+        Me.UpcomingLabel = New System.Windows.Forms.Label()
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         Me.PictureBox16 = New System.Windows.Forms.PictureBox()
         Me.LocateChildPic = New System.Windows.Forms.PictureBox()
@@ -81,15 +90,6 @@ Partial Class Phone
         Me.CallPic = New System.Windows.Forms.PictureBox()
         Me.KidPic = New System.Windows.Forms.PictureBox()
         Me.PhoneFrame = New System.Windows.Forms.PictureBox()
-        Me.UpcomingFeaturesButton = New System.Windows.Forms.Button()
-        Me.TabPage8 = New System.Windows.Forms.TabPage()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Biometrics = New System.Windows.Forms.Button()
-        Me.ManageMusic = New System.Windows.Forms.Button()
-        Me.ManageMessages = New System.Windows.Forms.Button()
-        Me.ConfigureWatch = New System.Windows.Forms.Button()
-        Me.Games = New System.Windows.Forms.Button()
-        Me.UpcomingLabel = New System.Windows.Forms.Label()
         Me.DailySchedPanel.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -104,9 +104,11 @@ Partial Class Phone
         Me.TabPage4.SuspendLayout()
         Me.TabPage5.SuspendLayout()
         Me.TabPage6.SuspendLayout()
-        Me.Panel1.SuspendLayout()
+        Me.IncomingCallPanel.SuspendLayout()
         Me.TabPage7.SuspendLayout()
         Me.CallChildPanel.SuspendLayout()
+        Me.TabPage8.SuspendLayout()
+        Me.UpcomingFeaturesPanel.SuspendLayout()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LocateChildPic, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -117,8 +119,6 @@ Partial Class Phone
         CType(Me.CallPic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KidPic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PhoneFrame, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPage8.SuspendLayout()
-        Me.Panel4.SuspendLayout()
         Me.SuspendLayout()
         '
         'DailySchedPanel
@@ -568,7 +568,7 @@ Partial Class Phone
         '
         'TabPage6
         '
-        Me.TabPage6.Controls.Add(Me.Panel1)
+        Me.TabPage6.Controls.Add(Me.IncomingCallPanel)
         Me.TabPage6.Location = New System.Drawing.Point(4, 22)
         Me.TabPage6.Name = "TabPage6"
         Me.TabPage6.Padding = New System.Windows.Forms.Padding(3)
@@ -577,18 +577,19 @@ Partial Class Phone
         Me.TabPage6.Text = "TabPage6"
         Me.TabPage6.UseVisualStyleBackColor = True
         '
-        'Panel1
+        'IncomingCallPanel
         '
-        Me.Panel1.BackColor = System.Drawing.Color.Salmon
-        Me.Panel1.Controls.Add(Me.AcceptCallPic)
-        Me.Panel1.Controls.Add(Me.DeclineCallPic)
-        Me.Panel1.Controls.Add(Me.ChildPicture)
-        Me.Panel1.Controls.Add(Me.ChildNameLabel)
-        Me.Panel1.Controls.Add(Me.IncomingCallLabel)
-        Me.Panel1.Location = New System.Drawing.Point(69, 62)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(369, 640)
-        Me.Panel1.TabIndex = 26
+        Me.IncomingCallPanel.BackColor = System.Drawing.Color.Salmon
+        Me.IncomingCallPanel.Controls.Add(Me.AcceptCallPic)
+        Me.IncomingCallPanel.Controls.Add(Me.DeclineCallPic)
+        Me.IncomingCallPanel.Controls.Add(Me.ChildPicture)
+        Me.IncomingCallPanel.Controls.Add(Me.ChildNameLabel)
+        Me.IncomingCallPanel.Controls.Add(Me.IncomingCallLabel)
+        Me.IncomingCallPanel.Location = New System.Drawing.Point(69, 62)
+        Me.IncomingCallPanel.Name = "IncomingCallPanel"
+        Me.IncomingCallPanel.Size = New System.Drawing.Size(369, 640)
+        Me.IncomingCallPanel.TabIndex = 26
+        Me.IncomingCallPanel.Visible = False
         '
         'ChildNameLabel
         '
@@ -643,6 +644,108 @@ Partial Class Phone
         Me.CallChildLabel.Size = New System.Drawing.Size(167, 41)
         Me.CallChildLabel.TabIndex = 0
         Me.CallChildLabel.Text = "Call Child"
+        '
+        'UpcomingFeaturesButton
+        '
+        Me.UpcomingFeaturesButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UpcomingFeaturesButton.Location = New System.Drawing.Point(72, 463)
+        Me.UpcomingFeaturesButton.Name = "UpcomingFeaturesButton"
+        Me.UpcomingFeaturesButton.Size = New System.Drawing.Size(227, 70)
+        Me.UpcomingFeaturesButton.TabIndex = 10
+        Me.UpcomingFeaturesButton.Text = "Upcoming Features"
+        Me.UpcomingFeaturesButton.UseVisualStyleBackColor = True
+        '
+        'TabPage8
+        '
+        Me.TabPage8.Controls.Add(Me.UpcomingFeaturesPanel)
+        Me.TabPage8.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage8.Name = "TabPage8"
+        Me.TabPage8.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage8.Size = New System.Drawing.Size(506, 765)
+        Me.TabPage8.TabIndex = 7
+        Me.TabPage8.Text = "TabPage8"
+        Me.TabPage8.UseVisualStyleBackColor = True
+        '
+        'UpcomingFeaturesPanel
+        '
+        Me.UpcomingFeaturesPanel.BackColor = System.Drawing.Color.Salmon
+        Me.UpcomingFeaturesPanel.Controls.Add(Me.Biometrics)
+        Me.UpcomingFeaturesPanel.Controls.Add(Me.ManageMusic)
+        Me.UpcomingFeaturesPanel.Controls.Add(Me.ManageMessages)
+        Me.UpcomingFeaturesPanel.Controls.Add(Me.ConfigureWatch)
+        Me.UpcomingFeaturesPanel.Controls.Add(Me.Games)
+        Me.UpcomingFeaturesPanel.Controls.Add(Me.UpcomingLabel)
+        Me.UpcomingFeaturesPanel.Location = New System.Drawing.Point(69, 62)
+        Me.UpcomingFeaturesPanel.Name = "UpcomingFeaturesPanel"
+        Me.UpcomingFeaturesPanel.Size = New System.Drawing.Size(369, 640)
+        Me.UpcomingFeaturesPanel.TabIndex = 26
+        Me.UpcomingFeaturesPanel.Visible = False
+        '
+        'Biometrics
+        '
+        Me.Biometrics.Enabled = False
+        Me.Biometrics.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Biometrics.Location = New System.Drawing.Point(71, 121)
+        Me.Biometrics.Name = "Biometrics"
+        Me.Biometrics.Size = New System.Drawing.Size(227, 70)
+        Me.Biometrics.TabIndex = 9
+        Me.Biometrics.Text = "Biometrics"
+        Me.Biometrics.UseVisualStyleBackColor = True
+        '
+        'ManageMusic
+        '
+        Me.ManageMusic.Enabled = False
+        Me.ManageMusic.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ManageMusic.Location = New System.Drawing.Point(71, 273)
+        Me.ManageMusic.Name = "ManageMusic"
+        Me.ManageMusic.Size = New System.Drawing.Size(227, 70)
+        Me.ManageMusic.TabIndex = 8
+        Me.ManageMusic.Text = "Manage Music"
+        Me.ManageMusic.UseVisualStyleBackColor = True
+        '
+        'ManageMessages
+        '
+        Me.ManageMessages.Enabled = False
+        Me.ManageMessages.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ManageMessages.Location = New System.Drawing.Point(71, 425)
+        Me.ManageMessages.Name = "ManageMessages"
+        Me.ManageMessages.Size = New System.Drawing.Size(227, 70)
+        Me.ManageMessages.TabIndex = 7
+        Me.ManageMessages.Text = "Manage Messages"
+        Me.ManageMessages.UseVisualStyleBackColor = True
+        '
+        'ConfigureWatch
+        '
+        Me.ConfigureWatch.Enabled = False
+        Me.ConfigureWatch.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ConfigureWatch.Location = New System.Drawing.Point(71, 349)
+        Me.ConfigureWatch.Name = "ConfigureWatch"
+        Me.ConfigureWatch.Size = New System.Drawing.Size(227, 70)
+        Me.ConfigureWatch.TabIndex = 6
+        Me.ConfigureWatch.Text = "Configure Smartwatch"
+        Me.ConfigureWatch.UseVisualStyleBackColor = True
+        '
+        'Games
+        '
+        Me.Games.Enabled = False
+        Me.Games.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Games.Location = New System.Drawing.Point(71, 197)
+        Me.Games.Name = "Games"
+        Me.Games.Size = New System.Drawing.Size(227, 70)
+        Me.Games.TabIndex = 5
+        Me.Games.Text = "Games"
+        Me.Games.UseVisualStyleBackColor = True
+        '
+        'UpcomingLabel
+        '
+        Me.UpcomingLabel.AutoSize = True
+        Me.UpcomingLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.UpcomingLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UpcomingLabel.Location = New System.Drawing.Point(23, 50)
+        Me.UpcomingLabel.Name = "UpcomingLabel"
+        Me.UpcomingLabel.Size = New System.Drawing.Size(322, 41)
+        Me.UpcomingLabel.TabIndex = 0
+        Me.UpcomingLabel.Text = "Upcoming Features"
         '
         'PictureBox17
         '
@@ -745,107 +848,6 @@ Partial Class Phone
         Me.PhoneFrame.TabIndex = 24
         Me.PhoneFrame.TabStop = False
         '
-        'UpcomingFeaturesButton
-        '
-        Me.UpcomingFeaturesButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.UpcomingFeaturesButton.Location = New System.Drawing.Point(72, 463)
-        Me.UpcomingFeaturesButton.Name = "UpcomingFeaturesButton"
-        Me.UpcomingFeaturesButton.Size = New System.Drawing.Size(227, 70)
-        Me.UpcomingFeaturesButton.TabIndex = 10
-        Me.UpcomingFeaturesButton.Text = "Upcoming Features"
-        Me.UpcomingFeaturesButton.UseVisualStyleBackColor = True
-        '
-        'TabPage8
-        '
-        Me.TabPage8.Controls.Add(Me.Panel4)
-        Me.TabPage8.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage8.Name = "TabPage8"
-        Me.TabPage8.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage8.Size = New System.Drawing.Size(506, 765)
-        Me.TabPage8.TabIndex = 7
-        Me.TabPage8.Text = "TabPage8"
-        Me.TabPage8.UseVisualStyleBackColor = True
-        '
-        'Panel4
-        '
-        Me.Panel4.BackColor = System.Drawing.Color.Salmon
-        Me.Panel4.Controls.Add(Me.Biometrics)
-        Me.Panel4.Controls.Add(Me.ManageMusic)
-        Me.Panel4.Controls.Add(Me.ManageMessages)
-        Me.Panel4.Controls.Add(Me.ConfigureWatch)
-        Me.Panel4.Controls.Add(Me.Games)
-        Me.Panel4.Controls.Add(Me.UpcomingLabel)
-        Me.Panel4.Location = New System.Drawing.Point(69, 62)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(369, 640)
-        Me.Panel4.TabIndex = 26
-        '
-        'Biometrics
-        '
-        Me.Biometrics.Enabled = False
-        Me.Biometrics.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Biometrics.Location = New System.Drawing.Point(71, 121)
-        Me.Biometrics.Name = "Biometrics"
-        Me.Biometrics.Size = New System.Drawing.Size(227, 70)
-        Me.Biometrics.TabIndex = 9
-        Me.Biometrics.Text = "Biometrics"
-        Me.Biometrics.UseVisualStyleBackColor = True
-        '
-        'ManageMusic
-        '
-        Me.ManageMusic.Enabled = False
-        Me.ManageMusic.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ManageMusic.Location = New System.Drawing.Point(71, 273)
-        Me.ManageMusic.Name = "ManageMusic"
-        Me.ManageMusic.Size = New System.Drawing.Size(227, 70)
-        Me.ManageMusic.TabIndex = 8
-        Me.ManageMusic.Text = "Manage Music"
-        Me.ManageMusic.UseVisualStyleBackColor = True
-        '
-        'ManageMessages
-        '
-        Me.ManageMessages.Enabled = False
-        Me.ManageMessages.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ManageMessages.Location = New System.Drawing.Point(71, 425)
-        Me.ManageMessages.Name = "ManageMessages"
-        Me.ManageMessages.Size = New System.Drawing.Size(227, 70)
-        Me.ManageMessages.TabIndex = 7
-        Me.ManageMessages.Text = "Manage Messages"
-        Me.ManageMessages.UseVisualStyleBackColor = True
-        '
-        'ConfigureWatch
-        '
-        Me.ConfigureWatch.Enabled = False
-        Me.ConfigureWatch.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ConfigureWatch.Location = New System.Drawing.Point(71, 349)
-        Me.ConfigureWatch.Name = "ConfigureWatch"
-        Me.ConfigureWatch.Size = New System.Drawing.Size(227, 70)
-        Me.ConfigureWatch.TabIndex = 6
-        Me.ConfigureWatch.Text = "Configure Smartwatch"
-        Me.ConfigureWatch.UseVisualStyleBackColor = True
-        '
-        'Games
-        '
-        Me.Games.Enabled = False
-        Me.Games.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Games.Location = New System.Drawing.Point(71, 197)
-        Me.Games.Name = "Games"
-        Me.Games.Size = New System.Drawing.Size(227, 70)
-        Me.Games.TabIndex = 5
-        Me.Games.Text = "Games"
-        Me.Games.UseVisualStyleBackColor = True
-        '
-        'UpcomingLabel
-        '
-        Me.UpcomingLabel.AutoSize = True
-        Me.UpcomingLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.UpcomingLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.UpcomingLabel.Location = New System.Drawing.Point(23, 50)
-        Me.UpcomingLabel.Name = "UpcomingLabel"
-        Me.UpcomingLabel.Size = New System.Drawing.Size(322, 41)
-        Me.UpcomingLabel.TabIndex = 0
-        Me.UpcomingLabel.Text = "Upcoming Features"
-        '
         'Phone
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -878,11 +880,14 @@ Partial Class Phone
         Me.TabPage4.ResumeLayout(False)
         Me.TabPage5.ResumeLayout(False)
         Me.TabPage6.ResumeLayout(False)
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.IncomingCallPanel.ResumeLayout(False)
+        Me.IncomingCallPanel.PerformLayout()
         Me.TabPage7.ResumeLayout(False)
         Me.CallChildPanel.ResumeLayout(False)
         Me.CallChildPanel.PerformLayout()
+        Me.TabPage8.ResumeLayout(False)
+        Me.UpcomingFeaturesPanel.ResumeLayout(False)
+        Me.UpcomingFeaturesPanel.PerformLayout()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LocateChildPic, System.ComponentModel.ISupportInitialize).EndInit()
@@ -893,9 +898,6 @@ Partial Class Phone
         CType(Me.CallPic, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KidPic, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PhoneFrame, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPage8.ResumeLayout(False)
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel4.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -946,7 +948,7 @@ Partial Class Phone
     Friend WithEvents SendMoneyButton As Button
     Friend WithEvents SendReminderBut As Button
     Friend WithEvents TabPage6 As TabPage
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents IncomingCallPanel As Panel
     Friend WithEvents IncomingCallLabel As Label
     Friend WithEvents ChildNameLabel As Label
     Friend WithEvents CallChildButton As Button
@@ -960,7 +962,7 @@ Partial Class Phone
     Friend WithEvents ChildPicture As PictureBox
     Friend WithEvents UpcomingFeaturesButton As Button
     Friend WithEvents TabPage8 As TabPage
-    Friend WithEvents Panel4 As Panel
+    Friend WithEvents UpcomingFeaturesPanel As Panel
     Friend WithEvents Biometrics As Button
     Friend WithEvents ManageMusic As Button
     Friend WithEvents ManageMessages As Button

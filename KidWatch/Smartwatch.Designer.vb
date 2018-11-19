@@ -101,6 +101,8 @@ Partial Class Smartwatch
         Me.SoccerLabel2 = New System.Windows.Forms.Label()
         Me.SoccerBall2 = New System.Windows.Forms.PictureBox()
         Me.ScheduleAppPanel = New System.Windows.Forms.Panel()
+        Me.ScheduleAudio = New System.Windows.Forms.PictureBox()
+        Me.ScheduleHome = New System.Windows.Forms.PictureBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.StudyPanel = New System.Windows.Forms.Panel()
         Me.StudyTime = New System.Windows.Forms.Label()
@@ -110,8 +112,6 @@ Partial Class Smartwatch
         Me.SoccerTime = New System.Windows.Forms.Label()
         Me.SoccerLabel = New System.Windows.Forms.Label()
         Me.soccerBall = New System.Windows.Forms.PictureBox()
-        Me.ScheduleHome = New System.Windows.Forms.PictureBox()
-        Me.ScheduleAudio = New System.Windows.Forms.PictureBox()
         Me.HomePagePanel.SuspendLayout()
         CType(Me.RabbitPicture, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PhoneAppPanel.SuspendLayout()
@@ -149,12 +149,12 @@ Partial Class Smartwatch
         CType(Me.SoccerBack, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SoccerBall2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ScheduleAppPanel.SuspendLayout()
+        CType(Me.ScheduleAudio, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ScheduleHome, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.StudyPanel.SuspendLayout()
         CType(Me.StudyPic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SoccerPanel.SuspendLayout()
         CType(Me.soccerBall, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ScheduleHome, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ScheduleAudio, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'HomePagePanel
@@ -265,7 +265,7 @@ Partial Class Smartwatch
         '
         'CallHomeButton
         '
-        Me.CallHomeButton.Image = CType(resources.GetObject("CallHomeButton.Image"), System.Drawing.Image)
+        Me.CallHomeButton.Image = Global.KidWatch.My.Resources.Resource1.HomeIcon3
         Me.CallHomeButton.Location = New System.Drawing.Point(264, 279)
         Me.CallHomeButton.Name = "CallHomeButton"
         Me.CallHomeButton.Size = New System.Drawing.Size(70, 61)
@@ -352,7 +352,7 @@ Partial Class Smartwatch
         '
         'AllowanceHome
         '
-        Me.AllowanceHome.Image = CType(resources.GetObject("AllowanceHome.Image"), System.Drawing.Image)
+        Me.AllowanceHome.Image = Global.KidWatch.My.Resources.Resource1.HomeIcon
         Me.AllowanceHome.Location = New System.Drawing.Point(264, 279)
         Me.AllowanceHome.Name = "AllowanceHome"
         Me.AllowanceHome.Size = New System.Drawing.Size(70, 61)
@@ -534,10 +534,10 @@ Partial Class Smartwatch
         '
         'GPSHomeButton
         '
-        Me.GPSHomeButton.Image = CType(resources.GetObject("GPSHomeButton.Image"), System.Drawing.Image)
-        Me.GPSHomeButton.Location = New System.Drawing.Point(267, 277)
+        Me.GPSHomeButton.Image = Global.KidWatch.My.Resources.Resource1.HomeIcon
+        Me.GPSHomeButton.Location = New System.Drawing.Point(280, 286)
         Me.GPSHomeButton.Name = "GPSHomeButton"
-        Me.GPSHomeButton.Size = New System.Drawing.Size(70, 61)
+        Me.GPSHomeButton.Size = New System.Drawing.Size(52, 51)
         Me.GPSHomeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.GPSHomeButton.TabIndex = 8
         Me.GPSHomeButton.TabStop = False
@@ -653,7 +653,7 @@ Partial Class Smartwatch
         '
         'SettingsHome
         '
-        Me.SettingsHome.Image = CType(resources.GetObject("SettingsHome.Image"), System.Drawing.Image)
+        Me.SettingsHome.Image = Global.KidWatch.My.Resources.Resource1.HomeIcon
         Me.SettingsHome.Location = New System.Drawing.Point(264, 279)
         Me.SettingsHome.Name = "SettingsHome"
         Me.SettingsHome.Size = New System.Drawing.Size(70, 61)
@@ -738,7 +738,7 @@ Partial Class Smartwatch
         '
         'StudyHome
         '
-        Me.StudyHome.BackgroundImage = CType(resources.GetObject("StudyHome.BackgroundImage"), System.Drawing.Image)
+        Me.StudyHome.BackgroundImage = Global.KidWatch.My.Resources.Resource1.HomeIcon
         Me.StudyHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.StudyHome.Location = New System.Drawing.Point(231, 243)
         Me.StudyHome.Name = "StudyHome"
@@ -850,7 +850,7 @@ Partial Class Smartwatch
         Me.SoccerDetails.Controls.Add(Me.SoccerTime2)
         Me.SoccerDetails.Controls.Add(Me.SoccerLabel2)
         Me.SoccerDetails.Controls.Add(Me.SoccerBall2)
-        Me.SoccerDetails.Location = New System.Drawing.Point(5, 438)
+        Me.SoccerDetails.Location = New System.Drawing.Point(4, 440)
         Me.SoccerDetails.Name = "SoccerDetails"
         Me.SoccerDetails.Size = New System.Drawing.Size(337, 343)
         Me.SoccerDetails.TabIndex = 23
@@ -858,8 +858,8 @@ Partial Class Smartwatch
         '
         'SoccerHome
         '
-        Me.SoccerHome.BackgroundImage = CType(resources.GetObject("SoccerHome.BackgroundImage"), System.Drawing.Image)
-        Me.SoccerHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.SoccerHome.BackgroundImage = Global.KidWatch.My.Resources.Resource1.HomeIcon
+        Me.SoccerHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.SoccerHome.Location = New System.Drawing.Point(231, 243)
         Me.SoccerHome.Name = "SoccerHome"
         Me.SoccerHome.Size = New System.Drawing.Size(92, 90)
@@ -971,6 +971,26 @@ Partial Class Smartwatch
         Me.ScheduleAppPanel.TabIndex = 24
         Me.ScheduleAppPanel.Visible = False
         '
+        'ScheduleAudio
+        '
+        Me.ScheduleAudio.BackgroundImage = CType(resources.GetObject("ScheduleAudio.BackgroundImage"), System.Drawing.Image)
+        Me.ScheduleAudio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ScheduleAudio.Location = New System.Drawing.Point(126, 258)
+        Me.ScheduleAudio.Name = "ScheduleAudio"
+        Me.ScheduleAudio.Size = New System.Drawing.Size(86, 80)
+        Me.ScheduleAudio.TabIndex = 14
+        Me.ScheduleAudio.TabStop = False
+        '
+        'ScheduleHome
+        '
+        Me.ScheduleHome.BackgroundImage = Global.KidWatch.My.Resources.Resource1.HomeIcon
+        Me.ScheduleHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ScheduleHome.Location = New System.Drawing.Point(246, 260)
+        Me.ScheduleHome.Name = "ScheduleHome"
+        Me.ScheduleHome.Size = New System.Drawing.Size(84, 78)
+        Me.ScheduleHome.TabIndex = 13
+        Me.ScheduleHome.TabStop = False
+        '
         'DateTimePicker1
         '
         Me.DateTimePicker1.CustomFormat = "dddd, MMMM dd"
@@ -1066,26 +1086,6 @@ Partial Class Smartwatch
         Me.soccerBall.TabIndex = 3
         Me.soccerBall.TabStop = False
         '
-        'ScheduleHome
-        '
-        Me.ScheduleHome.BackgroundImage = CType(resources.GetObject("ScheduleHome.BackgroundImage"), System.Drawing.Image)
-        Me.ScheduleHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ScheduleHome.Location = New System.Drawing.Point(246, 260)
-        Me.ScheduleHome.Name = "ScheduleHome"
-        Me.ScheduleHome.Size = New System.Drawing.Size(84, 78)
-        Me.ScheduleHome.TabIndex = 13
-        Me.ScheduleHome.TabStop = False
-        '
-        'ScheduleAudio
-        '
-        Me.ScheduleAudio.BackgroundImage = CType(resources.GetObject("ScheduleAudio.BackgroundImage"), System.Drawing.Image)
-        Me.ScheduleAudio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ScheduleAudio.Location = New System.Drawing.Point(126, 258)
-        Me.ScheduleAudio.Name = "ScheduleAudio"
-        Me.ScheduleAudio.Size = New System.Drawing.Size(86, 80)
-        Me.ScheduleAudio.TabIndex = 14
-        Me.ScheduleAudio.TabStop = False
-        '
         'Smartwatch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1152,14 +1152,14 @@ Partial Class Smartwatch
         CType(Me.SoccerBack, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SoccerBall2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ScheduleAppPanel.ResumeLayout(False)
+        CType(Me.ScheduleAudio, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ScheduleHome, System.ComponentModel.ISupportInitialize).EndInit()
         Me.StudyPanel.ResumeLayout(False)
         Me.StudyPanel.PerformLayout()
         CType(Me.StudyPic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SoccerPanel.ResumeLayout(False)
         Me.SoccerPanel.PerformLayout()
         CType(Me.soccerBall, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ScheduleHome, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ScheduleAudio, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

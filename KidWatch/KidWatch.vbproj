@@ -171,5 +171,14 @@
   <ItemGroup>
     <None Include="Resources\DeclineCall.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kid.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeIcon3.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

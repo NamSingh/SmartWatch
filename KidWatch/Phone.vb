@@ -9,6 +9,9 @@
         LocateSosPanel.Visible = False
         FundsPanel.Visible = False
         DailySchedPanel.Visible = False
+        UpcomingFeaturesPanel.Visible = False
+        IncomingCallPanel.Visible = False
+        CallChildPanel.Visible = False
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles AddSoccerPractice.Click
@@ -80,5 +83,15 @@
 
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles CallChildLabel.Click
 
+    End Sub
+
+    Private Sub UpcomingFeaturesButton_Click(sender As Object, e As EventArgs) Handles UpcomingFeaturesButton.Click
+        clearphone()
+        UpcomingFeaturesPanel.Visible = True
+    End Sub
+
+    Private Sub CallChildButton_Click(sender As Object, e As EventArgs) Handles CallChildButton.Click
+        clearphone()
+        CallChildPanel.Visible = True
     End Sub
 End Class
