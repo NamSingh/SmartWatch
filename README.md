@@ -1,2 +1,2 @@
 # SmartWatch
-A smartwatch designed for children
+A simple smartwatch designed for children
