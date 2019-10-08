@@ -1,2 +1,6 @@
 # SmartWatch
-A simple smartwatch designed for children
+A simple Smart Watch app designed for children.
+Accompanied by a mobile app for parents.
+
+
+-- In Progress
